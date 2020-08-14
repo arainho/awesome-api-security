@@ -8,9 +8,11 @@ Repository | Description
 ---- | ----
 [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. Contributions welcome 
 
+
 ## Tools
 Repository | Description
 ---- | ----
+[Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite
 [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting and uses API_Fuzzer gem 
 
 ## Cheatsheets
@@ -27,6 +29,11 @@ Repository | Description
 Repository | Description
 ---- | ----
 [API-Security-Checklist]([https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
+
+## Presentations
+Repository | Description
+---- | ----
+[pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by :- Gaurang Bhatnagar
 
 ## Other useful repositories
 Repository | Description
