@@ -2,6 +2,11 @@
 
 **A collection of awesome API Security tools and resources.**
 
+## Awesome Repositories
+
+Repository | Description
+---- | ----
+[awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. Contributions welcome 
 
 ## Tools
 Repository | Description
@@ -23,5 +28,6 @@ Repository | Description
 Repository | Description
 ---- | ----
 [API-Security-Checklist]([https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
+[Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
 
 
