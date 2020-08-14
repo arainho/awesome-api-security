@@ -29,5 +29,5 @@ Repository | Description
 ---- | ----
 [API-Security-Checklist]([https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
 [Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
-
+[How to design a REST API ](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
 
