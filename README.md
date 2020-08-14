@@ -1,4 +1,4 @@
-# awesome-apisec (https://github.com/arainho/awesome-apisec)
+# [awesome-apisec](https://github.com/arainho/awesome-apisec)
 
 **A collection of awesome API Security tools and resources.**
 
