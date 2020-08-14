@@ -34,6 +34,7 @@ Repository | Description
 Repository | Description
 ---- | ----
 [pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by :- Gaurang Bhatnagar
+[Securing your APIs](https://owasp.org/www-chapter-singapore/assets/presos/Securing_your_APIs_-_OWASP_API_Top_10_2019,_Real-life_Case.pdf) | “How Secure are you APIs?” - Securing your APIs: OWASP API Top 10 2019, Case Study and Demo
 
 ## Other useful repositories
 Repository | Description
