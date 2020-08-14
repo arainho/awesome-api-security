@@ -6,7 +6,7 @@
 
 Repository | Description
 ---- | ----
-[awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. Contributions welcome 
+[awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security
 
 
 ## Tools
