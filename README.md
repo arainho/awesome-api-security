@@ -37,6 +37,7 @@ Repository | Description
 [Securing your APIs](https://owasp.org/www-chapter-singapore/assets/presos/Securing_your_APIs_-_OWASP_API_Top_10_2019,_Real-life_Case.pdf) | “How Secure are you APIs?” - Securing your APIs: OWASP API Top 10 2019, Case Study and Demo
 [api-security-testing-for-hackers](https://www.bugcrowd.com/resources/webinars/api-security-testing-for-hackers) | API Security Testing For Hackers
 [bad-api-hapi-hackers](https://www.bugcrowd.com/resources/webinars/bad-api-hapi-hackers)| Bad API, hAPI Hackers!
+[disclosing-information-via-your-apis](https://www.bugcrowd.com/resources/webinars/hidden-in-plain-site-disclosing-information-via-your-apis/) | Hidden in Plain Site: Disclosing Information via Your APIs
 [rest-in-peace-abusing-graphql](https://www.bugcrowd.com/resources/webinars/rest-in-peace-abusing-graphql-to-attack-underlying-infrastructure) | REST in Peace: Abusing GraphQL to Attack Underlying Infrastructure
 
 ## Other useful repositories
