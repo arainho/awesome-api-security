@@ -30,6 +30,9 @@ Repository | Description
 ---- | ----
 [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
 
+## Training / Labs
+[Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
+
 ## Presentations / Videos
 Repository | Description
 ---- | ----
