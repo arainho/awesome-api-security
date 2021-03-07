@@ -21,7 +21,7 @@ Website | Description
 [owasp-api-security-top-10](https://apisecurity.io/encyclopedia/content/owasp-api-security-top-10-cheat-sheet-a4.pdf) | OWASP API Security Top 10
 
 ## Wiki's / Encyclopedias
-Repository | Description
+Website | Description
 ---- | ----
 [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia
 
@@ -31,10 +31,12 @@ Repository | Description
 [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
 
 ## Training / Labs
+Website | Description
+---- | ----
 [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
 
 ## Presentations / Videos
-Repository | Description
+Website | Description
 ---- | ----
 [pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by :- Gaurang Bhatnagar
 [Securing your APIs](https://owasp.org/www-chapter-singapore/assets/presos/Securing_your_APIs_-_OWASP_API_Top_10_2019,_Real-life_Case.pdf) | “How Secure are you APIs?” - Securing your APIs: OWASP API Top 10 2019, Case Study and Demo
