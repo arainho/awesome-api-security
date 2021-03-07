@@ -46,7 +46,7 @@ Website | Description
 [rest-in-peace-abusing-graphql](https://www.bugcrowd.com/resources/webinars/rest-in-peace-abusing-graphql-to-attack-underlying-infrastructure) | REST in Peace: Abusing GraphQL to Attack Underlying Infrastructure
 
 ## Other useful repositories
-Repository | Description
+Website | Description
 ---- | ----
 [31-days-of-API-Security-Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
 [Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
