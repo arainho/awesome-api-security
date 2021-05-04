@@ -14,6 +14,8 @@ Repository | Description
 ---- | ----
 [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite
 [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting and uses API_Fuzzer gem 
+[kiterunner](https://github.com/assetnote/kiterunner)| Contextual Content Discovery Tool 
+[MindAPI](https://github.com/dsopas/MindAPI)| Organize your API security assessment by using MindAPI
 
 ## Cheatsheets
 Website | Description
@@ -53,3 +55,5 @@ Website | Description
 [How to design a REST API ](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
 [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases
 [api-security-testing-how-to-hack](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3)
+
+
