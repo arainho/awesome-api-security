@@ -50,10 +50,12 @@ Website | Description
 
 ## Projects
 Project | Description
+---- | ----
 [owasp api security project](https://owasp.org/www-project-api-security/) | OWASP API Security Project - API Security Top 10
 
 ## Newsletters
 Newsletter | Description
+---- | ----
 [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices
 
 ## Other useful repositories
