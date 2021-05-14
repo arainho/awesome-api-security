@@ -36,6 +36,7 @@ Repository | Description
 Website | Description
 ---- | ----
 [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
+[Pentesting Lab: vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
 
 ## Presentations / Videos
 Website | Description
@@ -49,6 +50,9 @@ Website | Description
 
 ## Projects
 [owasp api security project](https://owasp.org/www-project-api-security/) | OWASP API Security Project - API Security Top 10
+
+## Newsletter
+[api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices
 
 ## Other useful repositories
 Website | Description
