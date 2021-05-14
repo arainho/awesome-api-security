@@ -49,9 +49,11 @@ Website | Description
 [rest-in-peace-abusing-graphql](https://www.bugcrowd.com/resources/webinars/rest-in-peace-abusing-graphql-to-attack-underlying-infrastructure) | REST in Peace: Abusing GraphQL to Attack Underlying Infrastructure
 
 ## Projects
+Project | Description
 [owasp api security project](https://owasp.org/www-project-api-security/) | OWASP API Security Project - API Security Top 10
 
-## Newsletter
+## Newsletters
+Newsletter | Description
 [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices
 
 ## Other useful repositories
