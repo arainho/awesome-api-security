@@ -59,6 +59,11 @@ Newsletter | Description
 ---- | ----
 [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices
 
+## Other resources
+Location | Description
+---- | ----
+[List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing.
+
 ## Other useful repositories
 Website | Description
 ---- | ----
