@@ -16,6 +16,7 @@ Repository | Description
 [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting and uses API_Fuzzer gem 
 [kiterunner](https://github.com/assetnote/kiterunner)| Contextual Content Discovery Tool 
 [MindAPI](https://github.com/dsopas/MindAPI)| Organize your API security assessment by using MindAPI
+[Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's
 
 ## Cheatsheets
 Website | Description
