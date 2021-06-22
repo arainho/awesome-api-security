@@ -42,6 +42,7 @@ Website | Description
 ## Presentations / Videos
 Website | Description
 ---- | ----
+[API hacking for Inexperienced hacker](https://www.youtube.com/watch?v=qqmyAxfGV9c) | API hacking for the Actually Pretty Inexperienced hacker with Katie Paxton-Fear - OWASP DevSlop
 [pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by :- Gaurang Bhatnagar
 [Securing your APIs](https://owasp.org/www-chapter-singapore/assets/presos/Securing_your_APIs_-_OWASP_API_Top_10_2019,_Real-life_Case.pdf) | “How Secure are you APIs?” - Securing your APIs: OWASP API Top 10 2019, Case Study and Demo
 [api-security-testing-for-hackers](https://www.bugcrowd.com/resources/webinars/api-security-testing-for-hackers) | API Security Testing For Hackers
