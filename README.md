@@ -39,6 +39,15 @@ Website | Description
 [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
 [Pentesting Lab: vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
 
+## Deliberately vulnerable APIs
+Website | Description
+---- | ----
+[crAPI](https://github.com/OWASP/crAPI) | completely ridiculous API (crAPI)
+[VAmPI](https://github.com/erev0s/VAmPI)| Vulnerable REST API with OWASP top 10 vulnerabilities for APIs
+[dvws-node](https://github.com/snoopysecurity/dvws-node) | Damn Vulnerable Web Service is a vulnerable web service/API/application that can be used to learn webservices/API vulnerabilities.
+[DamnVulnerableMicroServices](https://github.com/ne0z/DamnVulnerableMicroServices) | This is vulnerable microservice written in many language to demonstrating OWASP API Top Security Risk (under development)
+[Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| Damn Vulnerable GraphQL Application is an intentionally vulnerable implementation of Facebook's GraphQL technology, to learn and practice GraphQL Security.
+
 ## Presentations / Videos
 Website | Description
 ---- | ----
@@ -60,14 +69,14 @@ Newsletter | Description
 ---- | ----
 [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices
 
-## Other resources
+## Fuzzing / SecLists
 Location | Description
 ---- | ----
 [List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing.
 [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments.
 [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place.
 
-## Other useful repositories
+## Other useful resources
 Website | Description
 ---- | ----
 [31-days-of-API-Security-Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
