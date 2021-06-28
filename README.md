@@ -26,10 +26,11 @@ Website | Description
 [OWASP API Security Top 10](https://apisecurity.io/encyclopedia/content/owasp-api-security-top-10-cheat-sheet-a4.pdf) | 42Crunch - OWASP API Security Top 10
 [GraphQL Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/GraphQL_Cheat_Sheet.html) | GraphQL - OWASP Cheat Sheet Series
 
-## Wiki's / Encyclopedias
+## Wiki's / Encyclopedias / GitBook's
 Website | Description
 ---- | ----
 [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia
+[Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting
 
 ## Checklist
 Repository | Description
