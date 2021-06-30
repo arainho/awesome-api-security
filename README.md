@@ -4,13 +4,12 @@
 
 ## Awesome Repositories
 
-Repository | Description
+Name | Description
 ---- | ----
 [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security
 
-
 ## Tools
-Repository | Description
+Name | Description
 ---- | ----
 [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite
 [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting and uses API_Fuzzer gem 
@@ -20,31 +19,44 @@ Repository | Description
 [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. 
 
 ## Cheatsheets
-Website | Description
+Name | Description
 ---- | ----
 [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html) | REST Security - OWASP Cheat Sheet Series
 [OWASP API Security Top 10](https://apisecurity.io/encyclopedia/content/owasp-api-security-top-10-cheat-sheet-a4.pdf) | 42Crunch - OWASP API Security Top 10
 [GraphQL Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/GraphQL_Cheat_Sheet.html) | GraphQL - OWASP Cheat Sheet Series
 
 ## Wiki's / Encyclopedias / GitBook's
-Website | Description
+Name | Description
 ---- | ----
 [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia
 [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting
 
 ## Checklist
-Repository | Description
+Name | Description
 ---- | ----
 [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
 
 ## Training / Labs
-Website | Description
+Name | Description
 ---- | ----
 [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
 [Pentesting Lab: vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
 
+## Enumeration / Scanning
+Name | Description
+---- | ----
+[Burp Enumeration](https://portswigger.net/support/using-burp-to-enumerate-a-rest-api) | Using Burp to Enumerate a REST API
+[ZAP Scanning](https://www.zaproxy.org/blog/2017-06-19-scanning-apis-with-zap/) | Scanning APIs with ZAP
+
+## Fuzzing / SecLists
+Name | Description
+---- | ----
+[List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing.
+[SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments.
+[GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place.
+
 ## Deliberately vulnerable APIs
-Website | Description
+Name | Description
 ---- | ----
 [crAPI](https://github.com/OWASP/crAPI) | completely ridiculous API (crAPI)
 [VAmPI](https://github.com/erev0s/VAmPI)| Vulnerable REST API with OWASP top 10 vulnerabilities for APIs
@@ -53,7 +65,7 @@ Website | Description
 [Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| Damn Vulnerable GraphQL Application is an intentionally vulnerable implementation of Facebook's GraphQL technology, to learn and practice GraphQL Security.
 
 ## Presentations / Videos
-Website | Description
+Name | Description
 ---- | ----
 [API hacking for Inexperienced hacker](https://www.youtube.com/watch?v=qqmyAxfGV9c) | API hacking for the Actually Pretty Inexperienced hacker with Katie Paxton-Fear - OWASP DevSlop
 [pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by :- Gaurang Bhatnagar
@@ -64,7 +76,7 @@ Website | Description
 [rest-in-peace-abusing-graphql](https://www.bugcrowd.com/resources/webinars/rest-in-peace-abusing-graphql-to-attack-underlying-infrastructure) | REST in Peace: Abusing GraphQL to Attack Underlying Infrastructure
 
 ## Podcasts
-Website | Description
+Podcast | Description
 ---- | ----
 [Podcast: Hacking APIs](https://forallsecure.com/blog/the-hacker-mind-podcast-hacking-apis) | The Hacker Mind Podcast: Hacking APIs
 
@@ -78,15 +90,8 @@ Newsletter | Description
 ---- | ----
 [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices
 
-## Fuzzing / SecLists
-Location | Description
----- | ----
-[List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing.
-[SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments.
-[GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place.
-
 ## Other useful resources
-Website | Description
+Name | Description
 ---- | ----
 [31-days-of-API-Security-Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
 [Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
