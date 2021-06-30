@@ -95,9 +95,8 @@ Newsletter | Description
 ## Other useful resources
 Name | Description
 ---- | ----
-
-[How to design a REST API ](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
-[Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
+[How to design a REST API](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
+[Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
 [31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
 [API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide
 [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases
