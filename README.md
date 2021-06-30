@@ -95,11 +95,13 @@ Newsletter | Description
 ## Other useful resources
 Name | Description
 ---- | ----
-[31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
-[Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
+
 [How to design a REST API ](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
+[Awesome REST](https://github.com/marmelab/awesome-rest)          | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
+[31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
+[API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide
 [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases
 [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3)
 [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools
 [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them
-[API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide
+[API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What is API and microservice security? 
