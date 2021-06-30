@@ -63,6 +63,11 @@ Website | Description
 [disclosing-information-via-your-apis](https://www.bugcrowd.com/resources/webinars/hidden-in-plain-site-disclosing-information-via-your-apis/) | Hidden in Plain Site: Disclosing Information via Your APIs
 [rest-in-peace-abusing-graphql](https://www.bugcrowd.com/resources/webinars/rest-in-peace-abusing-graphql-to-attack-underlying-infrastructure) | REST in Peace: Abusing GraphQL to Attack Underlying Infrastructure
 
+## Podcasts
+Website | Description
+---- | ----
+[Podcast: Hacking APIs](https://forallsecure.com/blog/the-hacker-mind-podcast-hacking-apis) | The Hacker Mind Podcast: Hacking APIs
+
 ## Projects
 Project | Description
 ---- | ----
