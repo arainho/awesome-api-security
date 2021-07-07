@@ -69,6 +69,7 @@ Name | Description
 [dvws-node](https://github.com/snoopysecurity/dvws-node) | Damn Vulnerable Web Service is a vulnerable web service/API/application that can be used to learn webservices/API vulnerabilities.
 [DamnVulnerableMicroServices](https://github.com/ne0z/DamnVulnerableMicroServices) | This is vulnerable microservice written in many language to demonstrating OWASP API Top Security Risk (under development)
 [Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| Damn Vulnerable GraphQL Application is an intentionally vulnerable implementation of Facebook's GraphQL technology, to learn and practice GraphQL Security.
+[Generic-University](https://github.com/InsiderPhD/Generic-University) | Vulnerable API with Laravel App
 
 ## Presentations / Videos
 Name | Description
