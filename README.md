@@ -51,8 +51,9 @@ Name | Description
 ## Enumeration / Scanning
 Name | Description
 ---- | ----
-[Burp Enumeration](https://portswigger.net/support/using-burp-to-enumerate-a-rest-api) | Using Burp to Enumerate a REST API
-[ZAP Scanning](https://www.zaproxy.org/blog/2017-06-19-scanning-apis-with-zap/) | Scanning APIs with ZAP
+[Burp enumeration](https://portswigger.net/support/using-burp-to-enumerate-a-rest-api) | Using Burp to Enumerate a REST API
+[ZAP scanning](https://www.zaproxy.org/blog/2017-06-19-scanning-apis-with-zap/) | Scanning APIs with ZAP
+[w3af scanning](http://docs.w3af.org/en/latest/scan-rest-apis.html) | Scan REST APIs with w3af
 
 ## Fuzzing / SecLists
 Name | Description
