@@ -119,3 +119,4 @@ Name | Description
 [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools
 [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them
 [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What is API and microservice security? 
+[Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | Strengthening Your API Security Posture – Ford Motor Company
