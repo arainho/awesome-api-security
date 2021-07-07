@@ -82,7 +82,10 @@ Name | Description
 ## Podcasts
 Podcast | Description
 ---- | ----
-[Podcast: Hacking APIs](https://forallsecure.com/blog/the-hacker-mind-podcast-hacking-apis) | The Hacker Mind Podcast: Hacking APIs
+[Hacking APIs](https://forallsecure.com/blog/the-hacker-mind-podcast-hacking-apis) | The Hacker Mind Podcast: Hacking APIs
+[Hack Your API-Security Testing](https://testguild.com/podcast/automation/21-troy-hunt-hack-your-api-security-testing/) | 21: Troy Hunt: Hack Your API-Security Testing
+[The OWASP API Security Project](https://podcast.securityjourney.com/erez-yalon-the-owasp-api-security-project/) | Erez Yalon — The OWASP API Security Project
+[Episode 38 API Security Best Practices](https://wehackpurple.com/podcast/episode-38-api-security-best-practices/) | We Hack Purple Podcast Episode 38 API Security Best Practices
 
 ## Projects
 Project | Description
