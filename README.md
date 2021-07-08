@@ -30,6 +30,7 @@ Name | Description
 [OWASP API Security Top 10](https://apisecurity.io/encyclopedia/content/owasp-api-security-top-10-cheat-sheet-a4.pdf) | 42Crunch - OWASP API Security Top 10
 [GraphQL Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/GraphQL_Cheat_Sheet.html) | GraphQL - OWASP Cheat Sheet Series
 [Microservices Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Microservices_security.html) | Microservices - OWASP Security Cheat Sheet
+[JSON Web Token Security Cheat Sheet](https://assets.pentesterlab.com/jwt_security_cheatsheet/jwt_security_cheatsheet.pdf) | PentesterLab - JSON Web Token Security Cheat Sheet
 
 ## Wiki's / Encyclopedias / GitBook's
 Name | Description
