@@ -43,11 +43,12 @@ Name | Description
 ---- | ----
 [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
 
-## Training / Labs
+## Training / Walkthrough / Labs
 Name | Description
 ---- | ----
 [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
 [Pentesting Lab: vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
+[ShipFast - Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. 
 
 ## Enumeration / Scanning
 Name | Description
