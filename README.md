@@ -40,9 +40,9 @@ Name | Description
 
 ## Checklist
 Author | Name | Description
----- | ----
+---- | ---- | ----
 shieldfy| [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
-HolyBugx | (https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security cheklist
+HolyBugx | [API Security.pdf](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security cheklist
 
 ## Training / Walkthrough / Labs
 Name | Description
