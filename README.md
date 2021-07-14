@@ -39,9 +39,10 @@ Name | Description
 [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting
 
 ## Checklist
-Name | Description
+Author | Name | Description
 ---- | ----
-[API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
+shieldfy| [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
+HolyBugx | (https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security cheklist
 
 ## Training / Walkthrough / Labs
 Name | Description
