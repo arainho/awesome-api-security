@@ -42,7 +42,7 @@ Name | Description
 Author | Name | Description
 ---- | ---- | ----
 shieldfy| [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API
-[31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
+Inon Shkedy | [31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
 APIOps Cycles | [API audit checklist](https://uploads.strikinglycdn.com/files/b483cf33-2873-4e89-abf3-77551f9fb0b0/API%20Audit%20checklist.pdf) | API Audit checklist
 HolyBugx | [another API Security checklist](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security checklist
 
