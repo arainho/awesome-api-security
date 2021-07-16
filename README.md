@@ -20,7 +20,7 @@ Name | Description
 [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output
 [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs
 [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services
-[SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open source cross-platform functional testing solution for APIs and web services
+[SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services
 
 ## Cheatsheets
 Name | Description
@@ -41,14 +41,16 @@ Name | Description
 ## Checklist
 Author | Name | Description
 ---- | ---- | ----
-shieldfy| [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API 
-HolyBugx | [API Security.pdf](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security cheklist
+shieldfy| [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API
+[31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
+APIOps Cycles | [API audit checklist](https://uploads.strikinglycdn.com/files/b483cf33-2873-4e89-abf3-77551f9fb0b0/API%20Audit%20checklist.pdf) | API Audit checklist
+HolyBugx | [another API Security checklist](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security checklist
 
 ## Training / Walkthrough / Labs
 Name | Description
 ---- | ----
 [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints.
-[Pentesting Lab: vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
+[Pentesting Lab: vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface, Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
 [ShipFast - Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. 
 
 ## Enumeration / Scanning
@@ -72,16 +74,16 @@ Name | Description
 ---- | ----
 [crAPI](https://github.com/OWASP/crAPI) | completely ridiculous API (crAPI)
 [VAmPI](https://github.com/erev0s/VAmPI)| Vulnerable REST API with OWASP top 10 vulnerabilities for APIs
-[dvws-node](https://github.com/snoopysecurity/dvws-node) | Damn Vulnerable Web Service is a vulnerable web service/API/application that can be used to learn webservices/API vulnerabilities.
-[DamnVulnerableMicroServices](https://github.com/ne0z/DamnVulnerableMicroServices) | This is vulnerable microservice written in many language to demonstrating OWASP API Top Security Risk (under development)
-[Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| Damn Vulnerable GraphQL Application is an intentionally vulnerable implementation of Facebook's GraphQL technology, to learn and practice GraphQL Security.
+[dvws-node](https://github.com/snoopysecurity/dvws-node) | Damn Vulnerable Web Service is a vulnerable web service/API/application that we can use to learn webservices/API vulnerabilities.
+[DamnVulnerableMicroServices](https://github.com/ne0z/DamnVulnerableMicroServices) | This is a vulnerable microservice written in many languages to demonstrating OWASP API Top Security Risk (under development)
+[Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| Damn Vulnerable GraphQL Application is intentionally vulnerable implementation of Facebook's GraphQL technology to learn and practice GraphQL Security.
 [Generic-University](https://github.com/InsiderPhD/Generic-University) | Vulnerable API with Laravel App
 
 ## Presentations / Videos
 Name | Description
 ---- | ----
-[pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by :- Gaurang Bhatnagar
-[Securing your APIs](https://owasp.org/www-chapter-singapore/assets/presos/Securing_your_APIs_-_OWASP_API_Top_10_2019,_Real-life_Case.pdf) | “How Secure are you APIs?” - Securing your APIs: OWASP API Top 10 2019, Case Study and Demo
+[pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by Gaurang Bhatnagar
+[Securing your APIs](https://owasp.org/www-chapter-singapore/assets/presos/Securing_your_APIs_-_OWASP_API_Top_10_2019,_Real-life_Case.pdf) | "How Secure are you APIs?" - Securing your APIs: OWASP API Top 10 2019, Case Study and Demo
 [api-security-testing-for-hackers](https://www.bugcrowd.com/resources/webinars/api-security-testing-for-hackers) | API Security Testing For Hackers
 [bad-api-hapi-hackers](https://www.bugcrowd.com/resources/webinars/bad-api-hapi-hackers)| Bad API, hAPI Hackers!
 [disclosing-information-via-your-apis](https://www.bugcrowd.com/resources/webinars/hidden-in-plain-site-disclosing-information-via-your-apis/) | Hidden in Plain Site: Disclosing Information via Your APIs
@@ -90,7 +92,7 @@ Name | Description
 ## Playlists
 Name | Description
 ---- | ----
-[Everything API Hacking](https://www.youtube.com/playlist?list=PLbyncTkpno5HqX1h2MnV6Qt4wvTb8Mpol) | Katie Paxton-Fear, @InsiderPhD - videos collection + some other people creating a playlist of API hacking knowledge!
+[Everything API Hacking](https://www.youtube.com/playlist?list=PLbyncTkpno5HqX1h2MnV6Qt4wvTb8Mpol) | A video collection from Katie Paxton-Fear, @InsiderPhD, and other people creating a playlist of API hacking knowledge!
 
 ## Podcasts
 Podcast | Description
@@ -114,13 +116,12 @@ Newsletter | Description
 Name | Description
 ---- | ----
 [How to design a REST API](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
-[Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.
-[31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips.
+[Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this ongoing list.
 [API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide
 [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases
 [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3)
 [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools
 [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them
-[API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What is API and microservice security? 
+[API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What are API and microservice security? 
 [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | Strengthening Your API Security Posture – Ford Motor Company
 [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion
