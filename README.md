@@ -24,7 +24,7 @@ Name | Description
 ## Mind maps
 | Author  | Name | Description |
 | ------- | ---- | ------------|
-| David Sopas | [MindAPI](https://github.com/dsopas/MindAPI) | Organize your API security assessment by using MindAPI |
+| [David Sopas](https://github.com/dsopas) | [MindAPI](https://github.com/dsopas/MindAPI) | Organize your API security assessment by using MindAPI |
 | [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
 | [Harsh Bothra](https://github.com/muffyhub) | [XML attacks](https://www.xmind.net/m/xNEY9b/) | Mind map: XML attacks |
 
