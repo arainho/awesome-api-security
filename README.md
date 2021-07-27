@@ -69,6 +69,12 @@ Name | Description
 [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments.
 [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place.
 
+## API Keys validation
+| Name | Description |
+|---- | ----|
+| [Keyhacks](https://github.com/streaak/keyhacks)| Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid. |
+| [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity | 
+
 ## Deliberately vulnerable APIs
 Name | Description
 ---- | ----
