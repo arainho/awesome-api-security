@@ -77,11 +77,12 @@ Name | Description
 [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments.
 [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place.
 
-## API Keys validation
+## API Keys Find & validate
 | Name | Description |
 |---- | ----|
+| [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity |
 | [Keyhacks](https://github.com/streaak/keyhacks)| Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid. |
-| [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity | 
+[API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares.
 
 ## Deliberately vulnerable APIs
 Name | Description
@@ -131,7 +132,6 @@ Name | Description
 ---- | ----
 [How to design a REST API](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
 [Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this ongoing list.
-[API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares.
 [API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide
 [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases
 [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3)
