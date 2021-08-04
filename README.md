@@ -17,7 +17,7 @@
 
 ## Mind maps
 | Author  | Name | Description |
-| ------- | ---- | ------------|
+| ------- | ---- | ----------- |
 | [David Sopas](https://github.com/dsopas) | [MindAPI](https://dsopas.github.io/MindAPI/play/) | Organize your API security assessment by using MindAPI |
 | [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
 | [Harsh Bothra](https://github.com/muffyhub) | [XML attacks](https://www.xmind.net/m/xNEY9b/) | Mind map: XML attacks |
@@ -116,9 +116,9 @@
 | [owasp api security project](https://owasp.org/www-project-api-security/) | OWASP API Security Project - API Security Top 10 |
 
 ## Newsletters
-| Name | Description |
-| ---- | ----------- |
-| [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
+| Author  | Name | Description |
+| ------- | ---- | ----------- |
+| 42Crunch | [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
 
 ## Awesome Repositories
 | Name | Description |
