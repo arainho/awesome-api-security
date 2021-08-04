@@ -2,6 +2,11 @@
 
 **A collection of awesome API Security tools and resources.**
 
+## Awesome Repositories
+| Name | Description |
+| ---- | ----------- |
+| [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
+
 ## Tools
 | Name | Description |
 | ---- | ----------- |
@@ -119,11 +124,6 @@
 | Author  | Name | Description |
 | ------- | ---- | ----------- |
 | 42Crunch | [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
-
-## Awesome Repositories
-| Name | Description |
-| ---- | ----------- |
-| [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
 
 ## Design / Architecture / Development
 | Name | Description |
