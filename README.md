@@ -70,7 +70,7 @@ Name | Description
 [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments.
 [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place.
 
-## API Keys (Find & validate) 
+## API Keys - Find & validate
 | Name | Description |
 |---- | ----|
 | [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity |
@@ -131,6 +131,7 @@ Newsletter | Description
 |[REST API Design Guide](https://www.apiopscycles.com/resources/rest-api-design-guide) | This design guide or style guide contains best practices suitable for most REST APIs. |
 |[How to design a REST API](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
 |[Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this ongoing list.
+| [API Audit](https://www.apiopscycles.com/method/api-audit) | API Audit is a method to ensure APIs are matching the API Design guidelines. It also helps check for usability, security and API management platform compatibility. |
 
 ## Other useful resources
 Name | Description
