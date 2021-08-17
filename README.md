@@ -140,6 +140,7 @@ Name | Description
 ---- | ----
 | [API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide |
 | [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases. |
+| [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | Simplifying API Pentesting With Swagger Files. |
 | [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3). |
 | [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools. |
 | [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them. |
