@@ -128,6 +128,11 @@
 | ------- | ---- | ----------- |
 | 42Crunch | [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
 
+## Twitter
+| Author  | Name | Description |
+| ------- | ---- | ----------- |
+| 42Crunch | [@apisecurityio](https://twitter.com/apisecurityio/) | API security news, standards, vulnerabilities, tools. |
+
 ## Design / Architecture / Development
 | Name | Description |
 | ---- | ----------- |
