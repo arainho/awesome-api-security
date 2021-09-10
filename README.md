@@ -74,6 +74,8 @@
 | [List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing. |
 | [List of Swagger endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/swagger.txt) | Swagger endpoints |
 | [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments. |
+| [Kiterunner Wordlists](https://github.com/assetnote/wordlists/blob/master/data/kiterunner.json) | Kiterunner Wordlists provided by Assetnote |
+| [API Routes Wordlists](https://github.com/assetnote/wordlists/blob/master/data/automated.json) | API Routes - Automated Wordlists provided by Assetnote  |
 | [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place. |
 
 ## API Keys: Find & validate
