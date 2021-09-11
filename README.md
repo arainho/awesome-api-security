@@ -10,19 +10,33 @@
 ## Tools
 | Name | Description |
 | ---- | ----------- |
-| [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
-| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. |
-| [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
-| [APIFuzzer](https://github.com/KissPeter/APIFuzzer) | Fuzz test your application using your OpenAPI or Swagger API definition without coding. |
-| [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
+| | |
+| **GraphQL** |
+| [BatchQL](https://github.com/assetnote/batchql)| GraphQL security auditing script with a focus on performing batch GraphQL queries and mutations. |
+| [InQL](https://github.com/doyensec/inql) | InQL - A Burp Extension for GraphQL Security Testing. |
 | [GraphQLmap](https://github.com/swisskyrepo/GraphQLmap)| GraphQLmap is a scripting engine to interact with a graphql endpoint for pentesting purposes. |
-| [kiterunner](https://github.com/assetnote/kiterunner)| Contextual Content Discovery Tool. |
+| [graphql-path-enum](https://gitlab.com/dee-see/graphql-path-enum) | Tool that lists the different ways of reaching a given type in a GraphQL schema. |
+|  |  |
+| **REST APIs** |
+| [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
+| [APIFuzzer](https://github.com/KissPeter/APIFuzzer) | Fuzz test your application using your OpenAPI or Swagger API definition without coding. |
+| [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
-| [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
+| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. |Fuzz test your application using your OpenAPI or Swagger API definition without coding 
+| [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
+| [kiterunner](https://github.com/assetnote/kiterunner)| Contextual Content Discovery Tool. |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
-| [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
+| [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
+| [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | Dump all available paths and/or endpoints on WADL file. |
+|  |  |
+| **SOAP** |
+| [Wsdler](https://github.com/NetSPI/Wsdler)| WSDL Parser extension for Burp. |
+| [wsdl-wizard](https://github.com/portswigger/wsdl-wizard)| WSDL Wizard is a Burp Suite plugin written in Python to detect current and discover new WSDL (Web Service Definition Language) files. |
+|  |  |
+| **Others**|
+| [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 
 ## Mind maps
 | Author  | Name | Description |
