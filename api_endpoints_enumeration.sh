@@ -6,15 +6,13 @@
 TARGET_TLD="$1"
 WORDLIST="$2"
 
-dirb http://${TARGET_TLD} ${WORDLIST} -w -o dirb-${TARGET_TLD}.output
+go install github.com/OJ/gobuster/v3@latest
+~/go/bin/gobuster -e -u http://${TARGET_TLD} -w ${WORDLIST} -o gobuster-${TARGET_TLD}.output
 
 go get -u -v github.com/ffuf/ffuf
-ffuf -w ${WORDLIST} -u https://${TARGET_TLD}/FUZZ -mc all -c -v -o ffuf-${TARGET_TLD}.output
+~/go/bin/ffuf -w ${WORDLIST} -u https://${TARGET_TLD}/FUZZ -mc all -c -v -o ffuf-${TARGET_TLD}.output
 
 ## In progress
-# go get -u -v github.com/OJ/gobuster
-# gobuster -e -u http://${TARGET_TLD} -w ${WORDLIST}
-
 # amass enum -active -d ${TARGET_TLD} -config config.ini
 # nuclei -target ${TARGET_TLD} -t exposures/apis/
 # jaeles scan -s swagger-ui-probing.yaml -u ${TARGET_TLD}
