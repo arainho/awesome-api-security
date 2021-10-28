@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 TARGET_DIR="${1:-wordlists/tmp/}"
+TMP_BUNDLE="${tmp_bunble.txt}"
 
 # download wordlists
 curl -o "${TARGET_DIR}"/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"
@@ -15,8 +16,8 @@ curl -o "${TARGET_DIR}"/httparchive_apiroutes_2021_08_28.txt "https://wordlists-
 rm -- "*.txt"
 
 # create new bundle
-cat -- "./tmp/*.txt"  > tmp_bunble.txt
-cat -- tmp_bunble.txt | sort -n | uniq > wordlist_bundle_$(date +"%Y-%m-%d").txt
+cat -- "./tmp/*.txt"  > "${TMP_BUNDLE}"
+cat -- "${TMP_BUNDLE}" | sort -n | uniq > "wordlist_bundle_$(date +"%Y-%m-%d").txt"
 
 # cleanup
-rm -fv -- "tmp_bunble.txt"
+rm -fv -- "${TMP_BUNDLE}"
