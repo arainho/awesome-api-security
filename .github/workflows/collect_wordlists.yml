@@ -5,9 +5,9 @@ name: CI - collect wordlists
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main, master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ dev ]
   schedule:
   - cron: "0 2 * * 1-5"
 
