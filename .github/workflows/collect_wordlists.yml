@@ -33,7 +33,7 @@ jobs:
         run: |
           chmod u+x ./wordlists/collect.sh
           ./wordlists/collect.sh
-          ls -la ./wordlists/
+          ls -la ./wordlists/tmp
 
       # Commit possible changed files back to the repository.
       - uses: stefanzweifel/git-auto-commit-action@v4
