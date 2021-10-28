@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-TARGET_DIR="${1:-wordlists/tmp/}"
+TARGET_DIR="${1:-tmp}"
 TMP_BUNDLE="${tmp_bunble.txt}"
+
+# create target directory
+mkdir -p "${TARGET_DIR}"
 
 # download wordlists
 curl -o "${TARGET_DIR}"/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"
