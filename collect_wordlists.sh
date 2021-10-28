@@ -4,8 +4,8 @@ TARGET_DIR="${1:-wordlists}"
 TMP_DIR="${TARGET_DIR}/tmp"
 TMP_BUNDLE="${TMP_DIR}/tmp_bundle.txt"
 
-# create target directory
-mkdir -p "${TARGET_DIR}"
+# create target and tmp directory
+mkdir -p "${TMP_DIR}"
 
 # download wordlists
 curl -o "${TARGET_DIR}"/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"
