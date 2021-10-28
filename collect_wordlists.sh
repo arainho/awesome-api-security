@@ -23,7 +23,7 @@ unlink "${TARGET_DIR}/wordlist_bundle_latest.txt"
 rm -- "${TARGET_DIR}/wordlist_bundle_*.txt"
 
 # create new bundle
-cat "${TMP_DIR}/*.txt"  > "${TMP_BUNDLE}"
+cat "${TMP_DIR}"/*.txt  > "${TMP_BUNDLE}"
 cat "${TMP_BUNDLE}" | sort -n | uniq > "${TARGET_DIR}/wordlist_bundle_$(date +"%Y-%m-%d").txt"
 ln -s "${TARGET_DIR}/wordlist_bundle_$(date +"%Y-%m-%d").txt" "${TARGET_DIR}/wordlist_bundle_latest.txt"
 
