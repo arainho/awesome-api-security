@@ -17,11 +17,11 @@ curl -o "${TMP_DIR}"/kiterunner-swagger-wordlist.txt "https://wordlists-cdn.asse
 curl -o "${TMP_DIR}"/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt"
 
 # remove old bundles
-rm -- "${TARGET_DIR}/*.txt"
+rm -- "${TARGET_DIR}/wordlist_bundle_*.txt"
 
 # create new bundle
-cat -- "${TMP_DIR}/*.txt"  > "${TMP_BUNDLE}"
-cat -- "${TMP_BUNDLE}" | sort -n | uniq > "${TARGET_DIR}/wordlist_bundle_$(date +"%Y-%m-%d").txt"
+cat "${TMP_DIR}/*.txt"  > "${TMP_BUNDLE}"
+cat "${TMP_BUNDLE}" | sort -n | uniq > "${TARGET_DIR}/wordlist_bundle_$(date +"%Y-%m-%d").txt"
 ln -s "${TARGET_DIR}/wordlist_bundle_$(date +"%Y-%m-%d").txt" "${TARGET_DIR}/wordlist_bundle_latest.txt"
 
 # cleanup
