@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-TARGET_DIR="${1:-wordlists/tmp}"
-TMP_BUNDLE="${tmp_bunble.txt}"
+TARGET_DIR="${1:-wordlists}"
+TMP_DIR="${TARGET_DIR}/tmp"
+TMP_BUNDLE="${TMP_DIR}/tmp_bundle.txt"
 
 # create target directory
 mkdir -p "${TARGET_DIR}"
@@ -19,8 +20,8 @@ curl -o "${TARGET_DIR}"/httparchive_apiroutes_2021_08_28.txt "https://wordlists-
 rm -- "*.txt"
 
 # create new bundle
-cat -- "./tmp/*.txt"  > "${TMP_BUNDLE}"
-cat -- "${TMP_BUNDLE}" | sort -n | uniq > "wordlist_bundle_$(date +"%Y-%m-%d").txt"
+cat -- "${TMP_DIR}/*.txt"  > "${TMP_BUNDLE}"
+cat -- "${TMP_BUNDLE}" | sort -n | uniq > "${TARGET_DIR}/wordlist_bundle_$(date +"%Y-%m-%d").txt"
 
 # cleanup
 rm -fv -- "${TMP_BUNDLE}"
