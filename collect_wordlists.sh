@@ -4,6 +4,8 @@ TARGET_DIR="${1:-wordlists}"
 TMP_DIR="${TARGET_DIR}/tmp"
 TMP_BUNDLE="${TMP_DIR}/tmp_bundle.txt"
 
+echo "target dir: ${TARGET_DIR}"
+
 # create target and tmp directory
 mkdir -p "${TMP_DIR}"
 
@@ -17,6 +19,7 @@ curl -o "${TMP_DIR}"/kiterunner-swagger-wordlist.txt "https://wordlists-cdn.asse
 curl -o "${TMP_DIR}"/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt"
 
 # remove old bundles
+unlink "${TARGET_DIR}/wordlist_bundle_latest.txt"
 rm -- "${TARGET_DIR}/wordlist_bundle_*.txt"
 
 # create new bundle
