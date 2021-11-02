@@ -29,7 +29,10 @@ RUN git clone https://github.com/mseclab/PyJFuzz.git && \
     cd PyJFuzz && python setup.py install && \
     cd .. && pip install -r requirements.txt
 RUN git clone https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
-    make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr
+    make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
+    ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
 RUN git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
+RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \
+    wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH 
 
