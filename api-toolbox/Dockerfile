@@ -11,7 +11,7 @@ RUN mkdir -p /usr/share/{wordlists,templates,signatures}
 RUN apk update
 RUN apk add python3 py3-pip && \
     pip3 install --upgrade pip setuptools
-RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git
+RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git build-base
 
 RUN go get -u -v github.com/eth0izzle/shhgit
 RUN mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
