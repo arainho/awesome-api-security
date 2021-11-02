@@ -27,8 +27,8 @@ RUN pip3 install --upgrade arjun
 RUN git clone https://github.com/devanshbatham/ParamSpider && \
     cd ParamSpider && pip3 install -r requirements.txt
 RUN git clone https://github.com/mseclab/PyJFuzz.git && \
-    cd PyJFuzz && python setup.py install && \
-    cd .. && pip install -r requirements.txt
+    cd PyJFuzz && python3 setup.py install && \
+    cd .. && pip3 install -r requirements.txt
 RUN git clone https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
     make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
