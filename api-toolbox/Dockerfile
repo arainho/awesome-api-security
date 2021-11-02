@@ -1,7 +1,6 @@
 # golang:alpine3.14
 FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6c6f
 
-# TODO
 # tools in /usr/local/bin/
 # wordlists in /usr/share/wordlists/
 # templates in /usr/share/templates/
@@ -24,7 +23,7 @@ RUN go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && \
 RUN GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
     GO111MODULE=on go get -u github.com/jaeles-project/gospider && \
     git clone https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures
-RUN pip3 install --update arjun
+RUN pip3 install --upgrade arjun
 RUN git clone https://github.com/devanshbatham/ParamSpider && \
     cd ParamSpider && pip3 install -r requirements.txt
 RUN git clone https://github.com/mseclab/PyJFuzz.git && \
