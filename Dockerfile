@@ -6,12 +6,14 @@ FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6
 # templates in /usr/share/templates/
 # signatures in /usr/share/signatures/
 
+# general setup
 RUN mkdir -p /usr/share/{wordlists,templates,signatures}
 RUN apk update
 RUN apk add python3 py3-pip && \
     pip3 install --upgrade pip setuptools
 RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git build-base
 
+# tools
 RUN go get -u -v github.com/eth0izzle/shhgit
 RUN mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
     curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml
@@ -33,7 +35,10 @@ RUN git clone https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
     make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
+# wordlists
 RUN git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
 RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \
-    wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH 
+    wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
+RUN curl -o /usr/share/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"
+
 
