@@ -25,6 +25,8 @@ RUN GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
     GO111MODULE=on go get -u github.com/jaeles-project/gospider && \
     git clone https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures
 RUN pip3 install --update arjun
+RUN git clone https://github.com/devanshbatham/ParamSpider && \
+    cd ParamSpider && pip3 install -r requirements.txt
 RUN git clone https://github.com/mseclab/PyJFuzz.git && \
     cd PyJFuzz && python setup.py install && \
     cd .. && pip install -r requirements.txt
