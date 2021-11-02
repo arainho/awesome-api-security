@@ -8,8 +8,9 @@ FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6
 # signatures in /usr/share/signatures/
 
 RUN mkdir -p /usr/share/{wordlists,templates,signatures}
-RUN apk update && apk add --no-cache git
-RUN pip3 install --upgrade pip setuptools
+RUN apk update
+RUN apk add python3 py3-pip && \
+    pip3 install --upgrade pip setuptools
 RUN apk --no-cache add ca-certificates curl wget nmap netcat bind-tools git
 
 RUN go get -u -v github.com/eth0izzle/shhgit
