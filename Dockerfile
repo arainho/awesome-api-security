@@ -51,6 +51,8 @@ RUN git clone --depth=1 https://github.com/devanshbatham/ParamSpider /usr/local/
     cd /usr/local/ParamSpider && pip3 install -r requirements.txt
 RUN git clone --depth=1 https://github.com/mseclab/PyJFuzz.git /usr/local/PyJFuzz && \
     cd /usr/local/PyJFuzz && python3 setup.py install
+RUN git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git /usr/local/TnT-Fuzzer && \
+    cd /usr/local/TnT-Fuzzer && python3 setup.py install
 RUN git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
     make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
