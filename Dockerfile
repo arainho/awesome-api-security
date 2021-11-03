@@ -111,6 +111,21 @@ RUN pip3 install apicheck-package-manager && \
     acp install oas-checker
 RUN pip3 install regexploit
 
+# TODO
+# RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake && \
+#     git clone --depth=1 https://github.com/racepwn/racepwn && \
+#     ./build.sh
+
+RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
+    cd /usr/local/race-the-web && make && \
+    go get -u -v github.com/golang/dep/cmd/dep && \
+    dep ensure
+RUN apk add ruby && gem install API_Fuzzer
+RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/shapeshifter && \
+    cd /usr/local/shapeshifter && pip install .
+RUN apk add --no-cache testssl.sh
+RUN git clone --depth=1 https://github.com/assetnote/batchql.git /usr/local/batchql
+RUN git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap /usr/local/GraphQLmap
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
