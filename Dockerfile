@@ -123,6 +123,10 @@ RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/sha
 RUN apk add --no-cache testssl.sh
 RUN git clone --depth=1 https://github.com/assetnote/batchql.git /usr/local/batchql
 RUN git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap /usr/local/GraphQLmap
+RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
+    cd /usr/local/CeWL && gem install bundler && bundle install
+RUN git clone --depth=1 https://github.com/r3nt0n/bopscrk /usr/local/bopscrk && \
+    cd /usr/local/bopscrk && python3 -m pip install -r requirements.txt
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
