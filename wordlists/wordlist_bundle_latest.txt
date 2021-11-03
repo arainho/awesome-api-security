@@ -1,1 +1,1 @@
-wordlists/wordlist_bundle_2021-11-02.txt
+wordlists/wordlist_bundle_2021-11-03.txt
