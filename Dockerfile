@@ -24,7 +24,8 @@ RUN GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
 RUN pip3 install detect-secrets
 RUN git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
     cd /usr/local/git-secrets && make install
-RUN git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
+RUN apk --no-cache add --update nodejs npm
+    git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
     cd /usr/local/repo-supervisor && npm ci && npm run build
 
 # enumeration
