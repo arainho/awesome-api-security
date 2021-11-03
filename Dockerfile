@@ -128,20 +128,18 @@ RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
     cd /usr/local/CeWL && gem install bundler && bundle install
 RUN git clone --depth=1 https://github.com/r3nt0n/bopscrk /usr/local/bopscrk && \
     cd /usr/local/bopscrk && python3 -m pip install -r requirements.txt
-
-# TODO
-# RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /usr/local/automatic-api-attack-tool && \
-#     apk add --no-cache openjdk8-jre gradle && \
-#     cd /usr/local/automatic-api-attack-tool && ./gradlew build && \
-#     cp -av src/main/resources/runnable.sh . && \
-#     cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && chmod +x api-attack.sh
-
-# TODO
-# read: #     https://docs.microsoft.com/en-us/dotnet/core/install/linux-alpine
-# RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
-#     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
-#     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
-#     cd /usr/local/restler-fuzzer
+RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /usr/local/automatic-api-attack-tool && \
+    apk add --no-cache openjdk8-jre gradle && \
+    cd /usr/local/automatic-api-attack-tool && ./gradlew build && \
+    cp -av src/main/resources/runnable.sh . && \
+    cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && chmod +x api-attack.sh
+RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
+    apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
+    apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
+    curl -o /usr/local/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
+    cd /usr/local/restler-fuzzer && ./dotnet-install.sh -c 5.0 && \
+    mkdir -p /usr/local/restler-fuzzer/restler_bin && cd /usr/local/restler-fuzzer/restler_bin && \
+    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
