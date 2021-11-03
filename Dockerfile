@@ -54,7 +54,8 @@ RUN cd /usr/local/extensions && \
     git clone --depth=1  https://github.com/SecurityInnovation/AuthMatrix.git && \
     git clone --depth=1 https://github.com/PortSwigger/autorize.git && \
     git clone --depth=1 https://github.com/portswigger/auth-analyzer && \
-    git clone --depth=1 https://github.com/doyensec/inql
+    git clone --depth=1 https://github.com/doyensec/inql && \
+    git clone --depth=1 https://github.com/wallarm/jwt-heartbreaker.git
 
 # graphql
 RUN apk --no-cache --update nodejs npm && \
@@ -77,14 +78,24 @@ RUN apk --no-cache --update python2 py3-pip && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra
     cd /usr/local/Astra && sudo pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
-RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo
+RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
     cd /usr/local/susanoo && pip3 install -r requirements.txt
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
     rustup component add rustfmt && rustup component add clippy && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
     cd /usr/local/graphql-path-enum && cargo build
-RUN git clone --recursive git@github.com:trailofbits/protofuzz.git /usr/local/protofuzz &&
+RUN git clone --recursive --depth=1 git@github.com:trailofbits/protofuzz.git /usr/local/protofuzz && \
     cd /usr/local/protofuzz && python3 setup.py install
+RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
+    cd /usr/local/jwt_tool && python3 -m pip install termcolor cprint pycryptodomex requests
+RUN npm install --global jwt-cracker
+RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
+    cd /usr/local/jwtcat && python3 -m pip install -r requirements.txt
+RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
+RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
+    cd /usr/local/jwt_tool && python3 -m pip install termcolor cprint pycryptodomex requests
+RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
+    cd /usr/local/jwtcat && python3 -m pip install -r requirements.txt
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
