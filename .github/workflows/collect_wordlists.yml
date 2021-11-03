@@ -31,11 +31,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run wordlist collector
         run: |
-          chmod u+x ./collect_wordlists.sh
-          ./collect_wordlists.sh
-          ls -la ./wordlists/
-          ls -la ./wordlists/tmp/
-
+          chmod u+x ./wordlists/collect_wordlists.sh
+          ./wordlists/collect_wordlists.sh
+          
       # Commit possible changed files back to the repository.
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
