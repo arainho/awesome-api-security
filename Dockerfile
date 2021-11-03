@@ -29,10 +29,13 @@ RUN pip3 install truffleHog
 RUN GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
 RUN pip3 install detect-secrets
 RUN git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
-    cd /usr/local/git-secrets && make install
+    cd /usr/local/git-secrets && \
+    make install
 RUN apk add --no-cache --update nodejs npm && \
     git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
-    cd /usr/local/repo-supervisor && npm ci && npm run build
+    cd /usr/local/repo-supervisor && \
+    npm ci && \
+    npm run build
 
 # enumeration
 RUN go install github.com/OJ/gobuster/v3@latest
@@ -48,13 +51,18 @@ RUN GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
     git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures
 RUN pip3 install --upgrade arjun
 RUN git clone --depth=1 https://github.com/devanshbatham/ParamSpider /usr/local/ParamSpider && \
-    cd /usr/local/ParamSpider && pip3 install -r requirements.txt
+    cd /usr/local/ParamSpider && \
+    pip3 install -r requirements.txt
 RUN git clone --depth=1 https://github.com/mseclab/PyJFuzz.git /usr/local/PyJFuzz && \
-    cd /usr/local/PyJFuzz && python3 setup.py install
+    cd /usr/local/PyJFuzz && \
+    python3 setup.py install
 RUN git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git /usr/local/TnT-Fuzzer && \
-    cd /usr/local/TnT-Fuzzer && python3 setup.py install
+    cd /usr/local/TnT-Fuzzer && \
+    python3 setup.py install
 RUN git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
-    make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
+    cd /usr/local/kiterunner && \
+    make build && \
+    ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
 # burp extentions
@@ -87,26 +95,34 @@ RUN GO111MODULE=on go get -u -v github.com/lc/gau
 # other
 RUN apk add --no-cache --update python2 py3-pip && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
-    cd /usr/local/Astra && sudo pip2 install -r requirements.txt
+    cd /usr/local/Astra && \
+    sudo pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
 RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
     cd /usr/local/susanoo && pip3 install -r requirements.txt
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
-    rustup component add rustfmt && rustup component add clippy && \
+    rustup component add rustfmt && \
+    rustup component add clippy && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
-    cd /usr/local/graphql-path-enum && cargo build
+    cd /usr/local/graphql-path-enum && \
+    cargo build
 RUN git clone --recursive --depth=1 git@github.com:trailofbits/protofuzz.git /usr/local/protofuzz && \
-    cd /usr/local/protofuzz && python3 setup.py install
+    cd /usr/local/protofuzz && \
+    python3 setup.py install
 RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
-    cd /usr/local/jwt_tool && python3 -m pip install termcolor cprint pycryptodomex requests
+    cd /usr/local/jwt_tool && \
+    python3 -m pip install termcolor cprint pycryptodomex requests
 RUN npm install --global jwt-cracker
 RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
-    cd /usr/local/jwtcat && python3 -m pip install -r requirements.txt
+    cd /usr/local/jwtcat && \
+    python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
 RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
-    cd /usr/local/jwt_tool && python3 -m pip install termcolor cprint pycryptodomex requests
+    cd /usr/local/jwt_tool && \
+    python3 -m pip install termcolor cprint pycryptodomex requests
 RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
-    cd /usr/local/jwtcat && python3 -m pip install -r requirements.txt
+    cd /usr/local/jwtcat && \
+    python3 -m pip install -r requirements.txt
 RUN pip3 install jwtxploiter
 RUN pip3 install apicheck-package-manager && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
@@ -130,25 +146,33 @@ RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-w
     dep ensure
 RUN apk add ruby && gem install API_Fuzzer
 RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/shapeshifter && \
-    cd /usr/local/shapeshifter && pip install .
+    cd /usr/local/shapeshifter && \
+    pip install .
 RUN apk add --no-cache testssl.sh
 RUN git clone --depth=1 https://github.com/assetnote/batchql.git /usr/local/batchql
 RUN git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap /usr/local/GraphQLmap
 RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
-    cd /usr/local/CeWL && gem install bundler && bundle install
+    cd /usr/local/CeWL && \
+    gem install bundler && \
+    bundle install
 RUN git clone --depth=1 https://github.com/r3nt0n/bopscrk /usr/local/bopscrk && \
-    cd /usr/local/bopscrk && python3 -m pip install -r requirements.txt
+    cd /usr/local/bopscrk && \
+    python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /usr/local/automatic-api-attack-tool && \
     apk add --no-cache openjdk8-jre gradle && \
-    cd /usr/local/automatic-api-attack-tool && ./gradlew build && \
+    cd /usr/local/automatic-api-attack-tool && \
+    ./gradlew build && \
     cp -av src/main/resources/runnable.sh . && \
-    cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && chmod +x api-attack.sh
+    cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && \
+    chmod +x api-attack.sh
 RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
     curl -o /usr/local/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
-    cd /usr/local/restler-fuzzer && ./dotnet-install.sh -c 5.0 && \
-    mkdir -p /usr/local/restler-fuzzer/restler_bin && cd /usr/local/restler-fuzzer/restler_bin && \
+    cd /usr/local/restler-fuzzer && \
+    ./dotnet-install.sh -c 5.0 && \
+    mkdir -p /usr/local/restler-fuzzer/restler_bin && \
+    cd /usr/local/restler-fuzzer/restler_bin && \
     python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin
 
 # wordlists
@@ -157,5 +181,3 @@ RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetn
     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
 RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists
 RUN curl -o /usr/share/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"
-
-
