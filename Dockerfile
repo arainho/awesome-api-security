@@ -77,7 +77,7 @@ RUN GO111MODULE=on go get -u -v github.com/lc/gau
 
 # other
 RUN apk --no-cache --update python2 py3-pip && \
-    git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra
+    git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
     cd /usr/local/Astra && sudo pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
 RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
@@ -102,7 +102,8 @@ RUN pip3 install jwtxploiter
 RUN pip3 install apicheck-package-manager && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
     acp install jwtchk && \
-    apc install acurl && \acp install oas-checker
+    apc install acurl && \
+    acp install oas-checker && \
     acp install send-to-proxy && \
     acp install apicheck-curl && \
     acp install sensitive-data && \
