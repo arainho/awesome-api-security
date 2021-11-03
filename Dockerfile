@@ -66,7 +66,7 @@ RUN git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiter
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
 # burp extentions
-RUN cd /usr/local/extensions && \
+RUN cd /usr/share/extensions && \
     git clone --depth=1 https://github.com/portswigger/wsdl-wizard && \
     git clone --depth=1 https://github.com/NetSPI/Wsdler && \
     git clone --depth=1  https://github.com/SecurityInnovation/AuthMatrix.git && \
@@ -82,7 +82,7 @@ RUN apk add --no-cache --update nodejs npm && \
 
 # traffic analysis
 RUN apk add --no-cache --update mitmproxy wireshark xxd protoc
-RUN cd /usr/local/plugins && \
+RUN cd /usr/share/plugins && \
     git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
 # android
