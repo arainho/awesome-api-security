@@ -110,12 +110,9 @@ RUN pip3 install apicheck-package-manager && \
     acp install openapiv2-lint && \
     acp install oas-checker
 RUN pip3 install regexploit
-
-# TODO
-# RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake && \
-#     git clone --depth=1 https://github.com/racepwn/racepwn && \
-#     ./build.sh
-
+RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake && \
+    git clone --depth=1 https://github.com/racepwn/racepwn && \
+    ./build.sh
 RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
     cd /usr/local/race-the-web && make && \
     go get -u -v github.com/golang/dep/cmd/dep && \
