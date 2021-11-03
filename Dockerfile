@@ -2,41 +2,92 @@
 FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6c6f
 
 # tools in /usr/local/bin/
+# plugins in /usr/share/plugins
 # wordlists in /usr/share/wordlists/
 # templates in /usr/share/templates/
+# extensions in /usr/share/extensions/
 # signatures in /usr/share/signatures/
 
 # general setup
-RUN mkdir -p /usr/share/{wordlists,templates,signatures}
+RUN mkdir -p /usr/share/{plugins,wordlists,extensions,templates,signatures}
 RUN apk update
 RUN apk add python3 py3-pip && \
     pip3 install --upgrade pip setuptools
 RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git build-base
 
-# tools
+# secrets
 RUN go get -u -v github.com/eth0izzle/shhgit
 RUN mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
     curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml
+RUN pip3 install truffleHog
+RUN GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
+RUN pip3 install detect-secrets
+RUN git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
+    cd /usr/local/git-secrets && make install
+RUN git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
+    cd /usr/local/repo-supervisor && npm ci && npm run build
+
+# enumeration
 RUN go install github.com/OJ/gobuster/v3@latest
+RUN go get -u -v go get github.com/dwisiswant0/wadl-dumper
 RUN go get -u -v github.com/ffuf/ffuf
 RUN go get -u -v github.com/OWASP/Amass/v3/...
 RUN go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && \
-    git clone https://github.com/projectdiscovery/nuclei-templates.git /usr/share/templates/nuclei-templates
+    git clone --depth=1 https://github.com/projectdiscovery/nuclei-templates.git /usr/share/templates/nuclei-templates
 RUN GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
     GO111MODULE=on go get -u github.com/jaeles-project/gospider && \
-    git clone https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures
+    git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures
 RUN pip3 install --upgrade arjun
-RUN git clone https://github.com/devanshbatham/ParamSpider && \
-    cd ParamSpider && pip3 install -r requirements.txt
-RUN git clone https://github.com/mseclab/PyJFuzz.git && \
-    cd PyJFuzz && python3 setup.py install && \
+RUN git clone --depth=1 https://github.com/devanshbatham/ParamSpider /usr/local/ParamSpider && \
+    cd /usr/local/ParamSpider && pip3 install -r requirements.txt
+RUN git clone --depth=1 https://github.com/mseclab/PyJFuzz.git /usr/local/PyJFuzz && \
+    cd /usr/local/PyJFuzz && python3 setup.py install && \
     cd .. && pip3 install -r requirements.txt
-RUN git clone https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
+RUN git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
     make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
+# burp extentions
+RUN cd /usr/local/extensions && \
+    git clone --depth=1 https://github.com/portswigger/wsdl-wizard && \
+    git clone --depth=1 https://github.com/NetSPI/Wsdler && \
+    git clone --depth=1  https://github.com/SecurityInnovation/AuthMatrix.git && \
+    git clone --depth=1 https://github.com/PortSwigger/autorize.git && \
+    git clone --depth=1 https://github.com/portswigger/auth-analyzer && \
+    git clone --depth=1 https://github.com/doyensec/inql
+
+# graphql
+RUN apk --no-cache --update nodejs npm && \
+    npm install -g get-graphql-schema
+
+# traffic analysis
+RUN apk --no-cache --update mitmproxy wireshark xxd protoc
+RUN cd /usr/local/plugins && \
+    git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
+
+# android
+RUN pip3 install apkleaks
+
+# wayback machine
+RUN go get -u -v github.com/tomnomnom/waybackurls
+RUN GO111MODULE=on go get -u -v github.com/lc/gau
+
+# other
+RUN apk --no-cache --update python2 py3-pip && \
+    git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra
+    cd /usr/local/Astra && sudo pip2 install -r requirements.txt
+RUN go get -u -v github.com/bncrypted/apidor
+RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo
+    cd /usr/local/susanoo && pip3 install -r requirements.txt
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
+    rustup component add rustfmt && rustup component add clippy && \
+    git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
+    cd /usr/local/graphql-path-enum && cargo build
+RUN git clone --recursive git@github.com:trailofbits/protofuzz.git /usr/local/protofuzz &&
+    cd /usr/local/protofuzz && python3 setup.py install
+
 # wordlists
-RUN git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
+RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
 RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \
     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
 RUN curl -o /usr/share/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"
