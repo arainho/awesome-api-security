@@ -55,7 +55,8 @@ RUN cd /usr/local/extensions && \
     git clone --depth=1 https://github.com/PortSwigger/autorize.git && \
     git clone --depth=1 https://github.com/portswigger/auth-analyzer && \
     git clone --depth=1 https://github.com/doyensec/inql && \
-    git clone --depth=1 https://github.com/wallarm/jwt-heartbreaker.git
+    git clone --depth=1 https://github.com/wallarm/jwt-heartbreaker.git && \
+    git clone --depth=1 https://github.com/PortSwigger/json-web-token-attacker.git
 
 # graphql
 RUN apk --no-cache --update nodejs npm && \
@@ -96,6 +97,20 @@ RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool 
     cd /usr/local/jwt_tool && python3 -m pip install termcolor cprint pycryptodomex requests
 RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
     cd /usr/local/jwtcat && python3 -m pip install -r requirements.txt
+RUN pip3 install jwtxploiter
+RUN pip3 install apicheck-package-manager && \
+    echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
+    acp install jwtchk && \
+    apc install acurl && \acp install oas-checker
+    acp install send-to-proxy && \
+    acp install apicheck-curl && \
+    acp install sensitive-data && \
+    apc install replay && \
+    acp install openapiv3-lint && \
+    acp install openapiv2-lint && \
+    acp install oas-checker
+RUN pip3 install regexploit
+
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
