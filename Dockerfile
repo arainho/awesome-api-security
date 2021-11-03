@@ -35,7 +35,8 @@ RUN apk add --no-cache --update nodejs npm && \
 
 # enumeration
 RUN go install github.com/OJ/gobuster/v3@latest
-RUN python3 -m pip install dirsearch
+RUN apk add --no-cache libffi-dev && \
+    python3 -m pip install dirsearch
 RUN go get -u -v go get github.com/dwisiswant0/wadl-dumper
 RUN go get -u -v github.com/ffuf/ffuf
 RUN go get -u -v github.com/OWASP/Amass/v3/...
