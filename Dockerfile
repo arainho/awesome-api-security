@@ -29,6 +29,7 @@ RUN git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/
 
 # enumeration
 RUN go install github.com/OJ/gobuster/v3@latest
+RUN python3 -m pip install dirsearch
 RUN go get -u -v go get github.com/dwisiswant0/wadl-dumper
 RUN go get -u -v github.com/ffuf/ffuf
 RUN go get -u -v github.com/OWASP/Amass/v3/...
@@ -127,6 +128,15 @@ RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
     cd /usr/local/CeWL && gem install bundler && bundle install
 RUN git clone --depth=1 https://github.com/r3nt0n/bopscrk /usr/local/bopscrk && \
     cd /usr/local/bopscrk && python3 -m pip install -r requirements.txt
+
+# TODO
+# RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /usr/local/automatic-api-attack-tool && \
+#     apk add --no-cache openjdk8-jre gradle
+#     cd /usr/local/automatic-api-attack-tool && 
+# RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
+#     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
+#     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
+#     cd /usr/local/restler-fuzzer
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
