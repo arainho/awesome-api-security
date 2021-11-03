@@ -13,7 +13,7 @@ RUN mkdir -p /usr/share/{plugins,wordlists,extensions,templates,signatures}
 RUN apk update
 RUN apk add python3 py3-pip && \
     pip3 install --upgrade pip setuptools
-RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git build-base
+RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git less openssh build-base
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit
