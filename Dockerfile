@@ -16,6 +16,7 @@ RUN echo 'export PATH="$(python3 -m site --user-base)/bin:${PATH}"' >> ~/.bashrc
 RUN mkdir -p /usr/share/{plugins,wordlists,extensions,templates,signatures}
 RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
+    ln -s /usr/bin/python3 /usr/bin/python && \
     pip3 install --upgrade pip setuptools
 RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd \
                        bind-tools git less openssh build-base libzip-dev zip
