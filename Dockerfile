@@ -11,9 +11,10 @@ FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6
 # general setup
 RUN mkdir -p /usr/share/{plugins,wordlists,extensions,templates,signatures}
 RUN apk update
-RUN apk add python3 py3-pip && \
+RUN apk add --no-cache python3 py3-pip && \
     pip3 install --upgrade pip setuptools
-RUN apk --no-cache add ca-certificates curl wget nmap netcat-openbsd bind-tools git less openssh build-base
+RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd \
+                       bind-tools git less openssh build-base libzip-dev zip
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit
@@ -24,7 +25,7 @@ RUN GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
 RUN pip3 install detect-secrets
 RUN git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
     cd /usr/local/git-secrets && make install
-RUN apk --no-cache add --update nodejs npm && \
+RUN apk add --no-cache --update nodejs npm && \
     git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
     cd /usr/local/repo-supervisor && npm ci && npm run build
 
@@ -61,11 +62,11 @@ RUN cd /usr/local/extensions && \
     git clone --depth=1 https://github.com/PortSwigger/json-web-token-attacker.git
 
 # graphql
-RUN apk --no-cache --update nodejs npm && \
+RUN apk add --no-cache --update nodejs npm && \
     npm install -g get-graphql-schema
 
 # traffic analysis
-RUN apk --no-cache --update mitmproxy wireshark xxd protoc
+RUN apk add --no-cache --update mitmproxy wireshark xxd protoc
 RUN cd /usr/local/plugins && \
     git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
@@ -77,7 +78,7 @@ RUN go get -u -v github.com/tomnomnom/waybackurls
 RUN GO111MODULE=on go get -u -v github.com/lc/gau
 
 # other
-RUN apk --no-cache --update python2 py3-pip && \
+RUN apk add --no-cache --update python2 py3-pip && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
     cd /usr/local/Astra && sudo pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
@@ -147,6 +148,7 @@ RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/r
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
 RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \
     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
+RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists
 RUN curl -o /usr/share/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"
 
 
