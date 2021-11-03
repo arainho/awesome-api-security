@@ -8,6 +8,10 @@ FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6
 # extensions in /usr/share/extensions/
 # signatures in /usr/share/signatures/
 
+# set golang and python in path
+RUN echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.bashrc
+RUN echo 'export PATH="$(python3 -m site --user-base)/bin:${PATH}"' >> ~/.bashrc
+
 # general setup
 RUN mkdir -p /usr/share/{plugins,wordlists,extensions,templates,signatures}
 RUN apk update
