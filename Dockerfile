@@ -21,8 +21,8 @@ RUN mkdir -p /usr/share/plugins && \
 RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
-    pip3 install --upgrade pip setuptools && \
-    python3 -m pip install --user pipx && \
+    python3 -m pip install --upgrade pip setuptools && \
+    python3 -m pip install pipx && \
     python3 -m pipx ensurepath
 RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip
