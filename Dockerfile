@@ -180,8 +180,11 @@ RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/r
     python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin &&
     ln -s /usr/local/restler-fuzzer/restler_bin /usr/local/bin/restler_bin
 RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
-    pip install -r requirements.txt &&
-    ln -s /usr/local/openapi_security_scanner/openapi_security_scanner.py /usr/local/bin/openapi_security_scanner.py
+    cd /usr/local/openapi_security_scanner && \
+    pip3 install -r requirements.txt
+RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance
+    cd /usr/local/clairvoyance
+    pip3 install -r requirements.txt
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
