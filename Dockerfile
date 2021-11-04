@@ -13,7 +13,11 @@ RUN echo export PATH="$HOME/go/bin:$PATH" >> ~/.bashrc
 RUN echo export PATH="$(python3 -m site --user-base)/bin:${PATH}" >> ~/.bashrc
 
 # general setup
-RUN mkdir -p /usr/share/{plugins,wordlists,extensions,templates,signatures}
+RUN mkdir -p /usr/share/plugins && \
+    mkdir -p /usr/share/wordlists && \
+    mkdir -p /usr/share/extensions && \
+    mkdir -p /usr/share/templates && \
+    mkdir -p /usr/share/signatures
 RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
