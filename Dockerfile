@@ -67,7 +67,7 @@ RUN git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiter
     ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
     ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
-# burp extentions
+# burp extentions or utilities
 RUN cd /usr/share/extensions && \
     git clone --depth=1 https://github.com/portswigger/wsdl-wizard && \
     git clone --depth=1 https://github.com/NetSPI/Wsdler && \
@@ -76,7 +76,8 @@ RUN cd /usr/share/extensions && \
     git clone --depth=1 https://github.com/portswigger/auth-analyzer && \
     git clone --depth=1 https://github.com/doyensec/inql && \
     git clone --depth=1 https://github.com/wallarm/jwt-heartbreaker.git && \
-    git clone --depth=1 https://github.com/PortSwigger/json-web-token-attacker.git
+    git clone --depth=1 https://github.com/PortSwigger/json-web-token-attacker.git && \
+    pip3 install json2paths
 
 # graphql
 RUN apk add --no-cache --update nodejs npm && \
@@ -167,6 +168,7 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
     cp -av src/main/resources/runnable.sh . && \
     cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && \
     chmod +x api-attack.sh
+    ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
 RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
@@ -175,7 +177,11 @@ RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/r
     ./dotnet-install.sh -c 5.0 && \
     mkdir -p /usr/local/restler-fuzzer/restler_bin && \
     cd /usr/local/restler-fuzzer/restler_bin && \
-    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin
+    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin &&
+    ln -s /usr/local/restler-fuzzer/restler_bin /usr/local/bin/restler_bin
+RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
+    pip install -r requirements.txt &&
+    ln -s /usr/local/openapi_security_scanner/openapi_security_scanner.py /usr/local/bin/openapi_security_scanner.py
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
@@ -183,3 +189,4 @@ RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetn
     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
 RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists
 RUN curl -o /usr/share/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"
+RUN curl -o /usr/share/wordlists/fuzzdb-common-methods.txt "https://raw.githubusercontent.com/fuzzdb-project/fuzzdb/master/discovery/common-methods/common-methods.txt"
