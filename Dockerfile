@@ -18,7 +18,7 @@ RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     pip3 install --upgrade pip setuptools
-RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd \
+RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip
 
 # secrets
@@ -185,6 +185,8 @@ RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /us
 RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance
     cd /usr/local/clairvoyance
     pip3 install -r requirements.txt
+RUN git clone --depth=1 git@github.com:dolevf/graphw00f.git /usr/local/graphw00f
+    ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
 
 # wordlists
 RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
