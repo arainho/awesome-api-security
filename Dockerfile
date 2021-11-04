@@ -43,7 +43,9 @@ RUN apk add --no-cache libffi-dev python3-dev && \
     python3 -m pip install dirsearch
 RUN go get -u -v github.com/dwisiswant0/wadl-dumper
 RUN go get -u -v github.com/ffuf/ffuf
-RUN go get -u -v github.com/OWASP/Amass/v3/...
+RUN git clone --depth=1 https://github.com/OWASP/Amass.git /usr/local/Amass && \
+    cd /usr/local/Amass && \
+    go install -v ./...
 RUN go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && \
     git clone --depth=1 https://github.com/projectdiscovery/nuclei-templates.git /usr/share/templates/nuclei-templates
 RUN GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
