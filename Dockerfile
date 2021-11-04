@@ -21,7 +21,9 @@ RUN mkdir -p /usr/share/plugins && \
 RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
-    pip3 install --upgrade pip setuptools
+    pip3 install --upgrade pip setuptools && \
+    python3 -m pip install --user pipx && \
+    python3 -m pipx ensurepath
 RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip
 
@@ -88,7 +90,8 @@ RUN apk add --no-cache --update nodejs npm && \
     npm install -g get-graphql-schema
 
 # traffic analysis
-RUN apk add --no-cache --update mitmproxy wireshark xxd protoc
+RUN apk add --no-cache --update wireshark xxd protoc
+RUN pipx install mitmproxy
 RUN cd /usr/share/plugins && \
     git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
