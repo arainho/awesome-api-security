@@ -89,9 +89,8 @@ RUN apk add --no-cache --update nodejs npm && \
 
 # traffic analysis
 RUN apk add --no-cache --update wireshark xxd protoc
-RUN python3 -m pip install pipx && \
-    python3 -m pipx ensurepath && \
-    pipx install mitmproxy
+RUN python3 -m pip install pipx
+RUN pipx install mitmproxy
 RUN cd /usr/share/plugins && \
     git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
