@@ -167,7 +167,7 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
     ./gradlew build && \
     cp -av src/main/resources/runnable.sh . && \
     cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && \
-    chmod +x api-attack.sh
+    chmod +x api-attack.sh && \
     ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
 RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
@@ -177,15 +177,15 @@ RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/r
     ./dotnet-install.sh -c 5.0 && \
     mkdir -p /usr/local/restler-fuzzer/restler_bin && \
     cd /usr/local/restler-fuzzer/restler_bin && \
-    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin &&
+    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin && \
     ln -s /usr/local/restler-fuzzer/restler_bin /usr/local/bin/restler_bin
 RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
     cd /usr/local/openapi_security_scanner && \
     pip3 install -r requirements.txt
-RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance
-    cd /usr/local/clairvoyance
+RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance && \
+    cd /usr/local/clairvoyance && \
     pip3 install -r requirements.txt
-RUN git clone --depth=1 git@github.com:dolevf/graphw00f.git /usr/local/graphw00f
+RUN git clone --depth=1 git@github.com:dolevf/graphw00f.git /usr/local/graphw00f && \
     ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
 
 # wordlists
