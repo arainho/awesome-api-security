@@ -1,6 +1,6 @@
 # Awesome API Security 
 
-**WARNING: This is development branch, use it at your own risk !!!**
+**WARNING: This is a development branch, use it at your own risk !!!**
 
 This branch is dedicated to experimenting around automatic and manual flows related to security testing for APIs.
 
