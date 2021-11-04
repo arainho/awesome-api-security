@@ -8,10 +8,6 @@ FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6
 # extensions in /usr/share/extensions/
 # signatures in /usr/share/signatures/
 
-# set golang and python in path
-RUN echo export PATH="$HOME/go/bin:$PATH" >> ~/.bashrc
-RUN echo export PATH="$(python3 -m site --user-base)/bin:${PATH}" >> ~/.bashrc
-
 # general setup
 RUN mkdir -p /usr/share/plugins && \
     mkdir -p /usr/share/wordlists && \
@@ -21,11 +17,13 @@ RUN mkdir -p /usr/share/plugins && \
 RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
-    python3 -m pip install --upgrade pip setuptools && \
-    python3 -m pip install pipx && \
-    python3 -m pipx ensurepath
+    python3 -m pip install --upgrade pip setuptools
 RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip
+
+# set golang and python in path
+RUN echo export PATH="$HOME/go/bin:$PATH" >> ~/.bashrc
+RUN echo export PATH="$(python3 -m site --user-base)/bin:${PATH}" >> ~/.bashrc
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit
@@ -91,7 +89,9 @@ RUN apk add --no-cache --update nodejs npm && \
 
 # traffic analysis
 RUN apk add --no-cache --update wireshark xxd protoc
-RUN pipx install mitmproxy
+RUN python3 -m pip install pipx && \
+    python3 -m pipx ensurepath && \
+    pipx install mitmproxy
 RUN cd /usr/share/plugins && \
     git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
