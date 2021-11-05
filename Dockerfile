@@ -105,7 +105,7 @@ RUN GO111MODULE=on go get -u -v github.com/lc/gau
 RUN apk add --no-cache --update python2 py3-pip && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
     cd /usr/local/Astra && \
-    sudo pip2 install -r requirements.txt
+    pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
 RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
     cd /usr/local/susanoo && pip3 install -r requirements.txt
