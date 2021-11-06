@@ -102,7 +102,10 @@ RUN go get -u -v github.com/tomnomnom/waybackurls
 RUN GO111MODULE=on go get -u -v github.com/lc/gau
 
 # other
-RUN apk add --no-cache --update python2 py3-pip && \
+RUN apk add --no-cache --update python2 && \
+    python2 -m ensurepip && \
+    unlink /usr/bin/pip && \
+    ln -s /usr/bin/pip3 /usr/bin/pip && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
     cd /usr/local/Astra && \
     pip2 install -r requirements.txt
