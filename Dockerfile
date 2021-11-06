@@ -139,12 +139,12 @@ RUN python3 -m pip install apicheck-package-manager && \
     mkdir -p $HOME/.apicheck_manager/bin && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
     acp install jwt-checker && \
-    apc install acurl && \
+    acp install acurl && \
     acp install oas-checker && \
     acp install send-to-proxy && \
     acp install apicheck-curl && \
     acp install sensitive-data && \
-    apc install replay && \
+    acp install replay && \
     acp install openapiv3-lint && \
     acp install openapiv2-lint && \
     acp install oas-checker
