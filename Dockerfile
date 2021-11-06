@@ -136,9 +136,9 @@ RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
 RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
 RUN python3 -m pip install jwtxploiter
 RUN python3 -m pip install apicheck-package-manager && \
-    mkdir -p $HOME/.apicheck_manager/bin
+    mkdir -p $HOME/.apicheck_manager/bin && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
-    acp install jwt-checker && \
+    acp install jwtchk && \
     apc install acurl && \
     acp install oas-checker && \
     acp install send-to-proxy && \
