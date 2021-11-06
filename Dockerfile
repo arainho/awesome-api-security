@@ -134,9 +134,6 @@ RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
     cd /usr/local/jwtcat && \
     python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
-RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
-    cd /usr/local/jwt_tool && \
-    python3 -m pip install termcolor cprint pycryptodomex requests
 RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
     cd /usr/local/jwtcat && \
     python3 -m pip install -r requirements.txt
