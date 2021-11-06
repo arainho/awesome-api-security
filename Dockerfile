@@ -134,9 +134,6 @@ RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
     cd /usr/local/jwtcat && \
     python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
-RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
-    cd /usr/local/jwtcat && \
-    python3 -m pip install -r requirements.txt
 RUN pip3 install jwtxploiter
 RUN pip3 install apicheck-package-manager && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
