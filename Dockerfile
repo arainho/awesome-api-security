@@ -2,7 +2,7 @@
 FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6c6f
 
 # tools in /usr/local/bin/
-# plugins in /usr/share/plugins
+# plugins in /usr/share/plugins/
 # wordlists in /usr/share/wordlists/
 # templates in /usr/share/templates/
 # extensions in /usr/share/extensions/
@@ -104,6 +104,7 @@ RUN GO111MODULE=on go get -u -v github.com/lc/gau
 # other
 RUN apk add --no-cache --update python2 && \
     python2 -m ensurepip && \
+    python2 -m pip install --upgrade pip && \
     unlink /usr/bin/pip && \
     unlink /usr/bin/python && \
     ln -s /usr/bin/pip3 /usr/bin/pip && \
@@ -112,8 +113,8 @@ RUN apk add --no-cache --update python2 && \
     cd /usr/local/Astra && \
     pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
-RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
-    cd /usr/local/susanoo && pip3 install -r requirements.txt
+#RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
+#    cd /usr/local/susanoo && pip3 install -r requirements.txt
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
     rustup component add rustfmt && \
     rustup component add clippy && \
