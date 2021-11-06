@@ -115,7 +115,8 @@ RUN apk add --no-cache --update python2 && \
 RUN go get -u -v github.com/bncrypted/apidor
 #RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
 #    cd /usr/local/susanoo && pip3 install -r requirements.txt
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
+RUN curl --
+o '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
     echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
     source $HOME/.cargo/env && \
     rustup component add rustfmt && \
@@ -123,7 +124,7 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
     cd /usr/local/graphql-path-enum && \
     cargo build
-RUN git clone --recursive --depth=1 https://github.com:trailofbits/protofuzz.git /usr/local/protofuzz && \
+RUN git clone --recursive --depth=1 https://github.com/trailofbits/protofuzz.git /usr/local/protofuzz && \
     cd /usr/local/protofuzz && \
     python3 setup.py install
 RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
