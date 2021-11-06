@@ -138,7 +138,7 @@ RUN python3 -m pip install jwtxploiter
 RUN python3 -m pip install apicheck-package-manager && \
     mkdir -p $HOME/.apicheck_manager/bin
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
-    acp install jwtchk && \
+    acp install jwt-checker && \
     apc install acurl && \
     acp install oas-checker && \
     acp install send-to-proxy && \
