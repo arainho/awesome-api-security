@@ -135,20 +135,19 @@ RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
     python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
 RUN python3 -m pip install jwtxploiter
-RUN apk add --no-cache docker && \
-    python3 -m pip install apicheck-package-manager && \
+RUN python3 -m pip install apicheck-package-manager && \
     mkdir -p $HOME/.apicheck_manager/bin && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
-    acp install jwt-checker && \
-    acp install acurl && \
-    acp install oas-checker && \
-    acp install send-to-proxy && \
-    acp install apicheck-curl && \
-    acp install sensitive-data && \
-    acp install replay && \
-    acp install openapiv3-lint && \
-    acp install openapiv2-lint && \
-    acp install oas-checker
+    # acp install jwt-checker && \
+    # acp install acurl && \
+    # acp install oas-checker && \
+    # acp install send-to-proxy && \
+    # acp install apicheck-curl && \
+    # acp install sensitive-data && \
+    # acp install replay && \
+    # acp install openapiv3-lint && \
+    # acp install openapiv2-lint && \
+    # acp install oas-checker
 RUN python3 -m pip install regexploit
 RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake && \
     git clone --depth=1 https://github.com/racepwn/racepwn && \
