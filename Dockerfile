@@ -120,7 +120,7 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
     rustup component add clippy && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
     cd /usr/local/graphql-path-enum && \
-    cargo build
+    cargo build -y
 RUN git clone --recursive --depth=1 git@github.com:trailofbits/protofuzz.git /usr/local/protofuzz && \
     cd /usr/local/protofuzz && \
     python3 setup.py install
