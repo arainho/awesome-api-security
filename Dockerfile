@@ -116,6 +116,8 @@ RUN go get -u -v github.com/bncrypted/apidor
 #RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
 #    cd /usr/local/susanoo && pip3 install -r requirements.txt
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
+    echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
+    source $HOME/.cargo/env && \
     rustup component add rustfmt && \
     rustup component add clippy && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
