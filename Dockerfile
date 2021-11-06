@@ -123,7 +123,7 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum /usr/local/graphql-path-enum && \
     cd /usr/local/graphql-path-enum && \
     cargo build
-RUN git clone --recursive --depth=1 git@github.com:trailofbits/protofuzz.git /usr/local/protofuzz && \
+RUN git clone --recursive --depth=1 https://github.com:trailofbits/protofuzz.git /usr/local/protofuzz && \
     cd /usr/local/protofuzz && \
     python3 setup.py install
 RUN git clone --depth=1 https://github.com/ticarpi/jwt_tool /usr/local/jwt_tool && \
@@ -199,7 +199,7 @@ RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /us
 RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance && \
     cd /usr/local/clairvoyance && \
     pip3 install -r requirements.txt
-RUN git clone --depth=1 git@github.com:dolevf/graphw00f.git /usr/local/graphw00f && \
+RUN git clone --depth=1 https://github.com:dolevf/graphw00f.git /usr/local/graphw00f && \
     ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
 
 # wordlists
