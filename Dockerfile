@@ -134,8 +134,8 @@ RUN git clone --depth=1 https://github.com/AresS31/jwtcat /usr/local/jwtcat && \
     cd /usr/local/jwtcat && \
     python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rsa_sig2n
-RUN pip3 install jwtxploiter
-RUN pip3 install apicheck-package-manager && \
+RUN python3 -m pip install jwtxploiter
+RUN python3 -m pip install apicheck-package-manager && \
     echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
     acp install jwtchk && \
     apc install acurl && \
@@ -147,7 +147,7 @@ RUN pip3 install apicheck-package-manager && \
     acp install openapiv3-lint && \
     acp install openapiv2-lint && \
     acp install oas-checker
-RUN pip3 install regexploit
+RUN python3 -m pip install regexploit
 RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake && \
     git clone --depth=1 https://github.com/racepwn/racepwn && \
     ./build.sh
