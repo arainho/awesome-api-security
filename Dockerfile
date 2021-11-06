@@ -137,7 +137,7 @@ RUN git clone --depth=1 https://github.com/silentsignal/rsa_sign2n /usr/local/rs
 RUN python3 -m pip install jwtxploiter
 RUN python3 -m pip install apicheck-package-manager && \
     mkdir -p $HOME/.apicheck_manager/bin && \
-    echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
+    echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc
     # acp install jwt-checker && \
     # acp install acurl && \
     # acp install oas-checker && \
