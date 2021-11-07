@@ -150,10 +150,12 @@ RUN python3 -m pip install apicheck-package-manager && \
     # acp install oas-checker
 RUN python3 -m pip install regexploit
 RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake && \
-    git clone --depth=1 https://github.com/racepwn/racepwn && \
+    git clone --depth=1 https://github.com/racepwn/racepwn /usr/local/racepwn && \
+    cd /usr/local/racepwn && \
     ./build.sh
 RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
-    cd /usr/local/race-the-web && make && \
+    cd /usr/local/race-the-web && \
+    make && \
     go get -u -v github.com/golang/dep/cmd/dep && \
     dep ensure
 RUN apk add ruby && gem install API_Fuzzer
