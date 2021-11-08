@@ -149,7 +149,7 @@ RUN python3 -m pip install apicheck-package-manager && \
     # acp install openapiv2-lint && \
     # acp install oas-checker
 RUN python3 -m pip install regexploit
-RUN apk add --no-cache clang gcc libevent libevent-dev openssl cmake openssl-dev openssl-libs-static && \
+RUN apk add --no-cache clang gcc libevent libevent-dev openssl openssl-dev openssl-libs-static cmake wget unzip && \
     git clone --depth=1 https://github.com/racepwn/racepwn /usr/local/racepwn && \
     cd /usr/local/racepwn && \
     ./build.sh
