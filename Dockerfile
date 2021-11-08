@@ -149,10 +149,13 @@ RUN python3 -m pip install apicheck-package-manager && \
     # acp install openapiv2-lint && \
     # acp install oas-checker
 RUN python3 -m pip install regexploit
-RUN apk add --no-cache clang gcc libevent libevent-dev openssl openssl-dev openssl-libs-static cmake wget unzip && \
-    git clone --depth=1 https://github.com/racepwn/racepwn /usr/local/racepwn && \
-    cd /usr/local/racepwn && \
-    ./build.sh
+
+# build fail, skip for now
+#RUN apk add --no-cache clang gcc libevent libevent-dev openssl openssl-dev openssl-libs-static cmake wget unzip && \
+#    git clone --depth=1 https://github.com/racepwn/racepwn /usr/local/racepwn && \
+#    cd /usr/local/racepwn && \
+#    ./build.sh
+
 RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
     cd /usr/local/race-the-web && \
     make && \
