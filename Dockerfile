@@ -1,5 +1,6 @@
 # golang:alpine3.14
 FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6c6f
+LABEL org.opencontainers.image.authors="github.com/arainho"
 
 # tools in /usr/local/bin/
 # plugins in /usr/share/plugins/
