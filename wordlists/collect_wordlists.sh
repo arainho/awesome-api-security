@@ -17,7 +17,7 @@ curl -o "${TMP_DIR}"/danielmiessler-SecLists-api-endpoints.txt "https://raw.gith
 curl -o "${TMP_DIR}"/danielmiessler-SecLists-graphql.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/graphql.txt"
 curl -o "${TMP_DIR}"/kiterunner-swagger-wordlist.txt "https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt"
 curl -o "${TMP_DIR}"/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt"
-curl -o "${TMP_DIR}"/wordlists/fuzzdb-project-common-methods.txt https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods
+curl -o "${TMP_DIR}"/wordlists/fuzzdb-project-common-methods.txt "https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods"
 
 
 # remove old bundles and wordlists
