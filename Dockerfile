@@ -167,7 +167,8 @@ RUN apk add ruby ruby-dev && gem install API_Fuzzer
 RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/shapeshifter && \
     cd /usr/local/shapeshifter/shapeshifter && \
     python3 -m pip install .
-RUN apk add --no-cache testssl.sh
+RUN git clone --depth 1 https://github.com/drwetter/testssl.sh.git /usr/local/testssl.sh && \
+    ln -s /usr/local/testssl.sh/testssl.sh /usr/local/bin/testssl.sh
 RUN git clone --depth=1 https://github.com/assetnote/batchql.git /usr/local/batchql
 RUN git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap /usr/local/GraphQLmap
 RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
