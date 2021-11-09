@@ -158,12 +158,11 @@ RUN python3 -m pip install regexploit
 #    git clone --depth=1 https://github.com/racepwn/racepwn /usr/local/racepwn && \
 #    cd /usr/local/racepwn && \
 #    ./build.sh
-
-RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
-    cd /usr/local/race-the-web && \
-    make linux && \
-    go get -u -v github.com/golang/dep/cmd/dep && \
-    dep ensure
+# RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
+#    cd /usr/local/race-the-web && \
+#    make build && \
+#    go get -u -v github.com/golang/dep/cmd/dep && \
+#    dep ensure
 RUN apk add ruby && gem install API_Fuzzer
 RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/shapeshifter && \
     cd /usr/local/shapeshifter && \
