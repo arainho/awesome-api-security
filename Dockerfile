@@ -113,8 +113,11 @@ RUN apk add --no-cache --update python2 && \
     cd /usr/local/Astra && \
     pip2 install -r requirements.txt
 RUN go get -u -v github.com/bncrypted/apidor
+
+# skip for now
 #RUN git clone --depth=1 https://github.com/ant4g0nist/susanoo /usr/local/susanoo && \
 #    cd /usr/local/susanoo && pip3 install -r requirements.txt
+
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
     echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
     source $HOME/.cargo/env && \
@@ -158,7 +161,7 @@ RUN python3 -m pip install regexploit
 
 RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
     cd /usr/local/race-the-web && \
-    make build && \
+    make linux && \
     go get -u -v github.com/golang/dep/cmd/dep && \
     dep ensure
 RUN apk add ruby && gem install API_Fuzzer
