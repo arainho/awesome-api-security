@@ -189,16 +189,16 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
     chmod +x api-attack.sh && \
     ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
 #RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
-    apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
-    apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
-    curl -o /usr/local/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
-    cd /usr/local/restler-fuzzer && \
-    chmod u+x ./dotnet-install.sh && \
-    ./dotnet-install.sh -c 5.0 && \
-    mkdir -p /usr/local/restler-fuzzer/restler_bin && \
-    cd /usr/local/restler-fuzzer && \
-    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin && \
-    # ln -s /usr/local/restler-fuzzer/restler_bin/xxx.py /usr/local/bin/restler_bin
+#    apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
+#    apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
+#    curl -o /usr/local/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
+#    cd /usr/local/restler-fuzzer && \
+#    chmod u+x ./dotnet-install.sh && \
+#    ./dotnet-install.sh -c 5.0 && \
+#    mkdir -p /usr/local/restler-fuzzer/restler_bin && \
+#    cd /usr/local/restler-fuzzer && \
+#    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin && \
+#    # ln -s /usr/local/restler-fuzzer/restler_bin/xxx.py /usr/local/bin/restler_bin
 RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
     cd /usr/local/openapi_security_scanner && \
     pip3 install -r requirements.txt
