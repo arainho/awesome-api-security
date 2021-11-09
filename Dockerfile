@@ -166,8 +166,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web /usr/local
 RUN apk add ruby ruby-dev && gem install API_Fuzzer
 RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/shapeshifter && \
     cd /usr/local/shapeshifter/shapeshifter && \
-    python3 -m pip install python-dateutil && \
-    /usr/bin/pip3 install .
+    python3 -m pip install .
 RUN apk add --no-cache testssl.sh
 RUN git clone --depth=1 https://github.com/assetnote/batchql.git /usr/local/batchql
 RUN git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap /usr/local/GraphQLmap
