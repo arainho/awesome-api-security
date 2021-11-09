@@ -165,7 +165,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web /usr/local
     chmod u+x /usr/local/bin/race-the-web_2.0.1_lin64.bin    
 RUN apk add ruby ruby-dev && gem install API_Fuzzer
 RUN git clone --depth=1 https://github.com/szski/shapeshifter.git /usr/local/shapeshifter && \
-    cd /usr/local/shapeshifter && \
+    cd /usr/local/shapeshifter/shapeshifter && \
     python3 -m pip install python-dateutil && \
     /usr/bin/pip3 install .
 RUN apk add --no-cache testssl.sh
