@@ -213,9 +213,11 @@ RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/lo
 #    ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
 
 # wordlists
-RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists
-RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \
-    wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
-RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists
 RUN curl -o /usr/share/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"
 RUN curl -o /usr/share/wordlists/fuzzdb-common-methods.txt "https://raw.githubusercontent.com/fuzzdb-project/fuzzdb/master/discovery/common-methods/common-methods.txt"
+
+# big wordlists repositories - uncomment if necessary
+#RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists (1.9G)
+#RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \
+    wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
+#RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists
