@@ -194,6 +194,7 @@ RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/r
     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
     curl -o /usr/local/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
     cd /usr/local/restler-fuzzer && \
+    chmod u+x ./dotnet-install.sh && \
     ./dotnet-install.sh -c 5.0 && \
     mkdir -p /usr/local/restler-fuzzer/restler_bin && \
     cd /usr/local/restler-fuzzer/restler_bin && \
