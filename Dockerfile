@@ -201,10 +201,10 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
 #    # ln -s /usr/local/restler-fuzzer/restler_bin/xxx.py /usr/local/bin/restler_bin
 RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
     cd /usr/local/openapi_security_scanner && \
-    pip3 install -r requirements.txt
+    python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance && \
     cd /usr/local/clairvoyance && \
-    pip3 install -r requirements.txt
+    python3 -m pip install -r requirements.txt
 RUN git clone --depth=1 https://github.com:dolevf/graphw00f.git /usr/local/graphw00f && \
     ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
 
