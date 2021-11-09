@@ -188,6 +188,7 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
     cat runnable.sh ./build/libs/imperva-api-attack-tool.jar > api-attack.sh && \
     chmod +x api-attack.sh && \
     ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
+
 #RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
 #    apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
 #    apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
@@ -199,9 +200,11 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
 #    cd /usr/local/restler-fuzzer && \
 #    python3 ./build-restler.py --dest_dir /usr/local/restler-fuzzer/restler_bin && \
 #    # ln -s /usr/local/restler-fuzzer/restler_bin/xxx.py /usr/local/bin/restler_bin
-RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
-    cd /usr/local/openapi_security_scanner && \
-    python3 -m pip install -r requirements.txt
+
+#RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner /usr/local/openapi_security_scanner && \
+#    cd /usr/local/openapi_security_scanner && \
+#    python3 -m pip install -r requirements.txt
+
 RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance && \
     cd /usr/local/clairvoyance && \
     python3 -m pip install -r requirements.txt
