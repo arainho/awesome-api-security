@@ -4,12 +4,19 @@ ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
 
+ENV PATH="$MY_HOME/.local/bin:$PATH"
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
 # general setup
 RUN mkdir -p /usr/share/plugins && \
     mkdir -p /usr/share/wordlists && \
     mkdir -p /usr/share/extensions && \
     mkdir -p /usr/share/templates && \
     mkdir -p /usr/share/signatures && \
+    mkdir -p $MY_HOME && \
+    addgroup --gid 9999 $APP_GROUP && \
+    adduser --uid 9999 -D -G $APP_GROUP -h $MY_HOME $APP_USER && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
@@ -17,11 +24,16 @@ RUN mkdir -p /usr/share/plugins && \
     # python setup
     apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
-    python3 -m pip install --upgrade pip setuptools && \
+    python3 -m pip install --upgrade pip setuptools
 
-    # set golang and python in path
-    echo export PATH="$HOME/go/bin:$PATH" >> ~/.bashrc  && \
-    echo export PATH="$(python3 -m site --user-base)/bin:${PATH}" >> ~/.bashrc
+USER $APP_USER
+
+# secrets
+RUN go get -u -v github.com/eth0izzle/shhgit && \
+    mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
+    curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml
+
+
 
 FROM golang:alpine3.14
 LABEL org.opencontainers.image.authors="github.com/arainho"
@@ -29,22 +41,25 @@ LABEL org.opencontainers.image.authors="github.com/arainho"
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
+ENV PATH="$MY_HOME/.local/bin:$PATH"
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# general setup
 RUN mkdir -p /usr/share/plugins && \
     mkdir -p /usr/share/wordlists && \
     mkdir -p /usr/share/extensions && \
     mkdir -p /usr/share/templates && \
     mkdir -p /usr/share/signatures && \
+    mkdir -p $MY_HOME && \
+    addgroup --gid 9999 $APP_GROUP && \
+    adduser --uid 9999 -D -G $APP_GROUP -h $MY_HOME $APP_USER && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
-
-    # python setup
     apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
-    python3 -m pip install --upgrade pip setuptools && \
+    python3 -m pip install --upgrade pip setuptools
 
-    # set golang and python in path
-    echo export PATH="$HOME/go/bin:$PATH" >> ~/.bashrc  && \
-    echo export PATH="$(python3 -m site --user-base)/bin:${PATH}" >> ~/.bashrc
+USER $APP_USER
+COPY --chown=$APP_USER:$APP_GROUP --from=build-env $MY_HOME/.local $MY_HOME/.local
+CMD ["/bin/bash"]
