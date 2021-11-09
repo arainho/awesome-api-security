@@ -188,7 +188,7 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
     cat runnable.sh ./build/libs/imperva-api-attack-tool.jar > api-attack.sh && \
     chmod +x api-attack.sh && \
     ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
-RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
+#RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
     curl -o /usr/local/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
