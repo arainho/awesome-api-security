@@ -9,7 +9,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # general setup
-RUN addgroup --gid 9999 $APP_GROUP && \
+RUN addgroup -g 9999 $APP_GROUP && \
     adduser --uid 9999 -D -G $APP_GROUP -h $MY_HOME $APP_USER && \
     mkdir -m 775 -p /usr/share/plugins && \
     mkdir -m 775 -p /usr/share/wordlists && \
