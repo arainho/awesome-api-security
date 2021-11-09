@@ -222,8 +222,8 @@ RUN curl -o /usr/share/wordlists/kiterunner-swagger-wordlist.txt "https://wordli
 RUN curl -o /usr/share/wordlists/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt"
 RUN curl -o /usr/share/wordlists/fuzzdb-project-common-methods.txt https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods
 
-# gigantic  wordlists repositories - uncomment if necessary
-#RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists    (1.9G)
-#RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \                            (3.3G)
-    wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
-#RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists (156M)
+# gigantic wordlists repositories  (uncomment only if needed)
+# RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists    (1.9G)
+# RUN mkdir -p /usr/share/wordlists/assetnote-io && cd /usr/share/wordlists/assetnote-io && \                            (3.3G)
+#     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
+# RUN git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git /usr/share/wordlists/commonspeak2-wordlists (156M)
