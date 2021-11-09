@@ -9,19 +9,21 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # general setup
-RUN mkdir -p /usr/share/plugins && \
-    mkdir -p /usr/share/wordlists && \
-    mkdir -p /usr/share/extensions && \
-    mkdir -p /usr/share/templates && \
-    mkdir -p /usr/share/signatures && \
-    mkdir -p $MY_HOME && \
-    addgroup --gid 9999 $APP_GROUP && \
+RUN addgroup --gid 9999 $APP_GROUP && \
     adduser --uid 9999 -D -G $APP_GROUP -h $MY_HOME $APP_USER && \
+    mkdir -m 775 -p /usr/share/plugins && \
+    mkdir -m 775 -p /usr/share/wordlists && \
+    mkdir -m 775 -p /usr/share/extensions && \
+    mkdir -m 775 -p /usr/share/templates && \
+    mkdir -m 775 -p /usr/share/signatures && \
+    chown root:$APP_GROUP -Rv -- /usr/share/plugins && \
+    chown root:$APP_GROUP -Rv -- /usr/share/wordlists && \
+    chown root:$APP_GROUP -Rv -- /usr/share/extensions && \
+    chown root:$APP_GROUP -Rv -- /usr/share/templates && \
+    chown root:$APP_GROUP -Rv -- /usr/share/signatures && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
-
-    # python setup
     apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools
@@ -30,8 +32,14 @@ USER $APP_USER
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
-    mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
-    curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml
+        mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
+        curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml && \
+    pip3 install --user truffleHog && \
+    GO111MODULE=on go get -v -u github.com/zricethezav/gitleaks/v7 && \
+    pip3 install --user detect-secrets && \
+    git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
+        cd /usr/local/git-secrets && \
+        make install
 
 
 
