@@ -19,7 +19,7 @@ RUN apk update
 RUN apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools
-RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
+RUN apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils bash \
                        bind-tools git less openssh build-base libzip-dev zip
 
 # set golang and python in path
