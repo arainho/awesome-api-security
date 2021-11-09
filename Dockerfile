@@ -221,6 +221,9 @@ RUN curl -o /usr/share/wordlists/danielmiessler-SecLists-graphql.txt "https://ra
 RUN curl -o /usr/share/wordlists/kiterunner-swagger-wordlist.txt "https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt"
 RUN curl -o /usr/share/wordlists/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt"
 RUN curl -o /usr/share/wordlists/fuzzdb-project-common-methods.txt https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods
+RUN curl -o /usr/share/wordlists/routes-large.kite.tar.gz "https://wordlists-cdn.assetnote.io/data/kiterunner/routes-large.kite.tar.gz" && \
+    cd /usr/share/wordlists && \
+    tar xvzf routes-large.kite.tar.gz
 
 # gigantic wordlists repositories  (uncomment only if needed)
 # RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/danielmiessler-seclists    (1.9G)
