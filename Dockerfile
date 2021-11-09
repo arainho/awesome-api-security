@@ -173,8 +173,9 @@ RUN git clone --depth=1 https://github.com/assetnote/batchql.git /usr/local/batc
 RUN git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap /usr/local/GraphQLmap
 RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
     cd /usr/local/CeWL && \
-    gem install bundler && \
-    bundle install
+    gem install bundler mime mime-types mini_exiftool nokogiri rubyzip spider && \
+    chmod u+x ./cewl.rb && \
+    ln -s /usr/local/CeWL/cewl.rb /usr/local/bin/cewl.rb
 RUN git clone --depth=1 https://github.com/r3nt0n/bopscrk /usr/local/bopscrk && \
     cd /usr/local/bopscrk && \
     python3 -m pip install -r requirements.txt
