@@ -179,14 +179,16 @@ RUN git clone --depth=1 https://github.com/digininja/CeWL /usr/local/CeWL && \
 RUN git clone --depth=1 https://github.com/r3nt0n/bopscrk /usr/local/bopscrk && \
     cd /usr/local/bopscrk && \
     python3 -m pip install -r requirements.txt
-RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /usr/local/automatic-api-attack-tool && \
-    apk add --no-cache openjdk8-jre gradle && \
-    cd /usr/local/automatic-api-attack-tool && \
-    ./gradlew build && \
-    cp -av src/main/resources/runnable.sh . && \
-    cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && \
-    chmod +x api-attack.sh && \
-    ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
+
+# skip for now
+#RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /usr/local/automatic-api-attack-tool && \
+#    apk add --no-cache openjdk8-jre gradle && \
+#    cd /usr/local/automatic-api-attack-tool && \
+#    ./gradlew build && \
+#    cp -av src/main/resources/runnable.sh . && \
+#    cat runnable.sh imperva-api-attack-tool.jar > api-attack.sh && \
+#    chmod +x api-attack.sh && \
+#    ln -s /usr/local/automatic-api-attack-tool/api-attack.sh /usr/local/bin/api-attack.sh
 RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer /usr/local/restler-fuzzer && \
     apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
     apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
