@@ -40,7 +40,7 @@ RUN go get -u -v github.com/eth0izzle/shhgit && \
     pip3 install --user detect-secrets && \
     git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
         cd /usr/local/git-secrets && \
-        make install
+        make install && \
     git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
         cd /usr/local/repo-supervisor && \
         npm ci && \
