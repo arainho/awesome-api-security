@@ -158,7 +158,7 @@ RUN python3 -m pip install regexploit
 
 RUN git clone https://github.com/TheHackerDev/race-the-web /usr/local/race-the-web && \
     cd /usr/local/race-the-web && \
-    make && \
+    make build && \
     go get -u -v github.com/golang/dep/cmd/dep && \
     dep ensure
 RUN apk add ruby && gem install API_Fuzzer
