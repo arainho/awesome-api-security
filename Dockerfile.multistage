@@ -9,18 +9,18 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # general setup
-RUN addgroup -g 9999 $APP_GROUP && \
-    adduser -u 9999 -D -G $APP_GROUP -h $MY_HOME $APP_USER && \
+RUN addgroup -g 9999 $MY_GROUP && \
+    adduser -u 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
     mkdir -m 775 -p /usr/share/plugins && \
     mkdir -m 775 -p /usr/share/wordlists && \
     mkdir -m 775 -p /usr/share/extensions && \
     mkdir -m 775 -p /usr/share/templates && \
     mkdir -m 775 -p /usr/share/signatures && \
-    chown root:$APP_GROUP -Rv -- /usr/share/plugins && \
-    chown root:$APP_GROUP -Rv -- /usr/share/wordlists && \
-    chown root:$APP_GROUP -Rv -- /usr/share/extensions && \
-    chown root:$APP_GROUP -Rv -- /usr/share/templates && \
-    chown root:$APP_GROUP -Rv -- /usr/share/signatures && \
+    chown root:$MY_GROUP -Rv -- /usr/share/plugins && \
+    chown root:$MY_GROUP -Rv -- /usr/share/wordlists && \
+    chown root:$MY_GROUP -Rv -- /usr/share/extensions && \
+    chown root:$MY_GROUP -Rv -- /usr/share/templates && \
+    chown root:$MY_GROUP -Rv -- /usr/share/signatures && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
@@ -29,7 +29,7 @@ RUN addgroup -g 9999 $APP_GROUP && \
     python3 -m pip install --upgrade pip setuptools && \
     apk add --no-cache --update nodejs npm
 
-USER $APP_USER
+USER $MY_USER
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
@@ -58,18 +58,18 @@ ENV PATH="$MY_HOME/.local/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-RUN addgroup --gid 9999 $APP_GROUP && \
-    adduser --uid 9999 -D -G $APP_GROUP -h $MY_HOME $APP_USER && \
+RUN addgroup --gid 9999 $MY_GROUP && \
+    adduser --uid 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
     mkdir -m 775 -p /usr/share/plugins && \
     mkdir -m 775 -p /usr/share/wordlists && \
     mkdir -m 775 -p /usr/share/extensions && \
     mkdir -m 775 -p /usr/share/templates && \
     mkdir -m 775 -p /usr/share/signatures && \
-    chown root:$APP_GROUP -Rv -- /usr/share/plugins && \
-    chown root:$APP_GROUP -Rv -- /usr/share/wordlists && \
-    chown root:$APP_GROUP -Rv -- /usr/share/extensions && \
-    chown root:$APP_GROUP -Rv -- /usr/share/templates && \
-    chown root:$APP_GROUP -Rv -- /usr/share/signatures && \
+    chown root:$MY_GROUP -Rv -- /usr/share/plugins && \
+    chown root:$MY_GROUP -Rv -- /usr/share/wordlists && \
+    chown root:$MY_GROUP -Rv -- /usr/share/extensions && \
+    chown root:$MY_GROUP -Rv -- /usr/share/templates && \
+    chown root:$MY_GROUP -Rv -- /usr/share/signatures && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
@@ -77,9 +77,9 @@ RUN addgroup --gid 9999 $APP_GROUP && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools
 
-USER $APP_USER
-COPY --chown=$APP_USER:$APP_GROUP --from=build-env $MY_HOME/.local $MY_HOME/.local
-COPY --chown=$APP_USER:$APP_GROUP --from=build-env $MY_HOME/go $MY_HOME/go
-COPY --chown=$APP_USER:$APP_GROUP --from=build-env /usr/local/bin /usr/local/bin
+USER $MY_USER
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.local $MY_HOME/.local
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/go $MY_HOME/go
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env /usr/local/bin /usr/local/bin
 COPY --from=build-env /usr/local /usr/local
 CMD ["/bin/bash"]
