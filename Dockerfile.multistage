@@ -3,7 +3,7 @@ FROM golang:alpine3.14 AS build-env
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
-
+ENV APPS_TARGET="$MY_HOME/apps"
 ENV PATH="$MY_HOME/.local/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
@@ -11,16 +11,11 @@ ENV PYTHONUNBUFFERED=1
 # general setup
 RUN addgroup -g 9999 $MY_GROUP && \
     adduser -u 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
-    mkdir -m 775 -p /usr/share/plugins && \
-    mkdir -m 775 -p /usr/share/wordlists && \
-    mkdir -m 775 -p /usr/share/extensions && \
-    mkdir -m 775 -p /usr/share/templates && \
-    mkdir -m 775 -p /usr/share/signatures && \
-    chown root:$MY_GROUP -Rv -- /usr/share/plugins && \
-    chown root:$MY_GROUP -Rv -- /usr/share/wordlists && \
-    chown root:$MY_GROUP -Rv -- /usr/share/extensions && \
-    chown root:$MY_GROUP -Rv -- /usr/share/templates && \
-    chown root:$MY_GROUP -Rv -- /usr/share/signatures && \
+    mkdir -m 750 -p $MY_HOME/plugins && \
+    mkdir -m 750 -p $MY_HOME/wordlists && \
+    mkdir -m 750 -p $MY_HOME/extensions && \
+    mkdir -m 750 -p $MY_HOME/templates && \
+    mkdir -m 750 -p $MY_HOME/signatures && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
@@ -34,16 +29,16 @@ USER $MY_USER
 
 ### secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
-        mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
-        curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml && \
+        mkdir -p $MY_HOME/signatures/eth0izzle-signatures/ && \
+        curl -o $MY_HOME/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml && \
     pip3 install --user truffleHog && \
     GO111MODULE=on go get -v -u github.com/zricethezav/gitleaks/v7 && \
     pip3 install --user detect-secrets && \
-    git clone --depth=1 https://github.com/awslabs/git-secrets.git /usr/local/git-secrets && \
-        cd /usr/local/git-secrets && \
+    git clone --depth=1 https://github.com/awslabs/git-secrets.git $APPS_TARGET/git-secrets && \
+        cd $APPS_TARGET/git-secrets && \
         make install && \
-    git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
-        cd /usr/local/repo-supervisor && \
+    git clone --depth=1 https://github.com/auth0/repo-supervisor.git $APPS_TARGET/repo-supervisor && \
+        cd $APPS_TARGET/repo-supervisor && \
         npm ci && \
         npm run build && \
 
@@ -52,29 +47,29 @@ RUN go get -u -v github.com/eth0izzle/shhgit && \
     python3 -m pip install --user dirsearch && \
     go get -u -v github.com/dwisiswant0/wadl-dumper && \
     go get -u -v github.com/ffuf/ffuf && \
-    git clone --depth=1 https://github.com/OWASP/Amass.git /usr/local/Amass && \
-        cd /usr/local/Amass && \
+    git clone --depth=1 https://github.com/OWASP/Amass.git $APPS_TARGET/Amass && \
+        cd $APPS_TARGET/Amass && \
         go install -v ./... && \
     go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && \
-        git clone --depth=1 https://github.com/projectdiscovery/nuclei-templates.git /usr/share/templates/nuclei-templates && \
+        git clone --depth=1 https://github.com/projectdiscovery/nuclei-templates.git $MY_HOME/templates/nuclei-templates && \
     GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
         GO111MODULE=on go get -u github.com/jaeles-project/gospider && \
-        git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures && \
+        git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures.git $MY_HOME/signatures/jaeles-signatures && \
     python3 -m pip install --user --upgrade arjun && \
-    git clone --depth=1 https://github.com/devanshbatham/ParamSpider /usr/local/ParamSpider && \
-        cd /usr/local/ParamSpider && \
+    git clone --depth=1 https://github.com/devanshbatham/ParamSpider $APPS_TARGET/ParamSpider && \
+        cd $APPS_TARGET/ParamSpider && \
         python3 -m pip install --user -r requirements.txt && \
-    git clone --depth=1 https://github.com/mseclab/PyJFuzz.git /usr/local/PyJFuzz && \
-        cd /usr/local/PyJFuzz && \
+    git clone --depth=1 https://github.com/mseclab/PyJFuzz.git $APPS_TARGET/PyJFuzz && \
+        cd $APPS_TARGET/PyJFuzz && \
         python3 setup.py install && \
-    git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git /usr/local/TnT-Fuzzer && \
-        cd /usr/local/TnT-Fuzzer && \
+    git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git $APPS_TARGET/TnT-Fuzzer && \
+        cd $APPS_TARGET/TnT-Fuzzer && \
         python3 setup.py install && \
-    git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
-        cd /usr/local/kiterunner && \
+    git clone --depth=1 https://github.com/assetnote/kiterunner $APPS_TARGET/kiterunner && \
+        cd $APPS_TARGET/kiterunner && \
         make build && \
-        ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
-        ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
+        ln -s $(pwd)/dist/kr $MY_HOME/bin/kr && \
+        ln -s $APPS_TARGET/kiterunner/api-signatures $MY_HOME/signatures/kiterunner-api-signatures
 
 
 FROM golang:alpine3.14
@@ -83,22 +78,18 @@ LABEL org.opencontainers.image.authors="github.com/arainho"
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
+ENV APPS_TARGET="$MY_HOME/apps"
 ENV PATH="$MY_HOME/.local/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 RUN addgroup --gid 9999 $MY_GROUP && \
     adduser --uid 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
-    mkdir -m 775 -p /usr/share/plugins && \
-    mkdir -m 775 -p /usr/share/wordlists && \
-    mkdir -m 775 -p /usr/share/extensions && \
-    mkdir -m 775 -p /usr/share/templates && \
-    mkdir -m 775 -p /usr/share/signatures && \
-    chown root:$MY_GROUP -Rv -- /usr/share/plugins && \
-    chown root:$MY_GROUP -Rv -- /usr/share/wordlists && \
-    chown root:$MY_GROUP -Rv -- /usr/share/extensions && \
-    chown root:$MY_GROUP -Rv -- /usr/share/templates && \
-    chown root:$MY_GROUP -Rv -- /usr/share/signatures && \
+    mkdir -m 750 -p $MY_HOME/plugins && \
+    mkdir -m 750 -p $MY_HOME/wordlists && \
+    mkdir -m 750 -p $MY_HOME/extensions && \
+    mkdir -m 750 -p $MY_HOME/templates && \
+    mkdir -m 750 -p $MY_HOME/signatures && \
     apk update && \
     apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
@@ -107,8 +98,14 @@ RUN addgroup --gid 9999 $MY_GROUP && \
     python3 -m pip install --upgrade pip setuptools
 
 USER $MY_USER
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.bashrc $MY_HOME/.bashrc
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.local $MY_HOME/.local
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/go $MY_HOME/go
-COPY --chown=$MY_USER:$MY_GROUP --from=build-env /usr/local/bin /usr/local/bin
-COPY --from=build-env /usr/local /usr/local
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/bin $MY_HOME/bin
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/plugins $MY_HOME/plugins
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/wordlists $MY_HOME/wordlists
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/extensions $MY_HOME/extensions
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/templates $MY_HOME/templates
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/signatures $MY_HOME/signatures
+COPY --chown=$MY_USER:$MY_GROUP --from=build-env $APPS_TARGET $APPS_TARGET
 CMD ["/bin/bash"]
