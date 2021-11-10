@@ -26,7 +26,8 @@ RUN addgroup -g 9999 $MY_GROUP && \
     apk add --no-cache --update libffi-dev python3-dev && \
 
 USER $MY_USER
-
+#
+##
 ### secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
         mkdir -p $MY_HOME/signatures/eth0izzle-signatures/ && \
@@ -41,7 +42,8 @@ RUN go get -u -v github.com/eth0izzle/shhgit && \
         cd $APPS_TARGET/repo-supervisor && \
         npm ci && \
         npm run build && \
-
+#
+##
 ### enumeration
     go install github.com/OJ/gobuster/v3@latest && \
     python3 -m pip install --user dirsearch && \
@@ -98,6 +100,7 @@ RUN addgroup --gid 9999 $MY_GROUP && \
     python3 -m pip install --upgrade pip setuptools
 
 USER $MY_USER
+
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.bashrc $MY_HOME/.bashrc
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.local $MY_HOME/.local
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/go $MY_HOME/go
@@ -108,4 +111,5 @@ COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/extensions $MY_HOME/ex
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/templates $MY_HOME/templates
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/signatures $MY_HOME/signatures
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $APPS_TARGET $APPS_TARGET
+
 CMD ["/bin/bash"]
