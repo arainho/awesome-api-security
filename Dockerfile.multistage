@@ -23,10 +23,12 @@ RUN addgroup -g 9999 $MY_GROUP && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools && \
     apk add --no-cache --update nodejs npm && \
-    apk add --no-cache --update libffi-dev python3-dev && \
+    apk add --no-cache --update libffi-dev python3-dev
 
 USER $MY_USER
 
+#
+##
 ### secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
         mkdir -p $MY_HOME/signatures/eth0izzle-signatures/ && \
@@ -42,6 +44,7 @@ RUN go get -u -v github.com/eth0izzle/shhgit && \
         npm ci && \
         npm run build && \
 #
+##
 ### enumeration
     go install github.com/OJ/gobuster/v3@latest && \
     python3 -m pip install --user dirsearch && \
