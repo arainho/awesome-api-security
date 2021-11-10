@@ -27,11 +27,12 @@ RUN addgroup -g 9999 $MY_GROUP && \
     apk add --no-cache python3 py3-pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools && \
-    apk add --no-cache --update nodejs npm
+    apk add --no-cache --update nodejs npm && \
+    apk add --no-cache --update libffi-dev python3-dev && \
 
 USER $MY_USER
 
-# secrets
+### secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
         mkdir -p /usr/share/signatures/eth0izzle-signatures/ && \
         curl -o /usr/share/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml && \
@@ -44,8 +45,36 @@ RUN go get -u -v github.com/eth0izzle/shhgit && \
     git clone --depth=1 https://github.com/auth0/repo-supervisor.git /usr/local/repo-supervisor && \
         cd /usr/local/repo-supervisor && \
         npm ci && \
-        npm run build
+        npm run build && \
 
+### enumeration
+    go install github.com/OJ/gobuster/v3@latest && \
+    python3 -m pip install --user dirsearch && \
+    go get -u -v github.com/dwisiswant0/wadl-dumper && \
+    go get -u -v github.com/ffuf/ffuf && \
+    git clone --depth=1 https://github.com/OWASP/Amass.git /usr/local/Amass && \
+        cd /usr/local/Amass && \
+        go install -v ./... && \
+    go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && \
+        git clone --depth=1 https://github.com/projectdiscovery/nuclei-templates.git /usr/share/templates/nuclei-templates && \
+    GO111MODULE=on go get -u -v github.com/jaeles-project/jaeles && \
+        GO111MODULE=on go get -u github.com/jaeles-project/gospider && \
+        git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures.git /usr/share/signatures/jaeles-signatures && \
+    python3 -m pip install --user --upgrade arjun && \
+    git clone --depth=1 https://github.com/devanshbatham/ParamSpider /usr/local/ParamSpider && \
+        cd /usr/local/ParamSpider && \
+        python3 -m pip install --user -r requirements.txt && \
+    git clone --depth=1 https://github.com/mseclab/PyJFuzz.git /usr/local/PyJFuzz && \
+        cd /usr/local/PyJFuzz && \
+        python3 setup.py install && \
+    git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git /usr/local/TnT-Fuzzer && \
+        cd /usr/local/TnT-Fuzzer && \
+        python3 setup.py install && \
+    git clone --depth=1 https://github.com/assetnote/kiterunner /usr/local/kiterunner && \
+        cd /usr/local/kiterunner && \
+        make build && \
+        ln -s $(pwd)/dist/kr /usr/local/bin/kr && \
+        ln -s /usr/local/kiterunner/api-signatures /usr/share/signatures/kiterunner-api-signatures
 
 
 FROM golang:alpine3.14
