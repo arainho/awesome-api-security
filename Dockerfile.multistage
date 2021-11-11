@@ -118,7 +118,7 @@ RUN go get -u -v github.com/tomnomnom/waybackurls && \
 
 # other
 RUN git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
-        cd APPS_TARGET/Astra && \
+        cd $APPS_TARGET/Astra && \
         pip2 install -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
     git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susanoo && \
