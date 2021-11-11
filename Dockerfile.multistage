@@ -33,8 +33,8 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
     mkdir -m 750 -p $MY_HOME/extensions && \
     mkdir -m 750 -p $MY_HOME/templates && \
     mkdir -m 750 -p $MY_HOME/signatures && \
-
-### secrets
+#    
+##> secrets
     go get -u -v github.com/eth0izzle/shhgit && \
         mkdir -p $MY_HOME/signatures/eth0izzle-signatures/ && \
         curl -o $MY_HOME/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml && \
@@ -48,8 +48,8 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
         cd $APPS_TARGET/repo-supervisor && \
         npm ci && \
         npm run build && \
-
-### enumeration
+#
+##> enumeration
     go install github.com/OJ/gobuster/v3@latest && \
     python3 -m pip install --user dirsearch && \
     go get -u -v github.com/dwisiswant0/wadl-dumper && \
@@ -77,8 +77,8 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
         make build && \
         ln -s $(pwd)/dist/kr $MY_HOME/bin/kr && \
         ln -s $APPS_TARGET/kiterunner/api-signatures $MY_HOME/signatures/kiterunner-api-signatures && \
-
-### wordlists
+#
+###> wordlists
 curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
 curl -o $MY_HOME/wordlists/danielmiessler-SecLists-swagger.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/swagger.txt" && \
 curl -o $MY_HOME/wordlists/danielmiessler-SecLists-api-endpoints.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/api/api-endpoints.txt" && \
@@ -90,7 +90,7 @@ curl -o $MY_HOME/wordlists/routes-large.kite.tar.gz "https://wordlists-cdn.asset
     cd $MY_HOME/wordlists && \ 
     tar xvzf routes-large.kite.tar.gz
 
-### huge wordlists repositories  (uncomment only if needed)
+###> titanic wordlists repositories  (uncomment only if needed)
 # git clone --depth=1 https://github.com/danielmiessler/SecLists.git $MY_HOME/wordlists/danielmiessler-seclists && \      # (1.9G)
 # mkdir -p $MY_HOME/wordlists/assetnote-io && cd $MY_HOME/wordlists/assetnote-io && \                                     # (3.3G)
 #     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH && \
@@ -141,6 +141,7 @@ COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/extensions $MY_HOME/ex
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/templates $MY_HOME/templates
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/signatures $MY_HOME/signatures
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $APPS_TARGET $APPS_TARGET
+COPY --from=build-env /usr/local /usr/local
 COPY --from=build-env /usr/local/bin /usr/local/bin
 COPY --from=build-env /usr/local/share/man /usr/local/share/man
 
