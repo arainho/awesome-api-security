@@ -89,7 +89,7 @@ curl -o $MY_HOME/wordlists/fuzzdb-project-common-methods.txt https://github.com/
 curl -o $MY_HOME/wordlists/routes-large.kite.tar.gz "https://wordlists-cdn.assetnote.io/data/kiterunner/routes-large.kite.tar.gz" && \
     cd $MY_HOME/wordlists && \ 
     tar xvzf routes-large.kite.tar.gz
-
+#
 ###> titanic wordlists repositories  (uncomment only if needed)
 # git clone --depth=1 https://github.com/danielmiessler/SecLists.git $MY_HOME/wordlists/danielmiessler-seclists && \      # (1.9G)
 # mkdir -p $MY_HOME/wordlists/assetnote-io && cd $MY_HOME/wordlists/assetnote-io && \                                     # (3.3G)
