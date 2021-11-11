@@ -124,7 +124,7 @@ RUN python2 -m ensurepip && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
         cd APPS_TARGET/Astra && \
         pip2 install -r requirements.txt && \
-    go get -u -v github.com/bncrypted/apidor
+    go get -u -v github.com/bncrypted/apidor && \
     git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susanoo && \
         cd $APPS_TARGET/susanoo && pip3 install -r requirements.txt
 
