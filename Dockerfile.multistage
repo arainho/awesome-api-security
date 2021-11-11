@@ -8,7 +8,7 @@ ENV PATH="$MY_HOME/.local/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-##> general
+# general
 RUN addgroup -g 9999 $MY_GROUP && \
     adduser -u 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
     apk update && \
@@ -26,16 +26,16 @@ RUN addgroup -g 9999 $MY_GROUP && \
 
 USER $MY_USER
 
-##> workdir
+# workdir
 RUN mkdir -m 750 -p $MY_HOME/bin && \
     mkdir -m 750 -p $MY_HOME/plugins && \
     mkdir -m 750 -p $MY_HOME/wordlists && \
     mkdir -m 750 -p $MY_HOME/extensions && \
     mkdir -m 750 -p $MY_HOME/templates && \
     mkdir -m 750 -p $MY_HOME/signatures && \
-#    
-##> secrets
-    go get -u -v github.com/eth0izzle/shhgit && \
+  
+# secrets
+RUN go get -u -v github.com/eth0izzle/shhgit && \
         mkdir -p $MY_HOME/signatures/eth0izzle-signatures/ && \
         curl -o $MY_HOME/signatures/eth0izzle-signatures/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml && \
     pip3 install --user truffleHog && \
@@ -48,9 +48,9 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
         cd $APPS_TARGET/repo-supervisor && \
         npm ci && \
         npm run build && \
-#
-##> enumeration
-    go install github.com/OJ/gobuster/v3@latest && \
+
+# enumeration
+RUN go install github.com/OJ/gobuster/v3@latest && \
     python3 -m pip install --user dirsearch && \
     go get -u -v github.com/dwisiswant0/wadl-dumper && \
     go get -u -v github.com/ffuf/ffuf && \
@@ -77,24 +77,24 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
         make build && \
         ln -s $(pwd)/dist/kr $MY_HOME/bin/kr && \
         ln -s $APPS_TARGET/kiterunner/api-signatures $MY_HOME/signatures/kiterunner-api-signatures && \
-#
-###> wordlists
-curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
-curl -o $MY_HOME/wordlists/danielmiessler-SecLists-swagger.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/swagger.txt" && \
-curl -o $MY_HOME/wordlists/danielmiessler-SecLists-api-endpoints.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/api/api-endpoints.txt" && \
-curl -o $MY_HOME/wordlists/danielmiessler-SecLists-graphql.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/graphql.txt" && \
-curl -o $MY_HOME/wordlists/kiterunner-swagger-wordlist.txt "https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt" && \
-curl -o $MY_HOME/wordlists/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt" && \
-curl -o $MY_HOME/wordlists/fuzzdb-project-common-methods.txt https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods && \
-curl -o $MY_HOME/wordlists/routes-large.kite.tar.gz "https://wordlists-cdn.assetnote.io/data/kiterunner/routes-large.kite.tar.gz" && \
-    cd $MY_HOME/wordlists && \ 
-    tar xvzf routes-large.kite.tar.gz
-#
-###> titanic wordlists repositories  (uncomment only if needed)
-# git clone --depth=1 https://github.com/danielmiessler/SecLists.git $MY_HOME/wordlists/danielmiessler-seclists && \      # (1.9G)
-# mkdir -p $MY_HOME/wordlists/assetnote-io && cd $MY_HOME/wordlists/assetnote-io && \                                     # (3.3G)
-#     wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH && \
-# git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git $MY_HOME/wordlists/commonspeak2-wordlists  # (156M)
+
+# wordlists
+RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
+    curl -o $MY_HOME/wordlists/danielmiessler-SecLists-swagger.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/swagger.txt" && \
+    curl -o $MY_HOME/wordlists/danielmiessler-SecLists-api-endpoints.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/api/api-endpoints.txt" && \
+    curl -o $MY_HOME/wordlists/danielmiessler-SecLists-graphql.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/graphql.txt" && \
+    curl -o $MY_HOME/wordlists/kiterunner-swagger-wordlist.txt "https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt" && \
+    curl -o $MY_HOME/wordlists/httparchive_apiroutes_2021_08_28.txt "https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2021_08_28.txt" && \
+    curl -o $MY_HOME/wordlists/fuzzdb-project-common-methods.txt https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods && \
+    curl -o $MY_HOME/wordlists/routes-large.kite.tar.gz "https://wordlists-cdn.assetnote.io/data/kiterunner/routes-large.kite.tar.gz" && \
+        cd $MY_HOME/wordlists && \ 
+        tar xvzf routes-large.kite.tar.gz
+
+# titanic wordlists repositories  (uncomment only if needed)
+#RUN git clone --depth=1 https://github.com/danielmiessler/SecLists.git $MY_HOME/wordlists/danielmiessler-seclists && \      # (1.9G)
+#    mkdir -p $MY_HOME/wordlists/assetnote-io && cd $MY_HOME/wordlists/assetnote-io && \                                     # (3.3G)
+#        wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH && \
+#    git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git $MY_HOME/wordlists/commonspeak2-wordlists  # (156M)
 
 
 FROM golang:alpine3.14
