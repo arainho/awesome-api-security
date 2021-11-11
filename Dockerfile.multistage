@@ -196,8 +196,8 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $APPS_TARG
 #RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer $APPS_TARGET/restler-fuzzer && \
 #       apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
 #       apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
-#       curl -o $APPS_TARGET/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
-#       cd $APPS_TARGET/restler-fuzzer && \
+#       curl -L -o $APPS_TARGET/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
+#       cd $APPS_TARGET/restler-fuzzer && \APPS_TARGET/Astra
 #       chmod u+x ./dotnet-install.sh && \
 #       ./dotnet-install.sh -c 5.0 && \
 #       mkdir -p $APPS_TARGET/restler-fuzzer/restler_bin && \
