@@ -32,7 +32,7 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
     mkdir -m 750 -p $MY_HOME/wordlists && \
     mkdir -m 750 -p $MY_HOME/extensions && \
     mkdir -m 750 -p $MY_HOME/templates && \
-    mkdir -m 750 -p $MY_HOME/signatures && \
+    mkdir -m 750 -p $MY_HOME/signatures
   
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
@@ -47,7 +47,7 @@ RUN go get -u -v github.com/eth0izzle/shhgit && \
     git clone --depth=1 https://github.com/auth0/repo-supervisor.git $APPS_TARGET/repo-supervisor && \
         cd $APPS_TARGET/repo-supervisor && \
         npm ci && \
-        npm run build && \
+        npm run build
 
 # enumeration
 RUN go install github.com/OJ/gobuster/v3@latest && \
@@ -76,7 +76,7 @@ RUN go install github.com/OJ/gobuster/v3@latest && \
         cd $APPS_TARGET/kiterunner && \
         make build && \
         ln -s $(pwd)/dist/kr $MY_HOME/bin/kr && \
-        ln -s $APPS_TARGET/kiterunner/api-signatures $MY_HOME/signatures/kiterunner-api-signatures && \
+        ln -s $APPS_TARGET/kiterunner/api-signatures $MY_HOME/signatures/kiterunner-api-signatures
 
 # wordlists
 RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
