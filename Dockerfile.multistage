@@ -68,15 +68,27 @@ RUN go install github.com/OJ/gobuster/v3@latest && \
         python3 -m pip install --user -r requirements.txt && \
     git clone --depth=1 https://github.com/mseclab/PyJFuzz.git $APPS_TARGET/PyJFuzz && \
         cd $APPS_TARGET/PyJFuzz && \
-        python3 setup.py install && \
+        python3 setup.py install --user --prefix=$MY_HOME && \
     git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git $APPS_TARGET/TnT-Fuzzer && \
         cd $APPS_TARGET/TnT-Fuzzer && \
-        python3 setup.py install && \
+        python3 setup.py install  --user --prefix=$MY_HOME &&& \
     git clone --depth=1 https://github.com/assetnote/kiterunner $APPS_TARGET/kiterunner && \
         cd $APPS_TARGET/kiterunner && \
         make build && \
         ln -s $(pwd)/dist/kr $MY_HOME/bin/kr && \
         ln -s $APPS_TARGET/kiterunner/api-signatures $MY_HOME/signatures/kiterunner-api-signatures
+
+# burp extentions or utilities
+RUN cd $MY_HOME/extensions && \
+    git clone --depth=1 https://github.com/portswigger/wsdl-wizard && \
+    git clone --depth=1 https://github.com/NetSPI/Wsdler && \
+    git clone --depth=1  https://github.com/SecurityInnovation/AuthMatrix.git && \
+    git clone --depth=1 https://github.com/PortSwigger/autorize.git && \
+    git clone --depth=1 https://github.com/portswigger/auth-analyzer && \
+    git clone --depth=1 https://github.com/doyensec/inql && \
+    git clone --depth=1 https://github.com/wallarm/jwt-heartbreaker.git && \
+    git clone --depth=1 https://github.com/PortSwigger/json-web-token-attacker.git && \
+    pip3 install json2paths
 
 # wordlists
 RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
