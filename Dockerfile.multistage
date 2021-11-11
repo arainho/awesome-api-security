@@ -159,6 +159,62 @@ RUN git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGE
         acp install oas-checker && \
      python3 -m pip install regexploit
 
+# build fail, skip for now
+#RUN git clone --depth=1 https://github.com/racepwn/racepwn $APPS_TARGET/racepwn && \
+#    cd $APPS_TARGET/racepwn && \
+#    ./build.sh
+
+RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $APPS_TARGET/race-the-web && \
+        curl -o $APPS_TARGET/bin/race-the-web_2.0.1_lin64.bin \
+             -L https://github.com/TheHackerDev/race-the-web/releases/download/2.0.1/race-the-web_2.0.1_lin64.bin && \
+        chmod u+x $APPS_TARGET/bin/race-the-web_2.0.1_lin64.bin && \
+    gem install API_Fuzzer && \
+    git clone --depth=1 https://github.com/szski/shapeshifter.git $APPS_TARGET/shapeshifter && \
+        cd $APPS_TARGET/shapeshifter/shapeshifter && \
+        python3 -m pip install --user . && \
+    git clone --depth 1 https://github.com/drwetter/testssl.sh.git $APPS_TARGET/testssl.sh && \
+        ln -s $APPS_TARGET/testssl.sh/testssl.sh $APPS_TARGET/bin/testssl.sh && \
+    git clone --depth=1 https://github.com/assetnote/batchql.git $APPS_TARGET/batchql && \
+    git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap $APPS_TARGET/GraphQLmap && \
+    git clone --depth=1 https://github.com/digininja/CeWL $APPS_TARGET/CeWL && \
+        cd $APPS_TARGET/CeWL && \
+        gem install bundler mime mime-types mini_exiftool nokogiri rubyzip spider && \
+        chmod u+x ./cewl.rb && \
+        ln -s $APPS_TARGET/CeWL/cewl.rb $APPS_TARGET/bin/cewl.rb
+    git clone --depth=1 https://github.com/r3nt0n/bopscrk $APPS_TARGET/bopscrk && \
+        cd $APPS_TARGET/bopscrk && \
+        python3 -m pip install -r requirements.txt
+    git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool $APPS_TARGET/automatic-api-attack-tool && \
+        apk add --no-cache openjdk8-jre gradle && \
+        cd $APPS_TARGET/automatic-api-attack-tool && \
+        ./gradlew build && \
+        cp -av src/main/resources/runnable.sh . && \
+        cat runnable.sh ./build/libs/imperva-api-attack-tool.jar > api-attack.sh && \
+        chmod +x api-attack.sh && \
+        ln -s $APPS_TARGET/automatic-api-attack-tool/api-attack.sh $APPS_TARGET/bin/api-attack.sh
+
+#RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer $APPS_TARGET/restler-fuzzer && \
+#       apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
+#       apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
+#       curl -o $APPS_TARGET/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
+#       cd $APPS_TARGET/restler-fuzzer && \
+#       chmod u+x ./dotnet-install.sh && \
+#       ./dotnet-install.sh -c 5.0 && \
+#       mkdir -p $APPS_TARGET/restler-fuzzer/restler_bin && \
+#       cd $APPS_TARGET/restler-fuzzer && \
+#       python3 ./build-restler.py --dest_dir $APPS_TARGET/restler-fuzzer/restler_bin && \
+#       ln -s $APPS_TARGET/restler-fuzzer/restler_bin/xxx.py $APPS_TARGET/bin/restler_bin
+
+#RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner $APPS_TARGET/openapi_security_scanner && \
+#       cd $APPS_TARGET/openapi_security_scanner && \
+#       python3 -m pip install -r requirements.txt
+
+RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git $APPS_TARGET/clairvoyance && \
+        cd $APPS_TARGET/clairvoyance && \
+        python3 -m pip install -r requirements.txt && \
+    git clone --depth=1 https://github.com/dolevf/graphw00f.git $APPS_TARGET/graphw00f && \
+        ln -s $APPS_TARGET/graphw00f/main.py $APPS_TARGET/bin/graphw00f.py
+
 
 # wordlists
 RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
