@@ -14,7 +14,7 @@ RUN addgroup -g 9999 $MY_GROUP && \
     apk update && \
     apk add --no-cache sudo && \
     adduser $MY_USER wheel && \
-    echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel 
+    echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel && \
     apk add --no-cache ca-certificates curl wget nmap \
                        netcat-openbsd coreutils mandoc man-pages \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
