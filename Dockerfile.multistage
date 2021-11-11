@@ -126,7 +126,43 @@ RUN python2 -m ensurepip && \
         pip2 install -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
     git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susanoo && \
-        cd $APPS_TARGET/susanoo && pip3 install -r requirements.txt
+        cd $APPS_TARGET/susanoo && pip3 install -r requirements.txt && \
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
+        echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
+        source $HOME/.cargo/env && \
+        rustup component add rustfmt && \
+        rustup component add clippy && \
+    git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum $APPS_TARGET/graphql-path-enum && \
+        cd $APPS_TARGET/graphql-path-enum && \
+        cargo build && \
+    git clone --recursive --depth=1 https://github.com/trailofbits/protofuzz.git $APPS_TARGET/protofuzz && \
+        cd $APPS_TARGET/protofuzz && \
+        python3 setup.py install --prefix=$MY_HOME/.local && \
+    git clone --depth=1 https://github.com/ticarpi/jwt_tool $APPS_TARGET/jwt_tool && \
+        cd $APPS_TARGET/jwt_tool && \
+        python3 -m pip install --user termcolor cprint pycryptodomex requests && \
+    npm install jwt-cracker && \
+    git clone --depth=1 https://github.com/AresS31/jwtcat $APPS_TARGET/jwtcat && \
+        cd $APPS_TARGET/jwtcat && \
+        python3 -m pip install -r requirements.txt && \
+    git clone --depth=1 https://github.com/silentsignal/rsa_sign2n $APPS_TARGET/rsa_sig2n && \
+    python3 -m pip install --user jwtxploiter && \
+    python3 -m pip install --user apicheck-package-manager && \
+        mkdir -p $HOME/.apicheck_manager/bin && \
+        echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
+        export PATH="$HOME/.apicheck_manager/bin:$PATH" && \
+        acp install jwt-checker && \
+        acp install acurl && \
+        acp install oas-checker && \
+        acp install send-to-proxy && \
+        acp install apicheck-curl && \
+        acp install sensitive-data && \
+        acp install replay && \
+        acp install openapiv3-lint && \
+        acp install openapiv2-lint && \
+        acp install oas-checker && \
+     python3 -m pip install regexploit
+
 
 # wordlists
 RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
