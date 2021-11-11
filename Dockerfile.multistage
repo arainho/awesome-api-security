@@ -25,11 +25,11 @@ RUN addgroup -g 9999 $MY_GROUP && \
     unlink /usr/bin/pip && \
     unlink /usr/bin/python && \
     ln -s /usr/bin/pip3 /usr/bin/pip && \
-    ln -s /usr/bin/python3 /usr/bin/python
+    ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools && \
     apk add --no-cache --update nodejs npm && \
     apk add --no-cache --update libffi-dev python3-dev && \
-    apk add --no-cache --update wireshark xxd protoc && \
+    apk add --no-cache --update wireshark xxd protoc
     
 
 USER $MY_USER
