@@ -68,7 +68,7 @@ RUN go install github.com/OJ/gobuster/v3@latest && \
         python3 -m pip install --user -r requirements.txt && \
     git clone --depth=1 https://github.com/mseclab/PyJFuzz.git $APPS_TARGET/PyJFuzz && \
         cd $APPS_TARGET/PyJFuzz && \
-        python3 setup.py install --user --prefix=$MY_HOME && \
+        python3 setup.py install --user --prefix=$HOME/.local && \
     git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git $APPS_TARGET/TnT-Fuzzer && \
         cd $APPS_TARGET/TnT-Fuzzer && \
         python3 setup.py install  --user --prefix=$MY_HOME && \
