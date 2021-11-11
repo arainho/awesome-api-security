@@ -90,6 +90,37 @@ RUN cd $MY_HOME/extensions && \
     git clone --depth=1 https://github.com/PortSwigger/json-web-token-attacker.git && \
     pip3 install json2paths
 
+# graphql
+RUN apk add --no-cache --update nodejs npm && \
+    npm install -g get-graphql-schema
+
+# traffic analysis
+RUN apk add --no-cache --update wireshark xxd protoc && \
+    python3 -m pip install --user pipx && \
+    pipx install mitmproxy && \
+    cd /usr/share/plugins && \
+        git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
+
+# android
+RUN pip3 install --user apkleaks
+
+# wayback machine
+RUN go get -u -v github.com/tomnomnom/waybackurls && \
+    GO111MODULE=on go get -u -v github.com/lc/gau
+
+# other
+RUN apk add --no-cache --update python2 && \
+    python2 -m ensurepip && \
+    python2 -m pip install --upgrade pip && \
+    unlink /usr/bin/pip && \
+    unlink /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip && \
+    ln -s /usr/bin/python3 /usr/bin/python && \
+    git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
+        cd /usr/local/Astra && \
+        pip2 install -r requirements.txt
+    go get -u -v github.com/bncrypted/apidor
+
 # wordlists
 RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"RUN curl -o $MY_HOME/wordlists/yassineaboukir-3203-common-api-endpoints.txt "https://gist.githubusercontent.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d/raw/3ea2b7175f2fcf8e6de835c72cb2b2048f73f847/List%2520of%2520API%2520endpoints%2520&%2520objects"  && \
     curl -o $MY_HOME/wordlists/danielmiessler-SecLists-swagger.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/swagger.txt" && \
