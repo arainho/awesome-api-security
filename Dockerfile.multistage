@@ -180,10 +180,10 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $APPS_TARG
         cd $APPS_TARGET/CeWL && \
         gem install bundler mime mime-types mini_exiftool nokogiri rubyzip spider && \
         chmod u+x ./cewl.rb && \
-        ln -s $APPS_TARGET/CeWL/cewl.rb $APPS_TARGET/bin/cewl.rb
+        ln -s $APPS_TARGET/CeWL/cewl.rb $APPS_TARGET/bin/cewl.rb && \
     git clone --depth=1 https://github.com/r3nt0n/bopscrk $APPS_TARGET/bopscrk && \
         cd $APPS_TARGET/bopscrk && \
-        python3 -m pip install -r requirements.txt
+        python3 -m pip install -r requirements.txt && \
     git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool $APPS_TARGET/automatic-api-attack-tool && \
         apk add --no-cache openjdk8-jre gradle && \
         cd $APPS_TARGET/automatic-api-attack-tool && \
