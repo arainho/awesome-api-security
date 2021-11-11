@@ -118,7 +118,7 @@ RUN apk add --no-cache --update python2 && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra /usr/local/Astra && \
         cd /usr/local/Astra && \
-        pip2 install -r requirements.txt
+        pip2 install -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor
 
 # wordlists
