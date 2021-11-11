@@ -8,7 +8,7 @@ ENV PATH="$MY_HOME/.local/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-### general
+##> general
 RUN addgroup -g 9999 $MY_GROUP && \
     adduser -u 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
     apk update && \
@@ -26,7 +26,7 @@ RUN addgroup -g 9999 $MY_GROUP && \
 
 USER $MY_USER
 
-### workdir
+##> workdir
 RUN mkdir -m 750 -p $MY_HOME/bin && \
     mkdir -m 750 -p $MY_HOME/plugins && \
     mkdir -m 750 -p $MY_HOME/wordlists && \
