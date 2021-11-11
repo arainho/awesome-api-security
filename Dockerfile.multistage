@@ -117,13 +117,7 @@ RUN go get -u -v github.com/tomnomnom/waybackurls && \
     GO111MODULE=on go get -u -v github.com/lc/gau
 
 # other
-RUN python2 -m ensurepip && \
-    python2 -m pip install --upgrade pip && \
-    unlink /usr/bin/pip && \
-    unlink /usr/bin/python && \
-    ln -s /usr/bin/pip3 /usr/bin/pip && \
-    ln -s /usr/bin/python3 /usr/bin/python && \
-    git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
+RUN git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
         cd APPS_TARGET/Astra && \
         pip2 install -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
