@@ -22,7 +22,9 @@ RUN addgroup -g 9999 $MY_GROUP && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     python3 -m pip install --upgrade pip setuptools && \
     apk add --no-cache --update nodejs npm && \
-    apk add --no-cache --update libffi-dev python3-dev
+    apk add --no-cache --update libffi-dev python3-dev && \
+    apk add --no-cache --update wireshark xxd protoc && \
+    apk add --no-cache --update python2
 
 USER $MY_USER
 
@@ -94,10 +96,9 @@ RUN cd $MY_HOME/extensions && \
 RUN npm install get-graphql-schema
 
 # traffic analysis
-RUN apk add --no-cache --update wireshark xxd protoc && \
-    python3 -m pip install --user pipx && \
+RUN python3 -m pip install --user pipx && \
     pipx install mitmproxy && \
-    cd /usr/share/plugins && \
+    cd $HOME/plugins && \
         git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
 # android
@@ -108,8 +109,7 @@ RUN go get -u -v github.com/tomnomnom/waybackurls && \
     GO111MODULE=on go get -u -v github.com/lc/gau
 
 # other
-RUN apk add --no-cache --update python2 && \
-    python2 -m ensurepip && \
+RUN python2 -m ensurepip && \
     python2 -m pip install --upgrade pip && \
     unlink /usr/bin/pip && \
     unlink /usr/bin/python && \
