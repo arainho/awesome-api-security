@@ -141,6 +141,7 @@ COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/extensions $MY_HOME/ex
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/templates $MY_HOME/templates
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/signatures $MY_HOME/signatures
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $APPS_TARGET $APPS_TARGET
+
 COPY --from=build-env /usr/local /usr/local
 COPY --from=build-env /usr/local/bin /usr/local/bin
 COPY --from=build-env /usr/local/share/man /usr/local/share/man
