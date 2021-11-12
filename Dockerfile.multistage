@@ -148,16 +148,18 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
         mkdir -p $HOME/.apicheck_manager/bin && \
         echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
         export PATH="$HOME/.apicheck_manager/bin:$PATH" && \
-        acp install jwt-checker && \
-        acp install acurl && \
-        acp install oas-checker && \
-        acp install send-to-proxy && \
-        acp install apicheck-curl && \
-        acp install sensitive-data && \
-        acp install replay && \
-        acp install openapiv3-lint && \
-        acp install openapiv2-lint && \
-        acp install oas-checker && \
+        #
+        # next lines require that /var/run/docker.sock is mounted
+        #acp install jwt-checker && \
+        #acp install acurl && \
+        #acp install oas-checker && \
+        #acp install send-to-proxy && \
+        #acp install apicheck-curl && \
+        #acp install sensitive-data && \
+        #acp install replay && \
+        #acp install openapiv3-lint && \
+        #acp install openapiv2-lint && \
+        #acp install oas-checker && \
      python3 -m pip install regexploit
 
 # build fail, skip for now
