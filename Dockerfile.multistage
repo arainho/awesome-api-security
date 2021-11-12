@@ -52,7 +52,7 @@ RUN python3 -m pip install --upgrade pipenv && \
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
     export PATH="$HOME/.rbenv/bin:$PATH && \
     echo export PATH="$HOME/.rbenv/bin:$PATH >> ~/.bashrc && \
-    export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+    export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH" && \
     cat << EOF >> ~/.bashrc \
     if which ruby >/dev/null && which gem >/dev/null; then \
         PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH" \
