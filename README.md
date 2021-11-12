@@ -8,7 +8,8 @@ This branch is dedicated to experimenting around automatic and manual flows rela
 Collect several wordlists and build a bundle.
 
 ## 2 - build docker image for api-security-toolbox
-The [api-security-toolbox](https://hub.docker.com/r/arainho/api-security-toolbox) is a swiss knife for API security testing.  
+The [api-security-toolbox](https://hub.docker.com/r/arainho/api-security-toolbox) is a swiss knife for API security testing. 
+This image is based on `Dockerfile`.
 
 The `Dockerfile.multistage` is a different version of api-security-toolbox with:
 - multi-stage build to save disk space
