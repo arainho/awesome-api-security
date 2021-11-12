@@ -6,11 +6,13 @@ on:
     paths:
      - 'Dockerfile.multistage'
      - '.dockerignore'
+     - '.github/workflows/docker-multistage-image.yml'
   pull_request:
     branches: [ dev ]
     paths:
      - 'Dockerfile.multistage'
      - '.dockerignore'
+     - '.github/workflows/docker-multistage-image.yml'
 
 jobs:
 
