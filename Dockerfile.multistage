@@ -75,7 +75,7 @@ RUN go install github.com/OJ/gobuster/v3@latest && \
     python3 -m pip install --user --upgrade arjun && \
     git clone --depth=1 https://github.com/devanshbatham/ParamSpider $APPS_TARGET/ParamSpider && \
         cd $APPS_TARGET/ParamSpider && \
-        python3 -m pip install --user -r requirements.txt && \
+        python3 -m pip install --user -r requirements.txt  --prefix=$MY_HOME/.local && \
     git clone --depth=1 https://github.com/mseclab/PyJFuzz.git $APPS_TARGET/PyJFuzz && \
         cd $APPS_TARGET/PyJFuzz && \
         python3 setup.py install --prefix=$HOME/.local && \
@@ -122,7 +122,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
         python2 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
         cd $APPS_TARGET/Astra && \
-        pip2 install -r requirements.txt && \
+        python2 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
     go get -u -v github.com/bncrypted/apidor && \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
         echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
@@ -141,7 +141,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
     npm install jwt-cracker && \
     git clone --depth=1 https://github.com/AresS31/jwtcat $APPS_TARGET/jwtcat && \
         cd $APPS_TARGET/jwtcat && \
-        python3 -m pip install -r requirements.txt && \
+        python3 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
     git clone --depth=1 https://github.com/silentsignal/rsa_sign2n $APPS_TARGET/rsa_sig2n && \
     python3 -m pip install --user jwtxploiter && \
     python3 -m pip install --user apicheck-package-manager && \
@@ -184,7 +184,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $APPS_TARG
         ln -s $APPS_TARGET/CeWL/cewl.rb $APPS_TARGET/bin/cewl.rb && \
     git clone --depth=1 https://github.com/r3nt0n/bopscrk $APPS_TARGET/bopscrk && \
         cd $APPS_TARGET/bopscrk && \
-        python3 -m pip install -r requirements.txt && \
+        python3 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
     git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool $APPS_TARGET/automatic-api-attack-tool && \
         apk add --no-cache openjdk8-jre gradle && \
         cd $APPS_TARGET/automatic-api-attack-tool && \
@@ -208,11 +208,11 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $APPS_TARG
 
 #RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner $APPS_TARGET/openapi_security_scanner && \
 #       cd $APPS_TARGET/openapi_security_scanner && \
-#       python3 -m pip install -r requirements.txt
+#       python3 -m pip install -r requirements.txt --prefix=$MY_HOME/.local 
 
 RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git $APPS_TARGET/clairvoyance && \
         cd $APPS_TARGET/clairvoyance && \
-        python3 -m pip install -r requirements.txt && \
+        python3 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
     git clone --depth=1 https://github.com/dolevf/graphw00f.git $APPS_TARGET/graphw00f && \
         ln -s $APPS_TARGET/graphw00f/main.py $APPS_TARGET/bin/graphw00f.py
 
