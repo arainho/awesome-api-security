@@ -9,6 +9,12 @@ Collect several wordlists and build a bundle.
 
 ## 2 - build docker image for api-security-toolbox
 The [api-security-toolbox](https://hub.docker.com/r/arainho/api-security-toolbox) is a swiss knife for API security testing.  
-Please note that builds are still failing and docker image is not published yet.
+
+The `Dockerfile.multistage` is a different version of api-security-toolbox with:
+- multi-stage build to save disk space
+- tools and utilities installed as normal user appuser
+- linux os utilities installed as root
+
+Please note that the docker images (Dockerfile, Dockerfile.multistage) are in alpha stage.
 
 
