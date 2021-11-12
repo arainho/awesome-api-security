@@ -1,3 +1,5 @@
+FROM golang:alpine3.14 AS build-env
+
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
