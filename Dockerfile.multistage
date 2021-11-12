@@ -117,14 +117,13 @@ RUN go get -u -v github.com/tomnomnom/waybackurls && \
     GO111MODULE=on go get -u -v github.com/lc/gau
 
 # other
-RUN git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
+RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susanoo && \
+        cd $APPS_TARGET/susanoo && \
+        python3 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
+    git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
         cd $APPS_TARGET/Astra && \
         pip2 install -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
-    git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susanoo && \
-        python3 -m pip install --user mongoengine==0.11.0 && \
-        cd $APPS_TARGET/susanoo && \
-        python3 -m pip install -r requirements.txt && \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
         echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
         source $HOME/.cargo/env && \
