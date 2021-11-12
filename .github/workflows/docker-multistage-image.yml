@@ -1,4 +1,4 @@
-name: "Docker multi-stage image"
+name: "CI - Docker multi-stage image"
 
 on:
   push:
