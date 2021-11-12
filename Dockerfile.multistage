@@ -177,8 +177,8 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
 #    cd $APPS_TARGET/racepwn && \
 #    ./build.sh
 
-RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $APPS_TARGET/race-the-web && \
-        curl -o $APPS_TARGET/bin/race-the-web_2.0.1_lin64.bin \
+RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/race-the-web && \
+        curl -o $MY_HOME/bin/race-the-web_2.0.1_lin64.bin \
              -L https://github.com/TheHackerDev/race-the-web/releases/download/2.0.1/race-the-web_2.0.1_lin64.bin && \
         chmod u+x $APPS_TARGET/bin/race-the-web_2.0.1_lin64.bin && \
     gem install API_Fuzzer && \
