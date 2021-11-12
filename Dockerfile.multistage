@@ -4,7 +4,7 @@ ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
 ENV APPS_TARGET="$MY_HOME/apps"
-ENV PATH="$MY_HOME/.local/bin:$PATH"
+ENV PATH="$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$HOME/.apicheck_manager/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
@@ -18,8 +18,7 @@ RUN addgroup -g 9999 $MY_GROUP && \
     apk add --no-cache ca-certificates curl wget nmap \
                        netcat-openbsd coreutils mandoc man-pages \
                        bind-tools git less openssh build-base libzip-dev zip bash && \
-    apk add --no-cache python3 py3-pip && \
-    apk add --no-cache --update python2 && \
+    apk add --no-cache --update python2 python3 py3-pip && \
     python2 -m ensurepip && \
     python2 -m pip install --upgrade pip && \
     unlink /usr/bin/pip && \
@@ -245,7 +244,7 @@ ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
 ENV APPS_TARGET="$MY_HOME/apps"
-ENV PATH="$MY_HOME/.local/bin:$PATH"
+ENV PATH="$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$HOME/.apicheck_manager/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
