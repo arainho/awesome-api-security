@@ -36,5 +36,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: arainho/api-security-toolbox:alpha
+          tags: arainho/api-security-toolbox:multistage
           file: Dockerfile.multistage
