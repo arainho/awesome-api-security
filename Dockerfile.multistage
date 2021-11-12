@@ -50,7 +50,7 @@ RUN python3 -m pip install --upgrade pipenv && \
     python2 -m pip install --user virtualenv && \
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
     export PATH="$HOME/.rbenv/bin:$PATH && \
-    echo export PATH="$HOME/.rbenv/bin:$PATH >> ~/.bashrc
+    echo export PATH="$HOME/.rbenv/bin:$PATH >> ~/.bashrc && \
     npm install yarn && \
     export PATH="$PATH:`yarn global bin`" && \
     echo export PATH="$PATH:`yarn global bin`" >> ~/.bashrc
