@@ -180,7 +180,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
 RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/race-the-web && \
         curl -o $MY_HOME/bin/race-the-web_2.0.1_lin64.bin \
              -L https://github.com/TheHackerDev/race-the-web/releases/download/2.0.1/race-the-web_2.0.1_lin64.bin && \
-        chmod u+x $APPS_TARGET/bin/race-the-web_2.0.1_lin64.bin && \
+        chmod u+x $MY_HOME/bin/race-the-web_2.0.1_lin64.bin && \
     gem install API_Fuzzer && \
     git clone --depth=1 https://github.com/szski/shapeshifter.git $APPS_TARGET/shapeshifter && \
         cd $APPS_TARGET/shapeshifter/shapeshifter && \
