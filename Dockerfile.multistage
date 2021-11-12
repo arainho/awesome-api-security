@@ -119,7 +119,7 @@ RUN go get -u -v github.com/tomnomnom/waybackurls && \
 # other
 RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susanoo && \
         cd $APPS_TARGET/susanoo && \
-        python3 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
+        python2 -m pip install -r requirements.txt --prefix=$MY_HOME/.local && \
     git clone --depth=1  https://github.com/flipkart-incubator/Astra $APPS_TARGET/Astra && \
         cd $APPS_TARGET/Astra && \
         pip2 install -r requirements.txt && \
