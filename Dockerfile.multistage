@@ -124,7 +124,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
         python2 -m pip install --user -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
-        echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc && \
+        #export PATH="$HOME/.cargo/bin:$PATH" && \
         source $HOME/.cargo/env && \
         rustup component add rustfmt && \
         rustup component add clippy && \
@@ -145,7 +145,6 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
     python3 -m pip install --user jwtxploiter && \
     python3 -m pip install --user apicheck-package-manager && \
         mkdir -p $HOME/.apicheck_manager/bin && \
-        echo 'export PATH="$HOME/.apicheck_manager/bin:$PATH"' >> ~/.bashrc && \
         export PATH="$HOME/.apicheck_manager/bin:$PATH" && \
         #
         # next lines require that /var/run/docker.sock is mounted
