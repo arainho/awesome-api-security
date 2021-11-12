@@ -1,10 +1,8 @@
-FROM golang:alpine3.14 AS build-env
-
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
 ENV APPS_TARGET="$MY_HOME/apps"
-ENV PATH="$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$HOME/.apicheck_manager/bin:$PATH"
+ENV PATH="$HOME/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.apicheck_manager/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
@@ -77,7 +75,7 @@ RUN go install github.com/OJ/gobuster/v3@latest && \
         python3 -m pip install --user -r requirements.txt && \
     git clone --depth=1 https://github.com/mseclab/PyJFuzz.git $APPS_TARGET/PyJFuzz && \
         cd $APPS_TARGET/PyJFuzz && \
-        python3 setup.py install --prefix=$HOME/.local && \
+        python3 setup.py install --prefix=$MY_HOME/.local && \
     git clone --depth=1 https://github.com/Teebytes/TnT-Fuzzer.git $APPS_TARGET/TnT-Fuzzer && \
         cd $APPS_TARGET/TnT-Fuzzer && \
         python3 setup.py install --prefix=$MY_HOME/.local && \
@@ -105,7 +103,7 @@ RUN npm install get-graphql-schema
 # traffic analysis
 RUN python3 -m pip install --user pipx && \
     pipx install mitmproxy && \
-    cd $HOME/plugins && \
+    cd $MY_HOME/plugins && \
         git clone --depth=1  https://github.com/128technology/protobuf_dissector.git
 
 # android
@@ -124,8 +122,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
         python2 -m pip install --user -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
-        #export PATH="$HOME/.cargo/bin:$PATH" && \
-        source $HOME/.cargo/env && \
+        source $MY_HOME/.cargo/env && \
         rustup component add rustfmt && \
         rustup component add clippy && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum $APPS_TARGET/graphql-path-enum && \
@@ -144,7 +141,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
     git clone --depth=1 https://github.com/silentsignal/rsa_sign2n $APPS_TARGET/rsa_sig2n && \
     python3 -m pip install --user jwtxploiter && \
     python3 -m pip install --user apicheck-package-manager && \
-        mkdir -p $HOME/.apicheck_manager/bin && \
+        mkdir -p $MY_HOME/.apicheck_manager/bin && \
         export PATH="$HOME/.apicheck_manager/bin:$PATH" && \
         #
         # next lines require that /var/run/docker.sock is mounted
@@ -243,7 +240,7 @@ ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
 ENV APPS_TARGET="$MY_HOME/apps"
-ENV PATH="$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$HOME/.apicheck_manager/bin:$PATH"
+ENV PATH="$HOME/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.apicheck_manager/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
