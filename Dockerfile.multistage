@@ -181,7 +181,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
         curl -o $MY_HOME/bin/race-the-web_2.0.1_lin64.bin \
              -L https://github.com/TheHackerDev/race-the-web/releases/download/2.0.1/race-the-web_2.0.1_lin64.bin && \
         chmod u+x $MY_HOME/bin/race-the-web_2.0.1_lin64.bin && \
-    gem install API_Fuzzer && \
+    gem install --user-install API_Fuzzer && \
     git clone --depth=1 https://github.com/szski/shapeshifter.git $APPS_TARGET/shapeshifter && \
         cd $APPS_TARGET/shapeshifter/shapeshifter && \
         python3 -m pip install --user . && \
@@ -191,7 +191,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
     git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap $APPS_TARGET/GraphQLmap && \
     git clone --depth=1 https://github.com/digininja/CeWL $APPS_TARGET/CeWL && \
         cd $APPS_TARGET/CeWL && \
-        gem install bundler mime mime-types mini_exiftool nokogiri rubyzip spider && \
+        gem install --user-install bundler mime mime-types mini_exiftool nokogiri rubyzip spider && \
         chmod u+x ./cewl.rb && \
         ln -s $APPS_TARGET/CeWL/cewl.rb $APPS_TARGET/bin/cewl.rb && \
     git clone --depth=1 https://github.com/r3nt0n/bopscrk $APPS_TARGET/bopscrk && \
