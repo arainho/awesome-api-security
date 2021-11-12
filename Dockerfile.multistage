@@ -41,7 +41,18 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
     mkdir -m 750 -p $MY_HOME/extensions && \
     mkdir -m 750 -p $MY_HOME/templates && \
     mkdir -m 750 -p $MY_HOME/signatures
-  
+
+# languages managers for versions, envs, pkg's 
+RUN python3 -m pip install --upgrade pipenv && \
+    python3 -m pip install --user virtualenv && \
+    python2 -m pip install --user virtualenv && \
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
+    export PATH="$HOME/.rbenv/bin:$PATH && \
+    echo export PATH="$HOME/.rbenv/bin:$PATH >> ~/.bashrc
+    npm install yarn && \
+    export PATH="$PATH:`yarn global bin`" && \
+    echo export PATH="$PATH:`yarn global bin`" >> ~/.bashrc
+
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
         mkdir -p $MY_HOME/signatures/eth0izzle-signatures/ && \
