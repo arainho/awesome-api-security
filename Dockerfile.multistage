@@ -188,6 +188,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
         cd $APPS_TARGET/shapeshifter/shapeshifter && \
         python3 -m pip install --user . && \
     git clone --depth 1 https://github.com/drwetter/testssl.sh.git $APPS_TARGET/testssl.sh && \
+        chmod +x $APPS_TARGET/testssl.sh/testssl.sh && \
         ln -s $APPS_TARGET/testssl.sh/testssl.sh $MY_HOME/bin/testssl.sh && \
     git clone --depth=1 https://github.com/assetnote/batchql.git $APPS_TARGET/batchql && \
     git clone --depth=1 https://github.com/swisskyrepo/GraphQLmap $APPS_TARGET/GraphQLmap && \
