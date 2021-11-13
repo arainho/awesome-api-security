@@ -20,7 +20,7 @@ services:
   sensitive-data:
     image: bbvalabs/sensitive-data
   oas-checker:
-    image: bbvalabs/oas-checker
+    image: bbvalabs/oas-check
   openapiv2-lint:
     image: bbvalabs/openapiv2-lint
   openapiv3-lint:
