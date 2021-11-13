@@ -1,5 +1,7 @@
 /drafts
 /wordlists
+Dockerfile
+Dockerfile.multistage
 LICENSE
 README.md
 collect_wordlists.sh
