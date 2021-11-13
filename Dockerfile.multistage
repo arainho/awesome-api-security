@@ -196,7 +196,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
         cd $APPS_TARGET/CeWL && \
         gem install --user-install bundler mime mime-types mini_exiftool nokogiri rubyzip spider && \
         chmod u+x ./cewl.rb && \
-        ln -s $APPS_TARGET/CeWL/cewl.rb $APPS_TARGET/bin/cewl.rb && \
+        ln -s $APPS_TARGET/CeWL/cewl.rb $MY_HOME/bin/cewl.rb && \
     git clone --depth=1 https://github.com/r3nt0n/bopscrk $APPS_TARGET/bopscrk && \
         cd $APPS_TARGET/bopscrk && \
         python3 -m pip install --user -r requirements.txt && \
@@ -207,7 +207,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
         cp -av src/main/resources/runnable.sh . && \
         cat runnable.sh ./build/libs/imperva-api-attack-tool.jar > api-attack.sh && \
         chmod +x api-attack.sh && \
-        ln -s $APPS_TARGET/automatic-api-attack-tool/api-attack.sh $APPS_TARGET/bin/api-attack.sh
+        ln -s $APPS_TARGET/automatic-api-attack-tool/api-attack.sh $MY_HOME/bin/api-attack.sh
 
 #RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer $APPS_TARGET/restler-fuzzer && \
 #       apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
@@ -219,7 +219,7 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
 #       mkdir -p $APPS_TARGET/restler-fuzzer/restler_bin && \
 #       cd $APPS_TARGET/restler-fuzzer && \
 #       python3 ./build-restler.py --dest_dir $APPS_TARGET/restler-fuzzer/restler_bin && \
-#       ln -s $APPS_TARGET/restler-fuzzer/restler_bin/xxx.py $APPS_TARGET/bin/restler_bin
+#       ln -s $APPS_TARGET/restler-fuzzer/restler_bin/xxx.py $MY_HOME/bin/restler_bin
 
 #RUN git clone --depth=1 https://github.com/ngalongc/openapi_security_scanner $APPS_TARGET/openapi_security_scanner && \
 #       cd $APPS_TARGET/openapi_security_scanner && \
@@ -229,7 +229,7 @@ RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git $APPS_T
         cd $APPS_TARGET/clairvoyance && \
         python3 -m pip install --user -r requirements.txt && \
     git clone --depth=1 https://github.com/dolevf/graphw00f.git $APPS_TARGET/graphw00f && \
-        ln -s $APPS_TARGET/graphw00f/main.py $APPS_TARGET/bin/graphw00f.py
+        ln -s $APPS_TARGET/graphw00f/main.py $MY_HOME/bin/graphw00f.py
 
 
 # wordlists
