@@ -17,9 +17,10 @@ RUN addgroup -g 9999 $MY_GROUP && \
     adduser $MY_USER wheel && \
     echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel && \
     apk add --no-cache bash zsh fish \
-                       ca-certificates curl wget nmap \
-                       netcat-openbsd coreutils mandoc man-pages \
-                       bind-tools git less openssh build-base libzip-dev zip && \
+                       bind-tools openssh git \
+                       netcat-openbsd curl wget nmap \
+                       mandoc man-pages less less-doc \
+                       ca-certificates coreutils build-base libzip-dev zip && \
     apk add --no-cache --update python2 python3 py3-pip && \
     python2 -m ensurepip && \
     python2 -m pip install --upgrade pip && \
@@ -297,6 +298,6 @@ COPY --chown=$MY_USER:$MY_GROUP --from=build-env $APPS_TARGET $APPS_TARGET
 
 COPY --from=build-env /usr/local /usr/local
 COPY --from=build-env /usr/local/bin /usr/local/bin
-COPY --from=build-env /usr/local/share/man /usr/local/share/man
+#COPY --from=build-env /usr/local/share/man /usr/local/share/man
 
 CMD ["/bin/bash"]
