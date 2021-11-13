@@ -1,0 +1,20 @@
+- id: core-001
+  description: Find 'password' keyword in flow data
+  regex: '([pP][aA][sS][sS][wW][oO][rR][dD])'
+  severity: Medium  # Allowed values: Low, Medium, High
+  searchIn: All  # Allowed values: Response, Request, Headers, All
+- id: core-002
+  description: HTTP Headers contains information about backend
+  regex: '([Xx]-[Pp][Oo][Ww][Ee][Rr][Ee][Dd]-[Bb][Yy][\s]*:)'
+  severity: Low  # Allowed values: Low, Medium, High
+  searchIn: Headers  # Allowed values: Response, Request, Headers, All
+- id: core-003
+  description: HTTP Headers contains information about running server
+  regex: '([Ss][Ee][Rr][Vv][Ee][Rr][\s]*:)'
+  severity: Low  # Allowed values: Low, Medium, High
+  searchIn: Headers  # Allowed values: Response, Request, Headers, All
+- id: core-004
+  description: HTTP Headers reveals private IP address in headers
+  regex: '(^192\.168\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])$)|(^172\.([1][6-9]|[2][0-9]|[3][0-1])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])$)|(^10\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])$)'
+  severity: Medium  # Allowed values: Low, Medium, High
+  searchIn: Headers  # Allowed values: Response, Request, Headers, All

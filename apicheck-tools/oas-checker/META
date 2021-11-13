@@ -1,0 +1,7 @@
+name = oas-check
+display-name = OpenAPI v3 checker
+short-command = oas3-c
+version = 1.0.0
+description = Check the endpoint specification provided using OpenAPI v3 spec
+home = https://github.com/BBVA/apicheck
+author = Roberto Polli

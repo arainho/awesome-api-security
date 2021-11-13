@@ -1,0 +1,2 @@
+python-pipes
+requests[socks]

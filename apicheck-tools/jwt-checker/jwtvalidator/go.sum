@@ -1,0 +1,5 @@
+github.com/BBVA/apicheck v0.0.0-20200511114039-5edd14b6122b h1:GX/wSyGwU2FpJRTUtSSsFhTBvmg2+P1C3wRNZn+aYhw=
+github.com/cristalhq/jwt v1.2.0 h1:fHmMkFJvEbS4o04aQP8BmtJg7fqkYvd7r8er3sUdS4Q=
+github.com/cristalhq/jwt v1.2.0/go.mod h1:QQFazsDzoqeucUEEV0h16uPTZXBAi2SVA8cQ9JEDuFw=
+github.com/cristalhq/jwt/v2 v2.0.0 h1:CxleHxkZQQ5J0siUQ2gwZrhAysmh8Ddh/R06AzCiYao=
+github.com/cristalhq/jwt/v2 v2.0.0/go.mod h1:nQT19GqJbrWubmI+ULE8PYsR1GCbwI5hAg1nG+9AbTg=

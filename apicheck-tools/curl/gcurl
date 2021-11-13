@@ -1,0 +1,4 @@
+#!/bin/bash
+
+curl --silent --http1.1 --trace >(python gurl/__main__.py | jq -c) "$@" > /dev/null
+wait

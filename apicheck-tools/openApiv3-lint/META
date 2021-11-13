@@ -1,0 +1,7 @@
+name = openapiv3-lint
+display-name = OpenAPI v3 Linter
+short-command = oav3l
+version = 1.0.0
+description = Lint the endpoint specification provided using OpenAPI v3 spec
+home = https://github.com/BBVA/apicheck
+author = BBVA Labs Security

@@ -1,0 +1,4 @@
+sanic
+pyyaml
+requests
+python-pipes

@@ -1,0 +1,7 @@
+name = jwt-checker
+display-name = JWT token validator
+short-command = jwchk
+version = 1.0.0
+description = Validates issued JWT tokens to check for common pitfalls
+home = https://github.com/BBVA/apicheck
+author = BBVA Labs Security
