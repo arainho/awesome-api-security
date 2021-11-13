@@ -251,7 +251,8 @@ RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.gi
 #    git clone --depth=1  https://github.com/assetnote/commonspeak2-wordlists.git $MY_HOME/wordlists/commonspeak2-wordlists  # (156M)
 
 
-FROM golang:alpine3.14
+
+FROM golang:alpine3.14 AS build-env
 LABEL org.opencontainers.image.authors="github.com/arainho"
 
 ENV MY_USER="appuser"
@@ -262,20 +263,33 @@ ENV PATH="$MY_HOME/go/bin:$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$MY_HOME/.apic
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-RUN addgroup --gid 9999 $MY_GROUP && \
-    adduser --uid 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
-    mkdir -m 750 -p $MY_HOME/plugins && \
-    mkdir -m 750 -p $MY_HOME/wordlists && \
-    mkdir -m 750 -p $MY_HOME/extensions && \
-    mkdir -m 750 -p $MY_HOME/templates && \
-    mkdir -m 750 -p $MY_HOME/signatures && \
-    chown -Rv $MY_USER:$MY_GROUP -- $MY_HOME && \
+RUN addgroup -g 9999 $MY_GROUP && \
+    adduser -u 9999 -D -G $MY_GROUP -h $MY_HOME $MY_USER && \
     apk update && \
-    apk add --no-cache ca-certificates curl wget nmap netcat-openbsd coreutils \
-                       bind-tools git less openssh build-base libzip-dev zip bash && \
-    apk add --no-cache python3 py3-pip && \
+    apk add --no-cache sudo && \
+    adduser $MY_USER wheel && \
+    echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel && \
+    apk add --no-cache bash zsh fish \
+                       bind-tools openssh git \
+                       netcat-openbsd curl wget nmap \
+                       mandoc man-pages less less-doc \
+                       ca-certificates coreutils build-base libzip-dev zip && \
+    apk add --no-cache --update python2 python3 py3-pip && \
+    python2 -m ensurepip && \
+    python2 -m pip install --upgrade pip && \
+    unlink /usr/bin/pip && \
+    unlink /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip && \
     ln -s /usr/bin/python3 /usr/bin/python && \
-    python3 -m pip install --upgrade pip setuptools
+    python3 -m pip install --upgrade pip setuptools && \
+    apk add --no-cache --update nodejs npm && \
+    apk add --no-cache --update libffi-dev python3-dev && \
+    apk add --no-cache --update wireshark xxd protoc && \
+    apk add --no-cache --update ruby ruby-dev && \
+    apk add --no-cache clang gcc libevent libevent-dev openssl openssl-dev openssl-libs-static cmake wget unzip && \
+    apk add --no-cache openjdk8-jre gradle && \
+    apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
+    apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing
 
 USER $MY_USER
 
