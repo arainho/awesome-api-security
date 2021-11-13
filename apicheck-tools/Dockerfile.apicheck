@@ -1,0 +1,105 @@
+# acurl
+FROM python:3.8.3 AS acurl
+WORKDIR /app
+COPY curl /app
+RUN python -m venv /venv
+ENV PATH="/venv/bin:$PATH"
+RUN pip install -U pip && pip install -r requirements.txt && pip install .
+
+# jwt-checker
+FROM golang:1.14.2-buster AS jwt-checker
+RUN apt update && apt upgrade -y
+WORKDIR /app
+COPY jwt-checker/jwtvalidator/ /app
+RUN go test ./... && \
+    go build -o jwt-checker
+    
+# proxy
+FROM mitmproxy/mitmproxy AS proxy
+COPY ./proxy/certificates /data/certificates
+COPY ./proxy/addons /addons
+COPY ./proxy/apicheck_proxy.sh /usr/local/bin/apicheck_proxy
+RUN chmod +x /usr/local/bin/apicheck_proxy
+
+# replay
+FROM node:14-alpine AS replay
+WORKDIR /app
+COPY ./replay /app
+RUN npm install && npm run build && npm install -g
+RUN npm prune --production
+
+# send-to-proxy
+FROM python:3.8-alpine AS base
+RUN apk update && \
+    apk upgrade && \
+    apk --no-cache --update add openssl ca-certificates
+FROM base AS send-to-proxy
+RUN apk add --no-cache build-base && \
+    python -m pip install --no-cache-dir -U pip wheel
+COPY ./send-to-proxy /app/
+RUN python -m pip wheel --no-cache-dir --wheel-dir=/root/wheels -r /app/requirements.txt && \
+    python -m pip wheel --no-cache-dir --wheel-dir=/root/wheels /app/
+
+# sensitive-data
+FROM python:3.8-alpine as base-sd
+RUN apk update && \
+    apk upgrade && \
+    apk --no-cache --update add openssl ca-certificates
+FROM base-sd as builder-sd
+RUN apk add --no-cache build-base gcc musl-dev python3-dev libffi-dev openssl-dev libcurl curl-dev && \
+    python -m pip install --no-cache-dir -U pip wheel
+COPY ./sensitive-data /app/
+RUN python -m pip wheel --no-cache-dir --wheel-dir=/root/wheels -r /app/requirements.txt
+FROM builder-sd as sensitive-data
+RUN python -m pip wheel --no-cache-dir --wheel-dir=/root/wheels -f /root/wheels /app/
+
+# oas-checker AS oas-checker
+FROM node:14.11.0-alpine3.12
+RUN apk update && \
+    apk upgrade && \
+    npm install -g @stoplight/spectral@^5.7.2
+COPY ./oas-checker/spectral.yml /app/.spectral.yml
+COPY ./oas-checker/linter.sh /app/bin
+
+# openApiv2-lint 
+FROM node:14.0.0-alpine3.11 AS openapiv2-lint
+RUN apk update && \
+    apk upgrade && \
+    npm install --ignore-scripts -g oval
+COPY ./tools-edge/openApiv2-lint/linter.sh /app/bin/openapiv2-lint.sh
+
+# openApiv3-lint
+FROM node:14.0.0-alpine3.11 AS openapiv3-lint
+RUN apk update && \
+    apk upgrade && \
+    npm install -g speccy
+COPY ./tools-edge/openApiv3-lint/linter.sh /app/bin/openapiv3-lint.sh
+
+
+# final
+FROM alpine:3.11.6
+RUN apk update && apk --no-cache add curl bash jq python3 && \
+    test -d bin || mkdir bin
+    test -d app || mkdir app
+COPY --from=acurl /venv /venv
+COPY --from=jwt-checker /jwt-checker .
+COPY --from=build /jwtvalidator/jwt-checker .
+COPY --from=proxy /proxy .
+COPY --from=replay /replay .
+COPY --from=send-to-proxy /root/wheels /root/wheels
+COPY --from=sensitive-data /root/wheels /root/wheels
+COPY --from=oas-checker /.spectral.yml /.spectral.yml
+COPY --from=oas-checker /linter.sh .
+COPY --from=openapiv2-lint ./tools-edge/openApiv2-lint/linter.sh .
+COPY --from=openapiv3-lint ./tools-edge/openApiv3-lint/linter.sh .
+
+
+ENV PATH="/usr/local/bin:$HOME/bin:/venv/bin:$PATH"
+WORKDIR /app
+COPY . /app
+RUN chmod +x gcurl && \
+    python -m pip install --no-cache --no-index /root/wheels/* && \
+    rm -rf /root/wheels
+
+EXPOSE 8080
+ENTRYPOINT ["/bin/bash"]
