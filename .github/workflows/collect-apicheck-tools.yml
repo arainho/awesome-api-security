@@ -29,6 +29,7 @@ jobs:
       - name: Run git clone
         run: |
           git clone --depth=1 https://github.com/BBVA/apicheck.git apicheck
+          test -d apicheck-tools || mkdir -- apicheck-tools
           mv apicheck/tools/* apicheck-tools/
           mv apicheck/tools-edge/* apicheck-tools/
           rm -rfv -- apicheck/
