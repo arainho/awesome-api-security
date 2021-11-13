@@ -28,7 +28,7 @@ jobs:
       # Clone APICheck repository
       - name: Run git clone
         run: |
-          rm -rfv -- apicheck-tools/
+          rm -rfv -- apicheck-tools/{curl,jwt-checker,oas-checker,openApiv2-lint,openApiv3-lint,proxy,replay,send-to-proxy,sensitive-data}
           git clone --depth=1 https://github.com/BBVA/apicheck.git apicheck
           test -d apicheck-tools || mkdir -- apicheck-tools
           mv apicheck/tools/* apicheck-tools/
