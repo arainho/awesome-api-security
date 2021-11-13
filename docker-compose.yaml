@@ -19,3 +19,8 @@ services:
     image: bbvalabs/send-to-proxy
   sensitive-data:
     image: bbvalabs/sensitive-data
+  openapiv2-lint:
+    image: bbvalabs/openapiv2-lint
+  openapiv3-lint:
+    image: bbvalabs/openapiv3-lint
+  
