@@ -1,4 +1,5 @@
-FROM golang:alpine3.14 AS build-env
+# golang:alpine3.14
+FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6c6f
 LABEL org.opencontainers.image.authors="github.com/arainho"
 
 ENV MY_USER="appuser"
@@ -252,7 +253,7 @@ RUN curl -o $MY_HOME/wordlists/common-api-endpoints-mazen160.txt "https://raw.gi
 
 
 
-FROM golang:alpine3.14 AS build-env
+FROM golang@sha256:5ce2785c82a96349131913879a603fc44d9c10d438f61bba84ee6a1ef03f6c6f AS build-env
 LABEL org.opencontainers.image.authors="github.com/arainho"
 
 ENV MY_USER="appuser"
