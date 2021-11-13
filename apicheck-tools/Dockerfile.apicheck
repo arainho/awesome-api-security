@@ -1,0 +1,19 @@
+
+FROM python:3.8.3 as acurl
+WORKDIR /app
+COPY curl /app
+RUN python -m venv /venv
+ENV PATH="/venv/bin:$PATH"
+RUN pip install -U pip && pip install -r requirements.txt && pip install .
+
+FROM python:3.8.3-alpine
+RUN apk update && apk --no-cache add curl bash jq
+COPY --from=acurl /venv /venv
+
+ENV PATH="/venv/bin:$PATH"
+WORKDIR /app
+
+COPY /curl /app
+RUN chmod +x gcurl
+
+ENTRYPOINT ["/app/gcurl"]
