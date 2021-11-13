@@ -33,7 +33,9 @@ RUN addgroup -g 9999 $MY_GROUP && \
     apk add --no-cache --update wireshark xxd protoc && \
     apk add --no-cache --update ruby ruby-dev && \
     apk add --no-cache clang gcc libevent libevent-dev openssl openssl-dev openssl-libs-static cmake wget unzip
-    
+    apk add --no-cache openjdk8-jre gradle && \
+    apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
+    apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
 
 USER $MY_USER
 
@@ -201,7 +203,6 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
         cd $APPS_TARGET/bopscrk && \
         python3 -m pip install --user -r requirements.txt && \
     git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool $APPS_TARGET/automatic-api-attack-tool && \
-        apk add --no-cache openjdk8-jre gradle && \
         cd $APPS_TARGET/automatic-api-attack-tool && \
         ./gradlew build && \
         cp -av src/main/resources/runnable.sh . && \
@@ -210,8 +211,6 @@ RUN git clone --depth=1  https://github.com/TheHackerDev/race-the-web $MY_HOME/r
         ln -s $APPS_TARGET/automatic-api-attack-tool/api-attack.sh $MY_HOME/bin/api-attack.sh
 
 #RUN git clone --depth=1 https://github.com/microsoft/restler-fuzzer $APPS_TARGET/restler-fuzzer && \
-#       apk add --no-cache bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib && \
-#       apk add --no-cache libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
 #       curl -L -o $APPS_TARGET/restler-fuzzer/dotnet-install.sh https://dot.net/v1/dotnet-install.sh && \
 #       cd $APPS_TARGET/restler-fuzzer && \APPS_TARGET/Astra
 #       chmod u+x ./dotnet-install.sh && \
