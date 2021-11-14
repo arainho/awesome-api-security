@@ -50,7 +50,7 @@ RUN mkdir -m 750 -p $MY_HOME/bin && \
     mkdir -m 750 -p $MY_HOME/templates && \
     mkdir -m 750 -p $MY_HOME/signatures
 
-# languages managers for versions, envs, pkg's 
+# virtual envs, pkg's and versions managers
 RUN python3 -m pip install --upgrade pipenv && \
     python3 -m pip install --user virtualenv && \
     python2 -m pip install --user virtualenv && \
@@ -62,6 +62,10 @@ RUN python3 -m pip install --upgrade pipenv && \
     npm install yarn && \
     export PATH="$PATH:$(yarn global bin)" && \
     echo 'if which yarn >/dev/null; then echo export PATH="$PATH:$(yarn global bin)"; fi' >> ~/.bashrc
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
+    source $MY_HOME/.cargo/env && \
+    rustup component add rustfmt && \
+    rustup component add clippy
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
@@ -143,10 +147,6 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
         cd $APPS_TARGET/Astra && \
         python2 -m pip install --user -r requirements.txt && \
     go get -u -v github.com/bncrypted/apidor && \
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
-        source $MY_HOME/.cargo/env && \
-        rustup component add rustfmt && \
-        rustup component add clippy && \
     git clone --depth=1 https://gitlab.com/dee-see/graphql-path-enum $APPS_TARGET/graphql-path-enum && \
         cd $APPS_TARGET/graphql-path-enum && \
         cargo build && \
@@ -177,7 +177,7 @@ RUN  git clone --depth=1 https://github.com/ant4g0nist/susanoo $APPS_TARGET/susa
         #acp install openapiv3-lint && \
         #acp install openapiv2-lint && \
         #acp install oas-checker && \
-     python3 -m pip install regexploit
+     python3 -m pip install --user regexploit
 
 # build fail, skip for now
 #RUN git clone --depth=1 https://github.com/racepwn/racepwn $APPS_TARGET/racepwn && \
@@ -302,6 +302,23 @@ RUN mkdir -m 750 -p $MY_HOME/plugins && \
     mkdir -m 750 -p $MY_HOME/extensions && \
     mkdir -m 750 -p $MY_HOME/templates && \
     mkdir -m 750 -p $MY_HOME/signatures
+
+# virtual envs, pkg's and versions managers
+RUN python3 -m pip install --upgrade pipenv && \
+    python3 -m pip install --user virtualenv && \
+    python2 -m pip install --user virtualenv && \
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
+    export PATH="$HOME/.rbenv/bin:$PATH && \
+    echo export PATH="$HOME/.rbenv/bin:$PATH >> ~/.bashrc && \
+    export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH" && \
+    echo 'if which ruby >/dev/null && which gem >/dev/null; then PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"; fi' >> ~/.bashrc && \
+    npm install yarn && \
+    export PATH="$PATH:$(yarn global bin)" && \
+    echo 'if which yarn >/dev/null; then echo export PATH="$PATH:$(yarn global bin)"; fi' >> ~/.bashrc
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
+    source $MY_HOME/.cargo/env && \
+    rustup component add rustfmt && \
+    rustup component add clippy
 
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.bashrc $MY_HOME/.bashrc
 COPY --chown=$MY_USER:$MY_GROUP --from=build-env $MY_HOME/.local $MY_HOME/.local
