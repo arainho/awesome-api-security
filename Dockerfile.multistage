@@ -58,10 +58,10 @@ RUN python3 -m pip install --upgrade pipenv && \
     export PATH="$HOME/.rbenv/bin:$PATH && \
     echo export PATH="$HOME/.rbenv/bin:$PATH >> ~/.bashrc && \
     export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH" && \
-    echo 'if which ruby >/dev/null && which gem >/dev/null; then PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH" fi' >> ~/.bashrc && \
+    echo 'if which ruby >/dev/null && which gem >/dev/null; then PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"; fi' >> ~/.bashrc && \
     npm install yarn && \
     export PATH="$PATH:$(yarn global bin)" && \
-    echo 'if which yarn >/dev/null; then echo export PATH="$PATH:$(yarn global bin)" fi' >> ~/.bashrc
+    echo 'if which yarn >/dev/null; then echo export PATH="$PATH:$(yarn global bin)"; fi' >> ~/.bashrc
 
 # secrets
 RUN go get -u -v github.com/eth0izzle/shhgit && \
