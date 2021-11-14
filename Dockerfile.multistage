@@ -5,6 +5,7 @@ LABEL org.opencontainers.image.authors="github.com/arainho"
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
+ENV GOPATH="$MY_HOME/go"
 ENV APPS_TARGET="$MY_HOME/apps"
 ENV PATH="$MY_HOME/go/bin:$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$MY_HOME/.apicheck_manager/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -260,6 +261,7 @@ LABEL org.opencontainers.image.authors="github.com/arainho"
 ENV MY_USER="appuser"
 ENV MY_GROUP="appgroup"
 ENV MY_HOME="/home/$MY_USER"
+ENV GOPATH="$MY_HOME/go"
 ENV APPS_TARGET="$MY_HOME/apps"
 ENV PATH="$MY_HOME/go/bin:$MY_HOME/.local/bin:$MY_HOME/.cargo/bin:$MY_HOME/.apicheck_manager/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -314,6 +316,6 @@ COPY --chown=$MY_USER:$MY_GROUP --from=build-env $APPS_TARGET $APPS_TARGET
 
 COPY --from=build-env /usr/local /usr/local
 COPY --from=build-env /usr/local/bin /usr/local/bin
-#COPY --from=build-env /usr/local/share/man /usr/local/share/man
+COPY --from=build-env /usr/share/man /usr/share/man
 
 CMD ["/bin/bash"]
