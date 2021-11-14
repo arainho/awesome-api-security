@@ -15,13 +15,19 @@ services:
       - "8080:8080"
   replay:
     image: bbvalabs/replay
+    entrypoint: tail -f /dev/null &
   send-to-proxy:
     image: bbvalabs/send-to-proxy
+    entrypoint: tail -f /dev/null &
   sensitive-data:
     image: bbvalabs/sensitive-data
+    entrypoint: tail -f /dev/null &
   oas-checker:
     image: bbvalabs/oas-check
+    entrypoint: tail -f /dev/null &
   openapiv2-lint:
     image: bbvalabs/openapiv2-lint
+    entrypoint: tail -f /dev/null &
   openapiv3-lint:
     image: bbvalabs/openapiv3-lint
+    entrypoint: tail -f /dev/null &
