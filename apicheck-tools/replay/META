@@ -1,7 +1,0 @@
-name = replay
-display-name = Replay HTTP Requests
-short-command = arep
-version = 1.0.0
-description = Replays a HTTP conversation capturing the new responses obtained
-home = https://github.com/BBVA/apicheck
-author = BBVA Labs Security

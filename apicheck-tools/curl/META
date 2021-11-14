@@ -1,6 +1,0 @@
-name = acurl
-short-command = acurl
-version = 1.0.0
-description = curl with reqres output
-home = https://github.com/BBVA/apicheck
-author = BBVA Labs Security

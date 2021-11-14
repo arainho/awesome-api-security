@@ -1,6 +1,0 @@
-name = send-to-proxy
-display-name = Send data to a proxy server
-version = 1.0.2
-description = Read a request from stdin and send it to a proxy
-home = https://github.com/BBVA/apicheck
-author = BBVA Labs Security

@@ -1,6 +1,0 @@
-name = sensitive-data
-display-name = Sensitive data detector
-version = 1.0.2
-description = Find sensitive data in HTTP Request / Response / Headers
-home = https://github.com/BBVA/apicheck
-author = BBVA Labs Security
