@@ -19,5 +19,5 @@ The `Dockerfile.multistage` is a different version of api-security-toolbox with:
 Please note that the docker images (Dockerfile, Dockerfile.multistage) are in alpha stage.
 
 ## 3 - run vulnerable API's locally
-On the `labs` folders has scripts to build and run vulnerable API's locally.
+On the [`labs`](./labs) folders has scripts to build and run vulnerable API's locally.
 The purpose is to have local labs to exploit and learn API security.
