@@ -67,10 +67,12 @@ RUN python3 -m pip install --upgrade pipenv && \
     rustup component add rustfmt && \
     rustup component add clippy
 
-#### Testing new tools #####################################################
-# 0. git clone -b dev https://github.com/arainho/awesome-api-security      #
-# 1. Add your command(s) in the RUN below                                  #
-# 2. uncomment the lines in RUN                                            #
-# 3. docker build -t api-security-toolbox:local -f Dockerfile.testing .    #
-############################################################################
-# RUN <./your-command.(bash|sh|py|rb|js|etc)>
+#######################################################
+# STEPS FOR TESTING                                   #
+# 1. change 'tool-name' and 'installation commands';  #
+# 2. remove the symbols < and >                       #
+# 3. uncomment ENV and RUn lines                      #
+# 4. build the image                                  #
+#######################################################
+# ENV TOOL_XYZ="tool-to-test"
+# RUN <add installation commands here>
