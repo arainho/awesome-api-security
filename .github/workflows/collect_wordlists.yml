@@ -7,12 +7,12 @@ on:
   push:
     branches: [ dev ]
     paths:
-     - wordlists/**
+     - 'wordlists/**'
      - '.github/workflows/collect_wordlists.yml'
   pull_request:
     branches: [ dev ]
     paths:
-     - wordlists/**
+     - 'wordlists/**'
      - '.github/workflows/collect_wordlists.yml'
   schedule:
   - cron: "0 2 * * 1-5"
