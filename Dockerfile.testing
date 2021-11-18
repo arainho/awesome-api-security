@@ -20,8 +20,8 @@ RUN addgroup -g 9999 $MY_GROUP && \
     echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel && \
     apk add --no-cache bash zsh fish \
                        bind-tools openssh git \
-                       netcat-openbsd curl wget nmap \
                        mandoc man-pages less less-doc \
+                       netcat-openbsd curl wget httpie nmap \
                        ca-certificates coreutils build-base libzip-dev zip && \
     apk add --no-cache --update python2 python3 py3-pip && \
     python2 -m ensurepip && \
