@@ -49,7 +49,7 @@ On the [`labs`](./labs) folders has scripts to build and run vulnerable API's lo
 The purpose is to have local labs to exploit and learn API security.
 
 ## 5. collaboration
-For adding new tools of fix the tools in the [ToDo list](TODO.md) use the following procedure:
+For adding new tools of fix broken ones from [ToDo list](TODO.md) use the following procedure:
 0. Clone the repository
    ```bash
    git clone -b dev https://github.com/arainho/awesome-api-security
