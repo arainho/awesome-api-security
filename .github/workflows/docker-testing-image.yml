@@ -36,7 +36,7 @@ jobs:
     - name: Tests
       run: |-
         export TOOL_NAME="${TOOL_XYZ:-bash}"
-        docker run 
+        docker run \
           --rm -it \
           api-security-toolbox:local \
           which "$TOOL_NAME"; type "$TOOL_NAME"; file "$TOOL_NAME"
