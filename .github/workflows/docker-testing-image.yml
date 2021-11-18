@@ -20,16 +20,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-      -
-        name: Build docker image
-        run: |
-          pwd
-          ls
-          docker build --no-cache -t api-security-toolbox -f Dockerfile.testing .
-  
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Build the Docker image
+    - name: Build
+      run: |-
+        docker build \
+          --no-cache
+          -t api-security-toolbox:local \
+          -f Dockerfile.testing \
+          .
+
+    # Run additional tests
+    - name: Tests
+      run: |-
+        export TOOL_NAME="${TOOL_XYZ:-bash}"
+        docker run 
+          --rm -it \
+          api-security-toolbox:local \
+          which "$TOOL_NAME"; type "$TOOL_NAME"; file "$TOOL_NAME"
+
