@@ -18,6 +18,19 @@ The `Dockerfile.multistage` is a different version of api-security-toolbox with:
 
 Please note that the docker images (Dockerfile, Dockerfile.multistage) are in alpha stage.
 
-## 3 - run vulnerable API's locally
-On the [`labs`](./labs) folders has scripts to build and run vulnerable API's locally.
+## 3. run the api-security-toolbox
+```bash
+docker run -it --rm arainho/api-security-toolbox /bin/bash
+```
+
+If you need apicheck tools inside the toolbox you need docker unix socket inside the container
+```bash
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock arainho/api-security-toolbox /bin/bash
+acp install xyz
+```
+
+**warning: Using docker.sock could expose your host within the toolbox container** as stated in this [article](https://www.ctl.io/developers/blog/post/tutorial-understanding-the-security-risks-of-running-docker-containers).
+
+## 4 - run vulnerable API's locally
+On the [`labs`](./labs) folders has scripts to build and run vulnerable API's locally.  
 The purpose is to have local labs to exploit and learn API security.
