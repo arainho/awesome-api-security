@@ -77,5 +77,7 @@ RUN python3 -m pip install --upgrade pipenv && \
 # ENV TOOL_NAME="tool-to-test"
 # RUN <add installation commands here>
 
+
+# Mark as added once this change is accepted
 ENV TOOL_NAME="ciphey"
 RUN python3 -m pip install --user --upgrade ciphey
