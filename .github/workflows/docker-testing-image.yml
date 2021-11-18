@@ -27,7 +27,7 @@ jobs:
     - name: Build
       run: |-
         docker build \
-          --no-cache
+          --no-cache \
           -t api-security-toolbox:local \
           -f Dockerfile.testing \
           .
