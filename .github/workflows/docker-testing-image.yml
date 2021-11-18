@@ -29,5 +29,5 @@ jobs:
       -
         name: Build docker image
         run: |
-          docker build -t api-security-toolbox -f Dockerfile.testing .
+          docker build --no-cache -t api-security-toolbox -f Dockerfile.testing .
   
