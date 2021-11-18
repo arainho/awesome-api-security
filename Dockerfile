@@ -212,6 +212,7 @@ RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/lo
 RUN git clone --depth=1 https://github.com/dolevf/graphw00f.git /usr/local/graphw00f && \
     ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
 RUN python3 -m pip install fuzz-lightyear
+RUN npm install -g newman
 
 # wordlists
 RUN curl -o /usr/share/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"
