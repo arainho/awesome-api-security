@@ -29,5 +29,7 @@ jobs:
       -
         name: Build docker image
         run: |
+          pwd
+          ls
           docker build --no-cache -t api-security-toolbox -f Dockerfile.testing .
   
