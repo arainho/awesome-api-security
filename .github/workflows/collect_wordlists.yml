@@ -8,12 +8,12 @@ on:
     branches: [ dev ]
     paths:
      - wordlists/**
-     - ".github/workflows/collect_wordlists.yml"
+     - '.github/workflows/collect_wordlists.yml'
   pull_request:
     branches: [ dev ]
     paths:
      - wordlists/**
-     - ".github/workflows/collect_wordlists.yml"
+     - '.github/workflows/collect_wordlists.yml'
   schedule:
   - cron: "0 2 * * 1-5"
 
