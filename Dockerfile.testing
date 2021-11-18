@@ -74,5 +74,8 @@ RUN python3 -m pip install --upgrade pipenv && \
 # 3. uncomment ENV and RUn lines                      #
 # 4. build the image                                  #
 #######################################################
-# ENV TOOL_XYZ="tool-to-test"
+# ENV TOOL_NAME="tool-to-test"
 # RUN <add installation commands here>
+
+ENV TOOL_NAME="ciphey"
+RUN python3 -m pip install --user --upgrade ciphey
