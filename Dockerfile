@@ -209,9 +209,9 @@ RUN git clone --depth=1 https://github.com/imperva/automatic-api-attack-tool /us
 RUN git clone --depth=1 https://github.com/nikitastupin/clairvoyance.git /usr/local/clairvoyance && \
     cd /usr/local/clairvoyance && \
     python3 -m pip install -r requirements.txt
-
 RUN git clone --depth=1 https://github.com/dolevf/graphw00f.git /usr/local/graphw00f && \
     ln -s /usr/local/graphw00f/main.py /usr/local/bin/graphw00f.py
+RUN python3 -m pip install fuzz-lightyear
 
 # wordlists
 RUN curl -o /usr/share/wordlists/common-api-endpoints-mazen160.txt "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt"
