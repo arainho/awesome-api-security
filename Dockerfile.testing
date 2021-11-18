@@ -71,7 +71,7 @@ RUN python3 -m pip install --upgrade pipenv && \
 # STEPS FOR TESTING                                   #
 # 1. change 'tool-name' and 'installation commands';  #
 # 2. remove the symbols < and >                       #
-# 3. uncomment ENV and RUn lines                      #
+# 3. uncomment ENV and RUN lines                      #
 # 4. build the image                                  #
 #######################################################
 # ENV TOOL_NAME="tool-to-test"
