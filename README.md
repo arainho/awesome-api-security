@@ -26,7 +26,20 @@ docker run -it --rm arainho/api-security-toolbox /bin/bash
 If you need apicheck tools inside the toolbox you need docker unix socket inside the container
 ```bash
 docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock arainho/api-security-toolbox /bin/bash
-acp install xyz
+```
+
+Then you can install [apicheck](https://bbva.github.io/apicheck/docs) tools
+```bash
+acp install jwt-checker
+acp install acurl
+acp install oas-checker
+acp install send-to-proxy
+acp install apicheck-curl
+acp install sensitive-data
+acp install replay
+acp install openapiv3-lint
+acp install openapiv2-lint
+acp install oas-checker
 ```
 
 **warning: Using docker.sock could expose your host within the toolbox container** as stated in this [article](https://www.ctl.io/developers/blog/post/tutorial-understanding-the-security-risks-of-running-docker-containers).
