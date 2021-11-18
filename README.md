@@ -55,8 +55,8 @@ For adding new tools of fix broken ones from [ToDo list](TODO.md) use the follow
    git clone -b dev https://github.com/arainho/awesome-api-security
    git checkout -b tool-xyz
    ```
-2. Open the `Dockerfile.testing` file
-   - Add your command(s) in the RUN below   
+2. Open the `Dockerfile.testing` file with a text editor
+   - Add your command(s) in the last RUN line    
    - uncomment the lines in RUN       
 5. Build the image
    ```bash
