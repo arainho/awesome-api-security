@@ -106,6 +106,11 @@
 |[API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares.
 |[Private key usage verification ](https://github.com/trufflesecurity/driftwood) | Driftwood is a tool that can enable you to lookup whether a private key is used for things like TLS or as a GitHub SSH key for a user. |
 
+## Firewalls
+| Name | Description |
+| ---- | ----------- |
+| [Wallarm Free API Firewall](https://github.com/wallarm/api-firewall)| Fast and light-weight API proxy firewall for request and response validation by OpenAPI specs.  |
+
 ## Deliberately vulnerable APIs
 | Name | Description |
 | ---- | ----------- |
