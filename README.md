@@ -162,6 +162,7 @@
 ## Design / Architecture / Development
 | Name | Description |
 | ---- | ----------- |
+| [Understanding gRPC, OpenAPI and REST](https://cloud.google.com/blog/products/api-management/understanding-grpc-openapi-and-rest-and-when-to-use-them) | gRPC vs REST: Understanding gRPC, OpenAPI and REST and when to use them in API design |
 | [REST API Design Guide](https://www.apiopscycles.com/resources/rest-api-design-guide) | This design guide or style guide contains best practices suitable for most REST APIs. |
 | [How to design a REST API](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
 | [Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this ongoing list.
