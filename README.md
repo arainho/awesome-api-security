@@ -168,6 +168,15 @@
 | [Collect API Requirements](https://www.apiopscycles.com/collecting-requirements)| Collecting Requirements for your API with APIOps Cycles. |
 | [API Audit](https://www.apiopscycles.com/method/api-audit) | API Audit is a method to ensure APIs are matching the API Design guidelines. It also helps check for usability, security and API management platform compatibility. |
 
+## Specifications
+| Name | Description |
+| ---- | ----------- |
+| [AscyncAPI](https://www.asyncapi.com/docs/specifications/latest) | AsyncAPI Specification |
+| [OpenAPI](https://swagger.io/specification/) | OpenAPI Specification |
+| [JSON API](https://jsonapi.org/format/) | JSON API Specification |
+| [GraphQL](https://spec.graphql.org/) | GraphQL Specification |
+| [RAML](https://github.com/raml-org/raml-spec) | RAML Specification |
+
 ## Other useful resources
 Name | Description
 ---- | ----
