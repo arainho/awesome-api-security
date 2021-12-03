@@ -19,6 +19,7 @@
 |  |  |
 | **REST APIs** |
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
+| [APIClarity](https://github.com/apiclarity/apiclarity) | Reconstruct Open API Specifications from real-time workload traffic seamlessly. |
 | [APIFuzzer](https://github.com/KissPeter/APIFuzzer) | Fuzz test your application using your OpenAPI or Swagger API definition without coding. |
 | [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
