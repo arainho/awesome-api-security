@@ -24,7 +24,8 @@
 | [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
-| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. |Fuzz test your application using your OpenAPI or Swagger API definition without coding 
+| [Firecracker](https://www.blstsecurity.com/firecracker) | Firecracker from BLST security is an Intelligent attacker that simulates business flows in your API |
+| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. | 
 | [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
 | [kiterunner](https://github.com/assetnote/kiterunner)| Contextual Content Discovery Tool. |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
@@ -84,7 +85,6 @@
 | Name | Description |
 | ---- | ----------- |
 | [Burp enumeration](https://portswigger.net/support/using-burp-to-enumerate-a-rest-api) | Using Burp to Enumerate a REST API |
-| [BLST - Firecracker](https://www.blstsecurity.com/firecracker) | Intelligent attacker that simulates business flows in your API |
 | [ZAP scanning](https://www.zaproxy.org/blog/2017-06-19-scanning-apis-with-zap/) | Scanning APIs with ZAP |
 | [w3af scanning](http://docs.w3af.org/en/latest/scan-rest-apis.html) | Scan REST APIs with w3af |
 
