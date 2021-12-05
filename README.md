@@ -164,12 +164,13 @@
 
 
 ## HTTP 101
-| What !? |
-| ------- |
-|[Know your HTTP Headers!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/headers.pdf) |
-|[Know your HTTP Methods!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/methods.pdf) |
-|[Know your HTTP Status codes!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/status-codes.pdf) |
-|[Know your HTTP * Well](https://github.com/for-GET/know-your-http-well)|
+| Name | Description |
+| ---- | ----------- |
+|[Know your HTTP Headers!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/headers.pdf) | HTTP Headers: a simplified and comprehensive table. |
+|[Know your HTTP Methods!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/methods.pdf) | HTTP Methods: a simplified and comprehensive table. |
+|[Know your HTTP Status codes!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/status-codes.pdf) | HTTP Status codes: a simplified and comprehensive table. |
+| [HTTP Status Codes](https://httpstatuses.com/) | httpstatuses.com is an easy to reference database of HTTP Status Codes with their definitions and helpful code references all in one place. |
+|[Know your HTTP * Well](https://github.com/for-GET/know-your-http-well)| HTTP headers, media-types, methods, relations and status codes, all summarized and linking to their specification. |
 
 ## Design / Architecture / Development
 | Name | Description |
