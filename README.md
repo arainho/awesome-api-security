@@ -162,6 +162,15 @@
 | ------- | ---- | ----------- |
 | 42Crunch | [@apisecurityio](https://twitter.com/apisecurityio/) | API security news, standards, vulnerabilities, tools. |
 
+
+## HTTP 101
+| What !? |
+| ------- |
+|[Know your HTTP Headers!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/headers.pdf) |
+|[Know your HTTP Methods!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/methods.pdf) |
+|[Know your HTTP Status codes!](http://prezo.s3.amazonaws.com/pixi_california_2018/basics/status-codes.pdf) |
+|[Know your HTTP * Well](https://github.com/for-GET/know-your-http-well)|
+
 ## Design / Architecture / Development
 | Name | Description |
 | ---- | ----------- |
