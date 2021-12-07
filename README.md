@@ -52,6 +52,7 @@
 | Author  | Name | Description |
 | ------- | ---- | ------------|
 | Shieldfy | [API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist) | Checklist of the most important security countermeasures when designing, testing, and releasing your API. |
+| Salt Security | [API Security Best Practices Checklist](https://content.salt.security/api-security-checklist.html) | Customizable checklist of best practices to secure your APIs throughout their lifecycles |
 | Inon Shkedy | [31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips. |
 | APIOps Cycles | [API audit checklist](https://www.apiopscycles.com/api-audit-checklist) | API Audit checklist |
 | HolyBugx | [another API Security checklist](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security checklist
@@ -195,8 +196,11 @@
 ## Other useful resources
 Name | Description
 ---- | ----
+| [API Security for Dummies](https://content.salt.security/api-security-for-dummies.html) | Salt Security - The complete guide to securing your APIs |
 | [API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide |
 | [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security - API Security Best Practices MegaGuide |
+| [API Security Best Practices Guide](https://content.salt.security/wp-api-security-best-practices.html) | Salt Security - Comprehensive list of best practices to secure your APIs throughout their lifecycles |
+| [API Security Evaluation Guide](https://content.salt.security/api-security-eval-guide.html) | Salt Security - Advice for evaluating API security tooling |
 | [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases. |
 | [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | Simplifying API Pentesting With Swagger Files. |
 | [API security articles](https://char49.com/search/query:API%20security) | Char49 - API security articles. |
@@ -206,6 +210,7 @@ Name | Description
 | [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools. |
 | [Fixing the 13 most common GraphQL Vulnerabilities](https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready)| The complete GraphQL Security Guide: Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready. |
 | [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them. |
+| [State of API Security Report](https://content.salt.security/state-api-report.html) | Salt Security - Get the latest research and trends on API security, updated semiannually |
 | [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What are API and microservice security? |
 | [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | Strengthening Your API Security Posture – Ford Motor Company. |
 | [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion. |
