@@ -72,6 +72,7 @@
 | ---- | ----------- |
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
 | [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
+| [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
 
 ## Training / Walkthrough / Labs
 | Name | Description |
