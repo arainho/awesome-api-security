@@ -27,6 +27,7 @@
 | [Firecracker](https://www.blstsecurity.com/firecracker) | Firecracker from BLST security is an Intelligent attacker that simulates business flows in your API |
 | [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. | 
 | [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
+| [gotestwaf](https://github.com/wallarm/gotestwaf) | An open-source project in Golang to test different web application firewalls (WAF) for detection logic and bypasses |
 | [kiterunner](https://github.com/assetnote/kiterunner)| Contextual Content Discovery Tool. |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
