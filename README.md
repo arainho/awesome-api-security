@@ -203,7 +203,8 @@ Name | Description
 | [API security articles](https://char49.com/search/query:API%20security) | Char49 - API security articles. |
 | [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence - Principles of API Security Testing and how to perform a Security Test on an API. |
 | [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3). |
-| [How to Hack APIs in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021) | detectify - How to Hack APIs in 2021|
+| [How to Hack APIs in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021) | detectify - How to Hack APIs in 2021 |
+| [How to Hack API in 60 minutes with Open Source Tools](https://www.wallarm.com/what/how-to-hack-api-in-60-minutes-with-open-source) | How to Hack API in 60 minutes with Open Source Tools | 
 | [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools. |
 | [Fixing the 13 most common GraphQL Vulnerabilities](https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready)| The complete GraphQL Security Guide: Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready. |
 | [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them. |
