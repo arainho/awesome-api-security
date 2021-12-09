@@ -74,6 +74,12 @@
 | [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
 | [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
 
+## Books
+| Author | Name | Description |
+| ------ | ---- | ----------- |
+| Neil Madden | [API Security in Action](https://www.manning.com/books/api-security-in-action)| API Security in Action teaches you how to create secure APIs for any situation. |
+| Corey Ball  | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces |
+
 ## Training / Walkthrough / Labs
 | Name | Description |
 | ---- | ----------- |
