@@ -21,6 +21,7 @@
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
 | [APIClarity](https://github.com/apiclarity/apiclarity) | Reconstruct Open API Specifications from real-time workload traffic seamlessly. |
 | [APIFuzzer](https://github.com/KissPeter/APIFuzzer) | Fuzz test your application using your OpenAPI or Swagger API definition without coding. |
+| [APIKit](https://github.com/API-Security/APIKit) | APIKit：Discovery, Scan and Audit APIs Toolkit All In One. |
 | [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
