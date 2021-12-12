@@ -216,6 +216,7 @@ Name | Description
 | [How to Hack API in 60 minutes with Open Source Tools](https://www.wallarm.com/what/how-to-hack-api-in-60-minutes-with-open-source) | How to Hack API in 60 minutes with Open Source Tools | 
 | [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | How to exploit GraphQL endpoint: introspection, query, mutations & tools. |
 | [Fixing the 13 most common GraphQL Vulnerabilities](https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready)| The complete GraphQL Security Guide: Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready. |
+| [Hacking APIs - Notes from Bug Bounty Bootcamp](https://attacker-codeninja.github.io/2021-08-28-Hacking-APIs-notes-from-bug-bounty-bootcamp/)| Aakash Choudhary: My Notes on Hacking APIs from Bug Bounty Bootcamp. |
 | [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | SOAP Security: Top Vulnerabilities and How to Prevent Them. |
 | [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What are API and microservice security? |
 | [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | Strengthening Your API Security Posture – Ford Motor Company. |
