@@ -12,11 +12,12 @@
 | ---- | ----------- |
 | | |
 | **GraphQL** |
-| [graphql-playground](https://github.com/graphql/graphql-playground) | GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration) |
 | [BatchQL](https://github.com/assetnote/batchql) | GraphQL security auditing script with a focus on performing batch GraphQL queries and mutations. |
+| [clairvoyance](https://github.com/nikitastupin/clairvoyance) | Obtain GraphQL API schema despite disabled introspection! |
 | [InQL](https://github.com/doyensec/inql) | InQL - A Burp Extension for GraphQL Security Testing. |
 | [GraphQLmap](https://github.com/swisskyrepo/GraphQLmap)| GraphQLmap is a scripting engine to interact with a graphql endpoint for pentesting purposes. |
 | [graphql-path-enum](https://gitlab.com/dee-see/graphql-path-enum) | Tool that lists the different ways of reaching a given type in a GraphQL schema. |
+| [graphql-playground](https://github.com/graphql/graphql-playground) | GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration) |
 |  |  |
 | **REST APIs** |
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
