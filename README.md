@@ -1,3 +1,3 @@
-The `API Security Toolbox` moved to [api-security-toolbox](https://github.com/arainho/api-security-toolbox).
+The API security toolbox has moved to [apisec-toolbox](https://github.com/arainho/apisec-toolbox) repo.
 
 
