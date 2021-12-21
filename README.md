@@ -1,6 +1,34 @@
 # [awesome-apisec](https://github.com/arainho/awesome-apisec)
 
-**A collection of awesome API Security tools and resources.**
+<h4 align="center">A collection of awesome API Security tools and resources.</h4>
+      
+<p align="center">
+  <a href="#awesome-repositories">Awesome Repositories</a> •
+  <a href="#tools">Tools</a> •
+  <a href="#mind-maps">Mind maps</a> •
+  <a href="#checklist">Checklist</a> •
+  <a href="#cheatsheets">Cheatsheets</a> •
+  <a href="#wikis-encyclopedias-gitbooks">Wiki's, Encyclopedias, GitBook's</a> •
+  <a href="#books">Books</a> •
+  <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
+  <a href="#enumeration-scanning">Enumeration, Scanning</a> •
+  <a href="#fuzzing-seclists">Fuzzing, SecLists</a> •
+  <a href="#api-keys-find-and-validate">API Keys: Find and validate</a> •
+  <a href="#firewalls">Firewalls</a> •
+  <a href="#deliberately-vulnerable-apis">Deliberately vulnerable APIs</a> •
+  <a href="#presentations-videos">Presentations, Videos</a> •
+  <a href="#playlists">Playlists</a> •
+  <a href="#podcasts">Podcasts</a> •
+  <a href="#projects">Projects</a> •
+  <a href="#newsletters">Newsletters</a> •
+  <a href="#twitter">Twitter</a> •
+  <a href="#http-101">HTTP 101</a> •
+  <a href="#design-architecture-development">Design, Architecture, Development</a> •
+  <a href="#specifications">Specifications</a> •
+  <a href="#other-useful-resources">Other useful resources</a> • 
+</p>
+
+---
 
 ## Awesome Repositories
 | Name | Description |
@@ -71,7 +99,7 @@
 | [Microservices Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Microservices_security.html) | Microservices - OWASP Security Cheat Sheet |
 | [JSON Web Token Security Cheat Sheet](https://assets.pentesterlab.com/jwt_security_cheatsheet/jwt_security_cheatsheet.pdf) | PentesterLab - JSON Web Token Security Cheat Sheet |
 
-## Wiki's / Encyclopedias / GitBook's
+## Wiki's, Encyclopedias, GitBook's
 | Name | Description |
 | ---- | ----------- |
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
@@ -84,7 +112,7 @@
 | Neil Madden | [API Security in Action](https://www.manning.com/books/api-security-in-action)| API Security in Action teaches you how to create secure APIs for any situation. |
 | Corey Ball  | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces |
 
-## Training / Walkthrough / Labs
+## Training, Walkthrough, Labs
 | Name | Description |
 | ---- | ----------- |
 | [Kontra - OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
@@ -92,14 +120,14 @@
 | [ShipFast - Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
 | [Hacker101 CTFs - GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
 
-## Enumeration / Scanning
+## Enumeration, Scanning
 | Name | Description |
 | ---- | ----------- |
 | [Burp enumeration](https://portswigger.net/support/using-burp-to-enumerate-a-rest-api) | Using Burp to Enumerate a REST API |
 | [ZAP scanning](https://www.zaproxy.org/blog/2017-06-19-scanning-apis-with-zap/) | Scanning APIs with ZAP |
 | [w3af scanning](http://docs.w3af.org/en/latest/scan-rest-apis.html) | Scan REST APIs with w3af |
 
-## Fuzzing / SecLists
+## Fuzzing, SecLists
 | Name | Description |
 | ---- | ----------- |
 | [Common API endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt) | Wordlist for common API endpoints. |
@@ -111,7 +139,7 @@
 | [API Common methods](https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods) | API Common methods provided by fuzzdb. |
 | [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place. |
 
-## API Keys: Find & validate
+## API Keys: Find and validate
 | Name | Description |
 | ---- | ----------- |
 | [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity. |
@@ -136,7 +164,7 @@
 | [VAmPI](https://github.com/erev0s/VAmPI)| Vulnerable REST API with OWASP top 10 vulnerabilities for APIs |
 | [Websheep](https://github.com/marmicode/websheep) | Websheep is an app based on a willingly vulnerable ReSTful APIs. |
 
-## Presentations / Videos
+## Presentations, Videos
 | Name | Description |
 | ---- | ----------- |
 | [pentesting-rest-apis](https://www.slideshare.net/OWASPdelhi/pentesting-rest-apis-by-gaurang-bhatnagar) | Pentesting Rest API's by Gaurang Bhatnagar |
@@ -184,7 +212,7 @@
 | [HTTP Status Codes](https://httpstatuses.com/) | httpstatuses.com is an easy to reference database of HTTP Status Codes with their definitions and helpful code references all in one place. |
 |[Know your HTTP * Well](https://github.com/for-GET/know-your-http-well)| HTTP headers, media-types, methods, relations and status codes, all summarized and linking to their specification. |
 
-## Design / Architecture / Development
+## Design, Architecture, Development
 | Name | Description |
 | ---- | ----------- |
 | [The API Specification Toolbox](http://api.specificationtoolbox.com) | This Toolbox goal is to try and map out all of the different API specifications in use, as well as the services, tooling, extensions, and other supporting elements. |
