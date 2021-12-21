@@ -9,12 +9,12 @@
   <a href="#checklist">Checklist</a> •
   <a href="#cheatsheets">Cheatsheets</a> •
   <a href="#wikis-encyclopedias-gitbooks">Wiki's, Encyclopedias, GitBook's</a> •
-  <a href="#books">Books</a> •
+  <a href="#books">Books</a> • </br>
   <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
   <a href="#enumeration-scanning">Enumeration, Scanning</a> •
   <a href="#fuzzing-seclists">Fuzzing, SecLists</a> •
   <a href="#api-keys-find-and-validate">API Keys: Find and validate</a> •
-  <a href="#firewalls">Firewalls</a> •
+  <a href="#firewalls">Firewalls</a> • </br>
   <a href="#deliberately-vulnerable-apis">Deliberately vulnerable APIs</a> •
   <a href="#presentations-videos">Presentations, Videos</a> •
   <a href="#playlists">Playlists</a> •
@@ -22,7 +22,7 @@
   <a href="#projects">Projects</a> •
   <a href="#newsletters">Newsletters</a> •
   <a href="#twitter">Twitter</a> •
-  <a href="#http-101">HTTP 101</a> •
+  <a href="#http-101">HTTP 101</a> • </br>
   <a href="#design-architecture-development">Design, Architecture, Development</a> •
   <a href="#specifications">Specifications</a> •
   <a href="#other-useful-resources">Other useful resources</a> • 
