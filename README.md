@@ -217,6 +217,7 @@
 | ---- | ----------- |
 | [The API Specification Toolbox](http://api.specificationtoolbox.com) | This Toolbox goal is to try and map out all of the different API specifications in use, as well as the services, tooling, extensions, and other supporting elements. |
 | [Understanding gRPC, OpenAPI and REST](https://cloud.google.com/blog/products/api-management/understanding-grpc-openapi-and-rest-and-when-to-use-them) | gRPC vs REST: Understanding gRPC, OpenAPI and REST and when to use them in API design |
+| [API security design best practices](https://habr.com/en/post/595075/) | API security design best practices for enterprise and public cloud. |
 | [REST API Design Guide](https://www.apiopscycles.com/resources/rest-api-design-guide) | This design guide or style guide contains best practices suitable for most REST APIs. |
 | [How to design a REST API](https://blog.octo.com/en/design-a-rest-api) | How to design a REST API? - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.
 | [Awesome REST](https://github.com/marmelab/awesome-rest) | A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this ongoing list.
