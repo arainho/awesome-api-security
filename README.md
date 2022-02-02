@@ -55,7 +55,7 @@
 | [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
-| [Firecracker](https://www.blstsecurity.com/firecracker) | Firecracker from BLST security is an Intelligent attacker that simulates business flows in your API |
+| [Cherrybomb](https://github.com/blst-security/cherrybomb) | Stop half-done API specifications with a CLI tool that helps you avoid undefined user behaviour by validating your API specifications. |
 | [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. | 
 | [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
 | [gotestwaf](https://github.com/wallarm/gotestwaf) | An open-source project in Golang to test different web application firewalls (WAF) for detection logic and bypasses |
