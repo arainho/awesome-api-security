@@ -26,6 +26,7 @@
   <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
   <a href="#twitter">Twitter</a> •
   <a href="#wikis-encyclopedias-gitbooks">Wiki's, Encyclopedias, GitBook's</a> •
+  <a href="#contributions">Contributions</a> •
 </p>
 
 ---
@@ -252,3 +253,14 @@ Name | Description
 | [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | A guide from PortSwigger: What are API and microservice security? |
 | [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | Strengthening Your API Security Posture – Ford Motor Company. |
 | [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion. |
+
+## Contributions
+The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, freely available content, and resources created by the community to the community. Other content vendor-specific, ads, commercial, restricted, or provided in exchange of private details are out of scope and will probably be ignored.
+
+If you think your content fits the above purposes, please
+- create a new branch
+- change README.md
+- push the new changes
+- open a pull request
+
+For more details check GitHub [quickstart/contributing-to-projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
