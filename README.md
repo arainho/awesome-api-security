@@ -255,7 +255,9 @@ Name | Description
 | [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion. |
 
 ## Contributions
-The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, freely available content, and resources created by the community to the community. Other content vendor-specific, ads, commercial, restricted, or provided in exchange of private details are out of scope and will probably be ignored.
+1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. 
+
+2. Other content vendor-specific, ads, commercial, restricted, free trial, freemium, closed-source (proprietary software), or products provided in exchange for private user details that are out of scope will be discarded or ignored without notice.
 
 If you think your content fits the above purposes, please
 - create a new branch
