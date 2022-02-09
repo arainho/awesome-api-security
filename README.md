@@ -26,7 +26,8 @@
   <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
   <a href="#twitter">Twitter</a> •
   <a href="#wikis-encyclopedias-gitbooks">Wiki's, Encyclopedias, GitBook's</a> •
-  <a href="#contributions">Contributions</a> •
+  </br>
+  • <a href="#contributions">Contributions</a> •
 </p>
 
 ---
