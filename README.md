@@ -133,6 +133,7 @@
 | Name | Description |
 | ---- | ----------- |
 | [Common API endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt) | Wordlist for common API endpoints. |
+| [Hacking-APIs](https://github.com/hAPI-hacker/Hacking-APIs) | Wordlists and API paths by @hapi_hacker |
 | [List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing. |
 | [List of Swagger endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/swagger.txt) | Swagger endpoints |
 | [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments. |
