@@ -25,7 +25,7 @@
   <a href="#tools">Tools</a> •
   <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
   <a href="#twitter">Twitter</a> •
-  <a href="#wikis-encyclopedias-gitbooks">Encyclopedias, Projects, Wiki's and GitBooks</a> •
+  <a href="#encyclopedias-projects-wikis-and-gitbooks">Encyclopedias, Projects, Wikis and GitBooks</a> •
   </br>
   • <a href="#contributions">Contributions</a> •
 </p>
@@ -101,7 +101,7 @@
 | [Microservices Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Microservices_security.html) | Microservices - OWASP Security Cheat Sheet |
 | [JSON Web Token Security Cheat Sheet](https://assets.pentesterlab.com/jwt_security_cheatsheet/jwt_security_cheatsheet.pdf) | PentesterLab - JSON Web Token Security Cheat Sheet |
 
-## Encyclopedias, Projects, Wiki's and GitBooks
+## Encyclopedias, Projects, Wikis and GitBooks
 | Name | Description |
 | ---- | ----------- |
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
