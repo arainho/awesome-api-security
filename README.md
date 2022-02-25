@@ -101,7 +101,7 @@
 | [Microservices Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Microservices_security.html) | Microservices - OWASP Security Cheat Sheet |
 | [JSON Web Token Security Cheat Sheet](https://assets.pentesterlab.com/jwt_security_cheatsheet/jwt_security_cheatsheet.pdf) | PentesterLab - JSON Web Token Security Cheat Sheet |
 
-## Wiki's, Encyclopedias, GitBook's
+## Encyclopedias, Projects, Wiki's and GitBooks
 | Name | Description |
 | ---- | ----------- |
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
