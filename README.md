@@ -81,6 +81,9 @@
 | [David Sopas](https://github.com/dsopas) | [MindAPI](https://dsopas.github.io/MindAPI/play/) | Organize your API security assessment by using MindAPI |
 | [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
 | [Harsh Bothra](https://github.com/muffyhub) | [XML attacks](https://www.xmind.net/m/xNEY9b/) | Mind map: XML attacks |
+| [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - Recon](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap.pdf) | Mind map: API Pentesting - Recon |
+| [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - ATTACK](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap%20ATTACK.pdf) | Mind map: API Pentesting - ATTACK |
+| [Cypro AB](https://github.com/cyprosecurity) | [GraphQL Attacking](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap%20%7B%7BGraphQL%20Attacking%7D%7D.pdf) | Mind map: GraphQL Attacking |
 
 ## Checklist
 | Author  | Name | Description |
@@ -107,6 +110,7 @@
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
 | [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
 | [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
+| [API-SecurityEmpire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
 
 ## Books
 | Author | Name | Description |
