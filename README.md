@@ -113,10 +113,11 @@
 | [API-SecurityEmpire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
 
 ## Books
-| Author | Name | Description |
-| ------ | ---- | ----------- |
-| Neil Madden | [API Security in Action](https://www.manning.com/books/api-security-in-action)| API Security in Action teaches you how to create secure APIs for any situation. |
-| Corey Ball  | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces |
+| Author      | Publisher | Name | Description |
+| ----------- | --------- | -----| ----------- |
+| Neil Madden | Manning   | [API Security in Action](https://www.manning.com/books/api-security-in-action)| API Security in Action teaches you how to create secure APIs for any situation. |
+| Corey Ball  | No starch press | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces. |
+| Justing Richer and Antonio Sanso | Manning| [Understanding API Security](https://livebook.manning.com/book/understanding-api-security/introduction/) | Several chapters from several Manning books that give you some context for how API security works in the real world. |
 
 ## Training, Walkthrough, Labs
 | Name | Description |
