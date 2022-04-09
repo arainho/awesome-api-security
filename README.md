@@ -7,25 +7,26 @@
   <a href="#awesome-repositories">Awesome Repositories</a> •
   <a href="#books">Books</a> •
   <a href="#cheatsheets">Cheatsheets</a> •
-  <a href="#checklist">Checklist</a> • </br>
+  <a href="#checklist">Checklist</a> •
+  <a href="#conferences">Conferences</a> • </br>
   <a href="#deliberately-vulnerable-apis">Deliberately vulnerable APIs</a> •
   <a href="#design-architecture-development">Design, Architecture, Development</a> •
+  <a href="#encyclopedias-projects-wikis-and-gitbooks">Encyclopedias, Projects, Wikis and GitBooks</a> • </br>
   <a href="#enumeration-scanning">Enumeration, Scanning</a> •
   <a href="#firewalls">Firewalls</a> •
-  <a href="#fuzzing-seclists">Fuzzing, SecLists</a> • </br>
+  <a href="#fuzzing-seclists">Fuzzing, SecLists</a> •
   <a href="#http-101">HTTP 101</a> •
   <a href="#mind-maps">Mind maps</a> •
-  <a href="#newsletters">Newsletters</a> •
+  <a href="#newsletters">Newsletters</a> • </br>
   <a href="#other-useful-resources">Other useful resources</a> • 
   <a href="#playlists">Playlists</a> •
   <a href="#podcasts">Podcasts</a> •
-  <a href="#presentations-videos">Presentations, Videos</a> • </br>
-  <a href="#projects">Projects</a> •
+  <a href="#presentations-videos">Presentations, Videos</a> •
+  <a href="#projects">Projects</a> • </br>
   <a href="#specifications">Specifications</a> •
   <a href="#tools">Tools</a> •
   <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
   <a href="#twitter">Twitter</a> •
-  <a href="#encyclopedias-projects-wikis-and-gitbooks">Encyclopedias, Projects, Wikis and GitBooks</a> •
   </br>
   • <a href="#contributions">Contributions</a> •
 </p>
