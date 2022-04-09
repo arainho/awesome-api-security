@@ -202,6 +202,11 @@
 | ---- | ----------- |
 | [owasp api security project](https://owasp.org/www-project-api-security/) | OWASP API Security Project - API Security Top 10 |
 
+## Conferences
+| Name      | Description |
+| --------- | ----------- |
+| [APIsecure](https://apisecure.co) | The world's first conference dedicated to API threat management; bringing together breakers, defenders, and solutions in API security. |
+
 ## Newsletters
 | Author  | Name | Description |
 | ------- | ---- | ----------- |
