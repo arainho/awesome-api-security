@@ -12,7 +12,7 @@
   <a href="#deliberately-vulnerable-apis">Deliberately vulnerable APIs</a> •
   <a href="#design-architecture-development">Design, Architecture, Development</a> •
   <a href="#encyclopedias-projects-wikis-and-gitbooks">Encyclopedias, Projects, Wikis and GitBooks</a> • </br>
-  <a href="#enumeration-scanning-and-exploring-steps">Enumeration, Scanning and exploring steps</a> •
+  <a href="#enumeration-scanning-and-exploration-steps">Enumeration, Scanning and exploration steps</a> •
   <a href="#firewalls">Firewalls</a> •
   <a href="#fuzzing-seclists">Fuzzing, SecLists</a> •
   <a href="#http-101">HTTP 101</a> •
