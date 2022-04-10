@@ -113,7 +113,7 @@
 | [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
 | [API-SecurityEmpire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
 
-## Enumeration, Scanning exploration steps and details
+## Enumeration, Scanning and exploration steps
 | Name | Description |
 | ---- | ----------- |
 | [Burp API enumeration](https://portswigger.net/support/using-burp-to-enumerate-a-rest-api) | Using Burp to Enumerate a REST API |
