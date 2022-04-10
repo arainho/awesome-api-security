@@ -119,6 +119,7 @@
 | Neil Madden | Manning   | [API Security in Action](https://www.manning.com/books/api-security-in-action)| API Security in Action teaches you how to create secure APIs for any situation. |
 | Corey Ball  | No starch press | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces. |
 | Justing Richer and Antonio Sanso | Manning | [Understanding API Security](https://livebook.manning.com/book/understanding-api-security/introduction/) | Several chapters from several Manning books that give you some context for how API security works in the real world. |
+| Emily Freeman | Data Theorem Special Edition | [API Security for dummies](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWJ9kN) | This book is a high-level introduction to the key concepts of API security and DevSecOps. |
 
 ## Training, Walkthrough, Labs
 | Author | Name | Description |
