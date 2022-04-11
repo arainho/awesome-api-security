@@ -164,24 +164,24 @@
 | 42Crunch | [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
 
 ## Other resources
-Name | Description
----- | ----
-| [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security - API Security Best Practices MegaGuide |
-| [API Security: The Complete Guide](https://brightsec.com/blog/api-security) | Bright Security - API Security, The Complete Guide |
-| [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | SecureLayer7 - API Penetration Testing with OWASP 2017 Test Cases. |
-| [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | RhinoSecurityLabs - Simplifying API Pentesting With Swagger Files. |
-| [API security articles](https://char49.com/search/query:API%20security) | Char49 - API security articles. |
-| [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence - Principles of API Security Testing and how to perform a Security Test on an API. |
-| [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| SmartBear - How to Hack an API and Get Away with It (Part 1 of 3). |
-| [How to Hack APIs in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021) | Detectify - How to Hack APIs in 2021 |
-| [How to Hack API in 60 minutes with Open Source Tools](https://www.wallarm.com/what/how-to-hack-api-in-60-minutes-with-open-source) | How to Hack API in 60 minutes with Open Source Tools | 
-| [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | YesWeHAck - How to exploit GraphQL endpoint: introspection, query, mutations & tools. |
-| [Fixing the 13 most common GraphQL Vulnerabilities](https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready)| WunderGraph - GraphQL Security Guide, Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready. |
-| [Hacking APIs - Notes from Bug Bounty Bootcamp](https://attacker-codeninja.github.io/2021-08-28-Hacking-APIs-notes-from-bug-bounty-bootcamp/)| Aakash Choudhary: My Notes on Hacking APIs from Bug Bounty Bootcamp. |
-| [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | NeuraLegion - SOAP Security, Top Vulnerabilities and How to Prevent Them. |
-| [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | PortSwigger - What are API and microservice security? |
-| [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | 42Crunch - Strengthening Your API Security Posture – Ford Motor Company. |
-| [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Tenchi Security - Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion. |
+Name | Author | Description |
+---- | ------ | ----------- |
+| [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security | API Security Best Practices MegaGuide |
+| [API Security: The Complete Guide](https://brightsec.com/blog/api-security) | Bright Security | API Security, The Complete Guide |
+| [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | SecureLayer7 | API Penetration Testing with OWASP 2017 Test Cases. |
+| [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | RhinoSecurityLabs | Simplifying API Pentesting With Swagger Files. |
+| [API security articles](https://char49.com/search/query:API%20security) | Char49 | API security articles. |
+| [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence | Principles of API Security Testing and how to perform a Security Test on an API. |
+| [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| SmartBear | How to Hack an API and Get Away with It (Part 1 of 3). |
+| [How to Hack APIs in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021) | Detectify | How to Hack APIs in 2021 |
+| [How to Hack API in 60 minutes with Open Source Tools](https://www.wallarm.com/what/how-to-hack-api-in-60-minutes-with-open-source) | Wallarm | How to Hack API in 60 minutes with Open Source Tools | 
+| [GraphQL penetration testing](https://blog.yeswehack.com/yeswerhackers/how-exploit-graphql-endpoint-bug-bounty/) | YesWeHAck | How to exploit GraphQL endpoint: introspection, query, mutations & tools. |
+| [Fixing the 13 most common GraphQL Vulnerabilities](https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready)| WunderGraph | GraphQL Security Guide, Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready. |
+| [Hacking APIs - Notes from Bug Bounty Bootcamp](https://attacker-codeninja.github.io/2021-08-28-Hacking-APIs-notes-from-bug-bounty-bootcamp/)| Aakash Choudhary | My Notes on Hacking APIs from Bug Bounty Bootcamp. |
+| [SOAP Security Vulnerabilities and Prevention](https://www.neuralegion.com/blog/top-7-soap-api-vulnerabilities/) | NeuraLegion | SOAP Security, Top Vulnerabilities and How to Prevent Them. |
+| [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | PortSwigger | What are API and microservice security? |
+| [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | 42Crunch | Strengthening Your API Security Posture – Ford Motor Company. |
+| [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Tenchi Security | Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion. |
 
 ## Playlists
 | Name | Description |
