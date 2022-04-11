@@ -277,7 +277,7 @@ Name | Author | Description |
 | 42Crunch | [@apisecurityio](https://twitter.com/apisecurityio/) | API security news, standards, vulnerabilities, tools. |
 
 ## Contributions
-1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. The exception is in the book's topic where some referenced items may have an associated cost.
+1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. The exception is in the book's topic, where some referenced items may have an associated cost.
 
 2. Other content vendor-specific, ads, commercial, restricted, free trial, freemium, closed-source (proprietary software), or products provided in exchange for private user details are considered out of scope; these will be discarded or ignored without notice.
 
