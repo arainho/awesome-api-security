@@ -16,8 +16,8 @@
   <a href="#firewalls">Firewalls</a> •
   <a href="#fuzzing-seclists">Fuzzing, SecLists</a> •
   <a href="#http-101">HTTP 101</a> •
-  <a href="#mind-maps">Mind maps</a> •
-  <a href="#newsletters">Newsletters</a> • </br>
+  <a href="#mind-maps">Mind maps</a> • </br>
+  <a href="#newsletters">Newsletters</a> • 
   <a href="#other-resources">Other resources</a> • 
   <a href="#playlists">Playlists</a> •
   <a href="#podcasts">Podcasts</a> •
