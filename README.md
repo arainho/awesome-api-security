@@ -18,7 +18,7 @@
   <a href="#http-101">HTTP 101</a> •
   <a href="#mind-maps">Mind maps</a> •
   <a href="#newsletters">Newsletters</a> • </br>
-  <a href="#other-useful-resources">Other useful resources</a> • 
+  <a href="#other-resources">Other resources</a> • 
   <a href="#playlists">Playlists</a> •
   <a href="#podcasts">Podcasts</a> •
   <a href="#presentations-videos">Presentations, Videos</a> •
@@ -163,13 +163,13 @@
 | ------- | ---- | ----------- |
 | 42Crunch | [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
 
-## Other useful resources
+## Other resources
 Name | Description
 ---- | ----
-| [API Security Guide](https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html) | API Security: The Definitive Guide |
 | [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security - API Security Best Practices MegaGuide |
-| [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | API Penetration Testing with OWASP 2017 Test Cases. |
-| [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | Simplifying API Pentesting With Swagger Files. |
+| [API Security: The Complete Guide](https://brightsec.com/blog/api-security) | Bright Security - API Security, The Complete Guide |
+| [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | SecureLayer7 - API Penetration Testing with OWASP 2017 Test Cases. |
+| [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | RhinoSecurityLabs - Simplifying API Pentesting With Swagger Files. |
 | [API security articles](https://char49.com/search/query:API%20security) | Char49 - API security articles. |
 | [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence - Principles of API Security Testing and how to perform a Security Test on an API. |
 | [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| API Security Testing – How to Hack an API and Get Away with It (Part 1 of 3). |
