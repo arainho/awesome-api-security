@@ -109,10 +109,11 @@
 ## Encyclopedias, Projects, Wikis and GitBooks
 | Name | Description |
 | ---- | ----------- |
+| [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
+| [API Security Empire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
 | [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
-| [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
-| [API-SecurityEmpire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
+| [GraphQL](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - GraphQL |
 
 ## Enumeration, Scanning and exploration steps
 | Name | Description |
