@@ -174,6 +174,7 @@ Name | Author | Description |
 | [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | RhinoSecurityLabs | Simplifying API Pentesting With Swagger Files. |
 | [API security articles](https://char49.com/search/query:API%20security) | Char49 | API security articles. |
 | [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence | Principles of API Security Testing and how to perform a Security Test on an API. |
+| [Finding and Exploiting Web App APIs](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af) | Bend Theory | Finding and Exploiting Unintended Functionality in Main Web App APIs
 | [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| SmartBear | How to Hack an API and Get Away with It (Part 1 of 3). |
 | [How to Hack APIs in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021) | Detectify | How to Hack APIs in 2021 |
 | [How to Hack API in 60 minutes with Open Source Tools](https://www.wallarm.com/what/how-to-hack-api-in-60-minutes-with-open-source) | Wallarm | How to Hack API in 60 minutes with Open Source Tools | 
