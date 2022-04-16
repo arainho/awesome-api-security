@@ -4,7 +4,6 @@
       
 <p align="center">
   <a href="#api-keys-find-and-validate">API Keys: Find and validate</a> •
-  <a href="#awesome-repositories">Awesome Repositories</a> •
   <a href="#books">Books</a> •
   <a href="#cheatsheets">Cheatsheets</a> •
   <a href="#checklist">Checklist</a> •
@@ -23,6 +22,7 @@
   <a href="#podcasts">Podcasts</a> •
   <a href="#presentations-videos">Presentations, Videos</a> •
   <a href="#projects">Projects</a> • </br>
+  <a href="#security-apis">Security APIs</a> •
   <a href="#specifications">Specifications</a> •
   <a href="#tools">Tools</a> •
   <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
