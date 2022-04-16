@@ -41,11 +41,6 @@
 |[API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares.
 |[Private key usage verification ](https://github.com/trufflesecurity/driftwood) | Driftwood is a tool that can enable you to lookup whether a private key is used for things like TLS or as a GitHub SSH key for a user. |
 
-## Awesome repositories
-| Name | Description |
-| ---- | ----------- |
-| [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
-
 ## Books
 | Author      | Publisher | Name | Description |
 | ----------- | --------- | -----| ----------- |
@@ -214,6 +209,11 @@ Name | Author | Description |
 | Name | Description |
 | ---- | ----------- |
 | [owasp api security project](https://owasp.org/www-project-api-security/) | OWASP API Security Project - API Security Top 10 |
+
+## Security APIs
+| Name | Description |
+| ---- | ----------- |
+| [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
 
 ## Specifications
 | Name | Description |
