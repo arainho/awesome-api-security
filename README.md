@@ -128,7 +128,7 @@
 | ---- | ----------- |
 | [Wallarm Free API Firewall](https://github.com/wallarm/api-firewall)| Fast and light-weight API proxy firewall for request and response validation by OpenAPI specs.  |
 
-## Fuzzing, SecLists
+## Fuzzing, SecLists, Wordlists
 | Name | Description |
 | ---- | ----------- |
 | [API Common methods](https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods) | API Common methods provided by fuzzdb. |
