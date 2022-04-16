@@ -14,7 +14,7 @@
   <a href="#encyclopedias-projects-wikis-and-gitbooks">Encyclopedias, Projects, Wikis and GitBooks</a> • </br>
   <a href="#enumeration-scanning-and-exploration-steps">Enumeration, Scanning and exploration steps</a> •
   <a href="#firewalls">Firewalls</a> •
-  <a href="#fuzzing-seclists">Fuzzing, SecLists</a> •
+  <a href="#fuzzing-seclists-wordlists">Fuzzing, SecLists, Wordlists</a> •
   <a href="#http-101">HTTP 101</a> •
   <a href="#mind-maps">Mind maps</a> • </br>
   <a href="#newsletters">Newsletters</a> • 
