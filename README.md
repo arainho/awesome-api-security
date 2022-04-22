@@ -168,7 +168,7 @@ Name | Author | Description |
 | [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security | API Security Best Practices MegaGuide |
 | [API Security: The Complete Guide](https://brightsec.com/blog/api-security) | Bright Security | API Security, The Complete Guide |
 | [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | SecureLayer7 | API Penetration Testing with OWASP 2017 Test Cases. |
-|[API Penetration Testing Report](https://underdefense.com/wp-content/uploads/2019/05/Anonymised-API-Penetration-Testing-Report.pdf) | UnderDefense | Anonymised API Penetration Testing Report |
+|[API Penetration Testing Report](https://underdefense.com/wp-content/uploads/2019/05/Anonymised-API-Penetration-Testing-Report.pdf) | UnderDefense | Anonymised API Penetration Testing Report - vendor sample template |
 | [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | RhinoSecurityLabs | Simplifying API Pentesting With Swagger Files. |
 | [API security articles](https://char49.com/search/query:API%20security) | Char49 | API security articles. |
 | [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence | Principles of API Security Testing and how to perform a Security Test on an API. |
