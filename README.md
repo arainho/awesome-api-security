@@ -69,6 +69,7 @@
 | HolyBugx | [another API Security checklist](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/API%20Security.pdf) | HolyTips: API security checklist
 |  Latish Danawale  |  [API Testing Checklist](https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html) | API Testing Checklist. |
 | Binary Brotherhood| [OAuth2: Security checklist](https://web.archive.org/web/20210607123429/https://www.binarybrotherhood.io/oauth2_threat_model.html)| OAuth 2.0 Threat Model Pentesting Checklist |
+| API Mike, @api_sec | [API penetration testing checklist](https://apimike.com/api-penetration-testing-checklist) | Common steps to included in any API penetration testing process. |
 
 ## Conferences
 | Name      | Description |
