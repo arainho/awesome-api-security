@@ -191,6 +191,7 @@ Name | Author | Description |
 | Name | Description |
 | ---- | ----------- |
 | [Everything API Hacking](https://www.youtube.com/playlist?list=PLbyncTkpno5HqX1h2MnV6Qt4wvTb8Mpol) | A video collection from Katie Paxton-Fear, @InsiderPhD, and other people creating a playlist of API hacking knowledge! |
+| [API hacking](https://www.youtube.com/c/TheXSSrat/search?query=API%20hacking)| API hacking videos from @theXSSrat |
 
 ## Podcasts
 | Name | Description |
