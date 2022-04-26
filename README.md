@@ -277,6 +277,7 @@ Name | Author | Description |
 | Pentester Academy | [API security, REST Labs](https://attackdefense.pentesteracademy.com/listing?labtype=rest&subtype=rest-api-security) | Pentester Academy - attack & defense |
 | Hacker101 | [GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
 | OWASP-SKF | [GraphQL Labs](https://demo.securityknowledgeframework.org/labs/view) | GraphQL Labs on the OWASP Security Knowledge Framework |
+| TheXSSrat | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises |
 
 ## Twitter
 | Author  | Name | Description |
