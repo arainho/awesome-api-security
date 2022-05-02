@@ -251,6 +251,7 @@ Name | Author | Description |
 | [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
+| [CATS](https://github.com/Endava/cats) | CATS is a REST API Fuzzer and negative testing tool for OpenAPI endpoints. |
 | [Cherrybomb](https://github.com/blst-security/cherrybomb) | Stop half-done API specifications with a CLI tool that helps you avoid undefined user behaviour by validating your API specifications. |
 | [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. | 
 | [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
