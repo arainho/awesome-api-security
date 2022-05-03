@@ -243,6 +243,7 @@ Name | Author | Description |
 | [graphql-path-enum](https://gitlab.com/dee-see/graphql-path-enum) | Tool that lists the different ways of reaching a given type in a GraphQL schema. |
 | [graphql-playground](https://github.com/graphql/graphql-playground) | GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration) |
 | [graphql-threat-matrix](https://github.com/nicholasaleks/graphql-threat-matrix) | GraphQL threat framework used by security professionals to research security gaps in GraphQL implementations. |
+| [graphw00f](https://github.com/dolevf/graphw00f) | graphw00f is GraphQL Server Engine Fingerprinting utility for software security professionals looking to learn more about what technology is behind a given GraphQL endpoint. |
 |  |  |
 | **REST APIs** |
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
