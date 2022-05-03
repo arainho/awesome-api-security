@@ -36,7 +36,7 @@
 ## API Keys: Find and validate
 | Name | Description |
 | ---- | ----------- |
-| [API Guesser](https://api-guesser.netlify.app/] | Simple website to guess API Key / OAuth Token by Muhammad Daffa |
+| [API Guesser](https://api-guesser.netlify.app/) | Simple website to guess API Key / OAuth Token by Muhammad Daffa |
 |[API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares. |
 | [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity. |
 | [Keyhacks](https://github.com/streaak/keyhacks)| Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid. |
@@ -242,6 +242,7 @@ Name | Author | Description |
 | [GraphQLmap](https://github.com/swisskyrepo/GraphQLmap)| GraphQLmap is a scripting engine to interact with a graphql endpoint for pentesting purposes. |
 | [graphql-path-enum](https://gitlab.com/dee-see/graphql-path-enum) | Tool that lists the different ways of reaching a given type in a GraphQL schema. |
 | [graphql-playground](https://github.com/graphql/graphql-playground) | GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration) |
+| [graphql-threat-matrix](https://github.com/nicholasaleks/graphql-threat-matrix) | GraphQL threat framework used by security professionals to research security gaps in GraphQL implementations. |
 |  |  |
 | **REST APIs** |
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
