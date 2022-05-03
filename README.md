@@ -3,6 +3,7 @@
 <h4 align="center">A collection of awesome API Security tools and resources.</h4>
       
 <p align="center">
+  <a href="#about">About</a> •
   <a href="#api-keys-find-and-validate">API Keys: Find and validate</a> •
   <a href="#books">Books</a> •
   <a href="#cheatsheets">Cheatsheets</a> •
@@ -32,6 +33,12 @@
 </p>
 
 ---
+
+## About
+The awesome-api-security (aka awesome-apisec) repository is collection of awesome API Security tools and resources.     
+The focus goes to open-source tools and resources that benefit all the community.    
+
+Please read the <a href="#contributions">contributions</a> section before opening a pull request.
 
 ## API Keys: Find and validate
 | Name | Description |
