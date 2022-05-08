@@ -142,6 +142,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [API Routes Wordlists](https://github.com/assetnote/wordlists/blob/master/data/automated.json) | API Routes - Automated Wordlists provided by Assetnote  |
 | [Common API endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt) | Wordlist for common API endpoints. |
 | [Filenames by fuzz.txt](https://github.com/Bo0oM/fuzz.txt) | Potentially dangerous files | 
+| [Fuzzing APIs](https://www.fuzzingbook.org/html/APIFuzzer.html)| Fuzzing APIs chapter from "The Fuzzing Book". 
 | [GraphQL SecList](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/graphql.txt) | It's a GraphQL list used during security assessments, collected in one place. |
 | [Hacking-APIs](https://github.com/hAPI-hacker/Hacking-APIs) | Wordlists and API paths by @hapi_hacker |
 | [Kiterunner Wordlists](https://github.com/assetnote/wordlists/blob/master/data/kiterunner.json) | Kiterunner Wordlists provided by Assetnote |
