@@ -78,6 +78,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 |  Latish Danawale  |  [API Testing Checklist](https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html) | API Testing Checklist. |
 | Binary Brotherhood| [OAuth2: Security checklist](https://web.archive.org/web/20210607123429/https://www.binarybrotherhood.io/oauth2_threat_model.html)| OAuth 2.0 Threat Model Pentesting Checklist |
 | API Mike, @api_sec | [API penetration testing checklist](https://apimike.com/api-penetration-testing-checklist) | Common steps to include in any API penetration testing process. |
+| LeapGraph| [GraphQL API - The Complete Vulnerability Checklist](https://leapgraph.com/graphql-api-security/)| How to Secure a GraphQL API - The Complete Vulnerability Checklist |
 
 ## Conferences
 | Name      | Description |
