@@ -282,6 +282,7 @@ Name | Author | Description |
 |  |  |
 | **Others**|
 | [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
+| [unfurl](https://github.com/tomnomnom/unfurl) | Pull out bits of URLs provided on stdin |
 
 ## Training, Walkthrough, Labs
 | Author | Name | Description |
