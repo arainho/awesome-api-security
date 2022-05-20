@@ -121,7 +121,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [API Security Empire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
 | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
 | [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
-| [GraphQL](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - GraphQL |
+| [GraphQL](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/graphql) | HackTricks - GraphQL |
 
 ## Enumeration, Scanning and exploration steps
 | Name | Description |
