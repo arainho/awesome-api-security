@@ -306,7 +306,9 @@ Name | Author | Description |
 
 2. Other content vendor-specific, ads, commercial, restricted, free trial, freemium, closed-source (proprietary software), or products provided in exchange for private user details are considered out of scope pull requests.
 
-3. Out of scope pull requests will be discarded and closed or ignored without notice.
+3. Duplicated content or entries that do not provide additional or relevant content compared with existing entries may also not be considered.
+
+5. Out of scope pull requests will be probably discarded, closed or ignored without notice.
 
 If you think your content fits the above purposes, please
 - create a new branch
