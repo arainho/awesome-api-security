@@ -99,6 +99,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [REST API Goat](https://github.com/optiv/rest-api-goat) | This is a "Goat" project so you can get familiar with REST API testing. |
 | [VAmPI](https://github.com/erev0s/VAmPI)| Vulnerable REST API with OWASP top 10 vulnerabilities for APIs |
 | [vAPI](https://github.com/roottusk/vapi)| vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable API that mimics OWASP API Top 10 scenarios through Exercises. |
+| [vuln-graphql-api](https://github.com/kaakaww/vuln-graphql-api) | A very vulnerable implementation of a GraphQL API. |
 | [vulnerable-graphql-api](https://github.com/CarveSystems/vulnerable-graphql-api) | A very vulnerable implementation of a GraphQL API. |
 | [Websheep](https://github.com/marmicode/websheep) | Websheep is an app based on a willingly vulnerable ReSTful APIs. |
 
