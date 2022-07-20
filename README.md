@@ -139,8 +139,8 @@ Please read the <a href="#contributions">contributions</a> section before openin
 ## Fuzzing, SecLists, Wordlists
 | Name | Description |
 | ---- | ----------- |
-| [API Common methods](https://github.com/fuzzdb-project/fuzzdb/tree/master/discovery/common-methods) | API Common methods provided by fuzzdb. |
 | [API names wordlist](https://github.com/chrislockard/api_wordlist) | A wordlist of API names for web application assessments  |
+| [API HTTP requests methods](https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/http-request-methods.txt) | HTTP requests methods  wordlist by @danielmiessler |
 | [API Routes Wordlists](https://github.com/assetnote/wordlists/blob/master/data/automated.json) | API Routes - Automated Wordlists provided by Assetnote  |
 | [Common API endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt) | Wordlist for common API endpoints. |
 | [Filenames by fuzz.txt](https://github.com/Bo0oM/fuzz.txt) | Potentially dangerous files | 
