@@ -167,12 +167,13 @@ Please read the <a href="#contributions">contributions</a> section before openin
 ## Mind maps
 | Author  | Name | Description |
 | ------- | ---- | ----------- |
-| [David Sopas](https://github.com/dsopas) | [MindAPI](https://dsopas.github.io/MindAPI/play/) | Organize your API security assessment by using MindAPI |
-| [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
-| [Harsh Bothra](https://github.com/muffyhub) | [XML attacks](https://www.xmind.net/m/xNEY9b/) | Mind map: XML attacks |
-| [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - Recon](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap.pdf) | Mind map: API Pentesting - Recon |
 | [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - ATTACK](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap%20ATTACK.pdf) | Mind map: API Pentesting - ATTACK |
+| [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - Recon](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap.pdf) | Mind map: API Pentesting - Recon |
 | [Cypro AB](https://github.com/cyprosecurity) | [GraphQL Attacking](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap%20%7B%7BGraphQL%20Attacking%7D%7D.pdf) | Mind map: GraphQL Attacking |
+| [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
+| [David Sopas](https://github.com/dsopas) | [MindAPI](https://dsopas.github.io/MindAPI/play/) | Organize your API security assessment by using MindAPI 
+| [Harsh Bothra](https://github.com/muffyhub) | [XML attacks](https://www.xmind.net/m/xNEY9b/) | Mind map: XML attacks |
+| [Abhay Bhargav](https://twitter.com/abhaybhargav)| [REST API defenses](https://mobile.twitter.com/abhaybhargav/status/1373982049019654149/photo/1) | Mind map: REST API defenses |
 
 ## Newsletters
 | Author  | Name | Description |
