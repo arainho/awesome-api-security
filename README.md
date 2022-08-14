@@ -291,14 +291,15 @@ Name | Author | Description |
 ## Training, Walkthrough, Labs
 | Author | Name | Description |
 | ------ | ---- | ----------- |
-| Kontra | [OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
-| Tushar Kulkarni | [vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface, Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises. |
-| Grant Ongers | [API top 10 walkthrough](https://securedelivery.io/articles/api-top-ten-walkthrough/) | OWASP API Top 10 CTF Walk-through. |
-| ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
 | Pentester Academy | [API security, REST Labs](https://attackdefense.pentesteracademy.com/listing?labtype=rest&subtype=rest-api-security) | Pentester Academy - attack & defense |
+| Corey Ball | [API Security University](https://university.apisec.ai) |
+| Grant Ongers | [API top 10 walkthrough](https://securedelivery.io/articles/api-top-ten-walkthrough/) | OWASP API Top 10 CTF Walk-through. |
 | Hacker101 | [GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
 | OWASP-SKF | [GraphQL Labs](https://demo.securityknowledgeframework.org/labs/view) | GraphQL Labs on the OWASP Security Knowledge Framework |
 | Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises by @TheXSSrat |
+| Kontra | [OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
+| ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
+| Tushar Kulkarni | [vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface, Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises. |
 
 ## Twitter
 | Author  | Name | Description |
