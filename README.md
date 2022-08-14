@@ -292,7 +292,7 @@ Name | Author | Description |
 | Author | Name | Description |
 | ------ | ---- | ----------- |
 | Pentester Academy | [API security, REST Labs](https://attackdefense.pentesteracademy.com/listing?labtype=rest&subtype=rest-api-security) | Pentester Academy - attack & defense |
-| Corey Ball | [API Security University](https://university.apisec.ai) |
+| Corey Ball | [API Security University](https://university.apisec.ai) | APIsec University provides training courses for application security professionals |
 | Grant Ongers | [API top 10 walkthrough](https://securedelivery.io/articles/api-top-ten-walkthrough/) | OWASP API Top 10 CTF Walk-through. |
 | Hacker101 | [GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
 | OWASP-SKF | [GraphQL Labs](https://demo.securityknowledgeframework.org/labs/view) | GraphQL Labs on the OWASP Security Knowledge Framework |
