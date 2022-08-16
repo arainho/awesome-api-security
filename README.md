@@ -26,7 +26,7 @@
   <a href="#security-apis">Security APIs</a> •
   <a href="#specifications">Specifications</a> •
   <a href="#tools">Tools</a> •
-  <a href="#training-walkthrough-labs">Training, Workshops, Labs</a> •
+  <a href="#training-workshops-labs">Training, Workshops, Labs</a> •
   <a href="#twitter">Twitter</a> •
   </br>
   • <a href="#contributions">Contributions</a> •
