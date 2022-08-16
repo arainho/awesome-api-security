@@ -26,7 +26,7 @@
   <a href="#security-apis">Security APIs</a> •
   <a href="#specifications">Specifications</a> •
   <a href="#tools">Tools</a> •
-  <a href="#training-walkthrough-labs">Training, Walkthrough, Labs</a> •
+  <a href="#training-walkthrough-labs">Training, Workshops, Labs</a> •
   <a href="#twitter">Twitter</a> •
   </br>
   • <a href="#contributions">Contributions</a> •
@@ -288,7 +288,7 @@ Name | Author | Description |
 | [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 | [unfurl](https://github.com/tomnomnom/unfurl) | Pull out bits of URLs provided on stdin |
 
-## Training, Walkthrough, Labs
+## Training, Workshops, Labs
 | Author | Name | Description |
 | ------ | ---- | ----------- |
 | Pentester Academy | [API security, REST Labs](https://attackdefense.pentesteracademy.com/listing?labtype=rest&subtype=rest-api-security) | Pentester Academy - attack & defense |
@@ -296,6 +296,7 @@ Name | Author | Description |
 | Grant Ongers | [API top 10 walkthrough](https://securedelivery.io/articles/api-top-ten-walkthrough/) | OWASP API Top 10 CTF Walk-through. |
 | Hacker101 | [GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
 | OWASP-SKF | [GraphQL Labs](https://demo.securityknowledgeframework.org/labs/view) | GraphQL Labs on the OWASP Security Knowledge Framework |
+| Corey Ball | [Hacking APIs](https://sway.office.com/HVrL2AXUlWGNDHqy) | Hacking APIs: workshop |
 | Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises by @TheXSSrat |
 | Kontra | [OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
 | ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
