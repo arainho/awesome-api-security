@@ -241,6 +241,7 @@ Name | Author | Description |
 ## Specifications
 | Name | Description |
 | ---- | ----------- |
+| [API Blueprint](https://apiblueprint.org/documentation/specification.html)| API Blueprint Specification | 
 | [AscyncAPI](https://www.asyncapi.com/docs/specifications/latest) | AsyncAPI Specification |
 | [OpenAPI](https://swagger.io/specification/) | OpenAPI Specification |
 | [JSON API](https://jsonapi.org/format/) | JSON API Specification |
