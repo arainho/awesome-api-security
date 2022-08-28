@@ -93,6 +93,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Name | Description |
 | ---- | ----------- |
 | [APISandbox](https://github.com/API-Security/APISandbox) | Pre-Built Vulnerable Multiple API Scenarios Environments Based on Docker-Compose. |
+| [Bookstore](https://tryhackme.com/room/bookstoreoc) | TryHackMe room - A Beginner level box with basic web enumeration and REST API Fuzzing. |
 | [crAPI](https://github.com/OWASP/crAPI) | completely ridiculous API (crAPI) |
 | [Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| Damn Vulnerable GraphQL Application is intentionally vulnerable implementation of Facebook's GraphQL technology to learn and practice GraphQL Security. |
 | [Damn Vulnerable Micro Services](https://github.com/ne0z/DamnVulnerableMicroServices) | This is a vulnerable microservice written in many languages to demonstrating OWASP API Top Security Risk (under development)|
