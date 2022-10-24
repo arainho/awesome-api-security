@@ -279,6 +279,7 @@ Name | Author | Description |
 | [kiterunner](https://github.com/assetnote/kiterunner) | Contextual Content Discovery Tool. |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | Automagically reverse-engineer REST APIs via capturing traffic |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
+| [Step CI](https://stepci.com) | Open-Source API Testing and Monitoring for developers |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
 | [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
 | [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | Dump all available paths and/or endpoints on WADL file. |
