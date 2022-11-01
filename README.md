@@ -192,7 +192,7 @@ Name | Author | Description |
 | [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | SecureLayer7 | API Penetration Testing with OWASP 2017 Test Cases. |
 |[API Penetration Testing Report](https://underdefense.com/wp-content/uploads/2019/05/Anonymised-API-Penetration-Testing-Report.pdf) | UnderDefense | Anonymised API Penetration Testing Report - vendor sample template |
 | [API Pentesting with Swagger Files](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/) | RhinoSecurityLabs | Simplifying API Pentesting With Swagger Files. |
-| [API security articles](https://char49.com/search/query:API%20security) | Char49 | API security articles. |
+| [API security path resources](https://dsopas.github.io/MindAPI/references/) | MindAPI | Resources to help out in the API security path; diverse content from talks/webinards/videos, must read, writeups, bola/idors, oauth, jwt, rate limit, ssrf and practice entries. |
 | [API Security Testing](https://sphericaldefence.com/api-security-testing) | Spherical Defence | Principles of API Security Testing and how to perform a Security Test on an API. |
 | [Finding and Exploiting Web App APIs](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af) | Bend Theory | Finding and Exploiting Unintended Functionality in Main Web App APIs
 | [How to Hack an API and Get Away with It](https://smartbear.com/blog/test-and-monitor/api-security-testing-how-to-hack-an-api-part-1/)| SmartBear | How to Hack an API and Get Away with It (Part 1 of 3). |
