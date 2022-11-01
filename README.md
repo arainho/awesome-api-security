@@ -186,6 +186,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 ## Other resources
 Name | Author | Description |
 ---- | ------ | ----------- |
+| [API Hacking Articles](https://danaepp.com/blog)| Dana Epp | API Hacking Fundamentals, Tools, Techniques, Fails and Mindset articles. |
 | [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security | API Security Best Practices MegaGuide |
 | [API Security: The Complete Guide](https://brightsec.com/blog/api-security) | Bright Security | API Security, The Complete Guide |
 | [API Penetration Testing](https://blog.securelayer7.net/api-penetration-testing-with-owasp-2017-test-cases) | SecureLayer7 | API Penetration Testing with OWASP 2017 Test Cases. |
