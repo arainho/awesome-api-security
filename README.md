@@ -293,6 +293,7 @@ Name | Author | Description |
 | [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 | [dredd](https://github.com/apiaryio/dredd)| Language-agnostic HTTP API Testing Tool  |
 | [unfurl](https://github.com/tomnomnom/unfurl) | Pull out bits of URLs provided on stdin |
+| [Step CI](https://github.com/stepci/stepci) | Open-source framework for API Quality Assurance, which tests REST, GraphQL and gRPC automated and from Open API spec. |
 
 ## Training, Workshops, Labs
 | Author | Name | Description |
