@@ -263,6 +263,7 @@ Name | Author | Description |
 | [graphql-playground](https://github.com/graphql/graphql-playground) | GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration) |
 | [graphql-threat-matrix](https://github.com/nicholasaleks/graphql-threat-matrix) | GraphQL threat framework used by security professionals to research security gaps in GraphQL implementations. |
 | [graphw00f](https://github.com/dolevf/graphw00f) | graphw00f is GraphQL Server Engine Fingerprinting utility for software security professionals looking to learn more about what technology is behind a given GraphQL endpoint. |
+| [Step CI](https://github.com/stepci/stepci) | Open-source framework for API Quality Assurance, which tests REST, GraphQL and gRPC automated and from Open API spec. |
 |  |  |
 | **REST APIs** |
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
