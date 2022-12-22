@@ -319,7 +319,9 @@ Name | Author | Description |
 
 2. Other content vendor-specific, ads, commercial, restricted, free trial, freemium, closed-source (proprietary software), products or services provided in exchange for private user details are considered out of scope pull requests.
 
-3. Duplicated content or entries that do not provide additional or relevant content compared with existing entries may also not be considered.
+3. Content or materials not directly related to API security, hunting bugs in APIs, hardening or hacking APIs may also be discarded.
+
+4. Duplicated content or entries that do not provide additional or relevant content compared with existing entries may also not be considered.
 
 5. Out of scope pull requests will be probably discarded, closed or ignored without notice.
 
