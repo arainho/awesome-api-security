@@ -290,10 +290,11 @@ Name | Author | Description |
 | [wsdl-wizard](https://github.com/portswigger/wsdl-wizard)| WSDL Wizard is a Burp Suite plugin written in Python to detect current and discover new WSDL (Web Service Definition Language) files. |
 |  |  |
 | **Others**|
-| [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 | [dredd](https://github.com/apiaryio/dredd)| Language-agnostic HTTP API Testing Tool  |
-| [unfurl](https://github.com/tomnomnom/unfurl) | Pull out bits of URLs provided on stdin |
+| [getallurls (gau)](https://github.com/lc/gau) | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl. |
+| [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 | [Step CI](https://github.com/stepci/stepci) | Open-source framework for API Quality Assurance, which tests REST, GraphQL and gRPC automated and from Open API spec. |
+| [unfurl](https://github.com/tomnomnom/unfurl) | Pull out bits of URLs provided on stdin |
 
 ## Training, Workshops, Labs
 | Author | Name | Description |
