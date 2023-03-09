@@ -279,6 +279,7 @@ Name | Author | Description |
 | [gotestwaf](https://github.com/wallarm/gotestwaf) | An open-source project in Golang to test different web application firewalls (WAF) for detection logic and bypasses |
 | [kiterunner](https://github.com/assetnote/kiterunner) | Contextual Content Discovery Tool. |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | Automagically reverse-engineer REST APIs via capturing traffic |
+| [Optic](https://github.com/opticdev/optic) | Verify the accuracy of your OpenAPI 3.x spec using real traffic and automatically apply patches that keep it up-to-date |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
 | [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
