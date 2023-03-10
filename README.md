@@ -121,13 +121,14 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [API Audit](https://www.apiopscycles.com/method/api-audit) | API Audit is a method to ensure APIs are matching the API Design guidelines. It also helps check for usability, security and API management platform compatibility. |
 
 ## Encyclopedias, Projects, Wikis and GitBooks
-| Name | Description |
-| ---- | ----------- |
-| [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | six2dez - APIs Pentest Book |
-| [API Security Empire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
-| [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | APIsecurity.io - API Security Encyclopedia |
-| [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
-| [GraphQL](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/graphql) | HackTricks - GraphQL |
+| Author   | Name | Description |
+| -------- | ---- | ----------- |
+| @six2dez | [APIs Pentest Book](https://pentestbook.six2dez.com/enumeration/webservices/apis) | APIs Pentest Book |
+| @csbygb  | [API Pentest tips](https://csbygb.gitbook.io/pentips/web-pentesting/api) | CSbyGB's Pentips |
+| cyprosecurity | [API Security Empire](https://github.com/cyprosecurity/API-SecurityEmpire) | The API Security Empire Project aims to present unique attack & defense methods in the API Security field |
+| @APIsecurity.io | [API Security Encyclopedia](https://apisecurity.io/encyclopedia/content/api-security-encyclopedia.htm)  | API Security Encyclopedia |
+| @carlospolop | [Web API Pentesting](https://book.hacktricks.xyz/pentesting/pentesting-web/web-api-pentesting) | HackTricks - Web API Pentesting |
+| @carlospolop | [GraphQL](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/graphql) | HackTricks - GraphQL |
 
 ## Enumeration, Scanning and exploration steps
 | Name | Description |
