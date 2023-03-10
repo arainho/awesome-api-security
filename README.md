@@ -278,6 +278,7 @@ Name | Author | Description |
 | [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
 | [gotestwaf](https://github.com/wallarm/gotestwaf) | An open-source project in Golang to test different web application firewalls (WAF) for detection logic and bypasses |
 | [kiterunner](https://github.com/assetnote/kiterunner) | Contextual Content Discovery Tool. |
+| [Metlo](https://github.com/metlo-labs/metlo) | [Open-source API security tool](https://metlo.com) to discover, inventory, test, and protect your APIs. |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | Automagically reverse-engineer REST APIs via capturing traffic |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
