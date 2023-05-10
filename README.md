@@ -316,9 +316,12 @@ Name | Author | Description |
 | Tushar Kulkarni | [vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface, Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises. |
 
 ## Twitter
-| Author  | Name | Description |
-| ------- | ---- | ----------- |
-| 42Crunch | [@apisecurityio](https://twitter.com/apisecurityio/) | API security news, standards, vulnerabilities, tools. |
+| Author            | Name                                                 | Description                                           |
+| ----------------  | ---------------------------------------------------- | ----------------------------------------------------- |
+| 42Crunch          | [@apisecurityio](https://twitter.com/apisecurityio)  | API security news, standards, vulnerabilities, tools. |
+| Corey J. Ball     | [@hAPI_hacker](https://twitter.com/hAPI_hacker)      | Cybersecurity consulting manager                      |
+| David Sopas       | [@dsopas](https://twitter.com/dsopas)                | Security Researcher                                   |
+| Katie Paxton-Fear | [@InsiderPhD](https://twitter.com/InsiderPhD)        | Lecturer and hacker                                   |
 
 ## Contributions
 1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. The exception is in the book's topic, where some referenced items may have an associated cost.
@@ -330,6 +333,10 @@ Name | Author | Description |
 4. Duplicated content or entries that do not provide additional or relevant content compared with existing entries may also not be considered.
 
 5. Out of scope pull requests will be probably discarded, closed or ignored without notice.
+
+6. The twitter section reference authors of books, videos, workshops, courses, newsletters or content already existent on this repository. This is a bit subjective and may not be consensual at all! Even though it can bring division I decided to add the section since it might be useful to some of the visitors of the repository.
+
+7. If you are an author of tools/content and your description is not accurate on twitter or other section let me know!
 
 If you think your content fits the above purposes, please
 - create a new branch
