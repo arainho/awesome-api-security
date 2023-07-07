@@ -183,6 +183,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Author  | Name | Description |
 | ------- | ---- | ----------- |
 | 42Crunch | [api security articles](https://apisecurity.io/#newsletter1) | API Security Articles - The Latest API Security News, Vulnerabilities & Best Practices. |
+| Dana Epp | [api hacker’s inner circle](https://apihacker.blog/) | API Hacker’s Inner Circle Newsletter. |
 
 ## Other resources
 Name | Author | Description |
