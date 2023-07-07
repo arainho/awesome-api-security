@@ -284,6 +284,7 @@ Name | Author | Description |
 | [Metlo](https://github.com/metlo-labs/metlo) | [Open-source API security tool](https://metlo.com) to discover, inventory, test, and protect your APIs. |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | Automagically reverse-engineer REST APIs via capturing traffic |
 | [Optic](https://github.com/opticdev/optic) | Verify the accuracy of your OpenAPI 3.x spec using real traffic and automatically apply patches that keep it up-to-date |
+| [REST-Attacker](https://github.com/RUB-NDS/REST-Attacker) | Designed as a proof-of-concept for the feasibility of testing generic real-world REST implementations. Its goal is to provide a framework for REST security research. |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
 | [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
