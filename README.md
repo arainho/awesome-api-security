@@ -321,6 +321,7 @@ Name | Author | Description |
 | ----------------  | ---------------------------------------------------- | ----------------------------------------------------- |
 | 42Crunch          | [@apisecurityio](https://twitter.com/apisecurityio)  | API security news, standards, vulnerabilities, tools. |
 | Corey J. Ball     | [@hAPI_hacker](https://twitter.com/hAPI_hacker)      | Cybersecurity consulting manager                      |
+| Dana Epp          | [@ddǝɐuɐp](https://twitter.com/danaepp)              | Microsoft Security MVP                                |
 | David Sopas       | [@dsopas](https://twitter.com/dsopas)                | Security Researcher                                   |
 | Katie Paxton-Fear | [@InsiderPhD](https://twitter.com/InsiderPhD)        | Lecturer and hacker                                   |
 
