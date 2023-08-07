@@ -101,6 +101,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [Generic-University](https://github.com/InsiderPhD/Generic-University) | Vulnerable API with Laravel App |
 | [node-api-goat](https://github.com/layro01/node-api-goat) | A simple Express.JS REST API application that exposes endpoints with code that contains vulnerabilities. |
 | [Pixi](https://github.com/DevSlop/Pixi) | The Pixi module is a MEAN Stack web app with wildly insecure APIs! |
+|[poc-graphql](https://github.com/righettod/poc-graphql) | Research on GraphQL from an AppSec point of view. |
 | [REST API Goat](https://github.com/optiv/rest-api-goat) | This is a "Goat" project so you can get familiar with REST API testing. |
 | [VAmPI](https://github.com/erev0s/VAmPI)| Vulnerable REST API with OWASP top 10 vulnerabilities for APIs |
 | [vAPI](https://github.com/roottusk/vapi)| vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable API that mimics OWASP API Top 10 scenarios through Exercises. |
