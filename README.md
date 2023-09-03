@@ -317,7 +317,6 @@ Name | Author | Description |
 | Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises by @TheXSSrat |
 | Kontra | [OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
 | ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
-| Tushar Kulkarni | [vAPI](https://github.com/roottusk/vapi) | vAPI is Vulnerable Adversely Programmed Interface, Self-Hostable PHP Interface that mimics OWASP API Top 10 scenarios in the means of Exercises. |
 
 ## Twitter
 | Author            | Name                                                 | Description                                           |
