@@ -108,6 +108,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [vulnapi](https://github.com/tkisason/vulnapi) | [tkisason](https://github.com/tkisason) | Intentionaly very vulnerable API with bonus bad coding practices. |
 | [vulnerable-graphql-api](https://github.com/CarveSystems/vulnerable-graphql-api) | [CarveSystems](https://github.com/CarveSystems) | A very vulnerable implementation of a GraphQL API. |
 | [Websheep](https://github.com/marmicode/websheep) | [marmicode](https://github.com/marmicode) | Websheep is an app based on a willingly vulnerable ReSTful APIs. |
+| [VulnerableApp4APISecurity](https://github.com/Erdemstar/VulnerableApp4APISecurity) | [Erdemstar](https://github.com/Erdemstar/) | This repository was developed using .NET 7.0 API technology based on findings listed in the OWASP 2019 API Security Top 10. |
 
 ## Design, Architecture, Development
 | Name | Description |
