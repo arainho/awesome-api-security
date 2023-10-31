@@ -83,6 +83,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Apollo | [GraphQL API — GraphQL Security Checklist](https://www.apollographql.com/blog/graphql/security/9-ways-to-secure-your-graphql-api-security-checklist/) | 9 Ways To Secure your GraphQL API — GraphQL Security Checklist |
 | LeapGraph | [GraphQL API - The Complete Vulnerability Checklist](https://leapgraph.com/graphql-api-security/)| How to Secure a GraphQL API - The Complete Vulnerability Checklist |
 | Lokesh Gupta | [REST API Security Essentials](https://restfulapi.net/security-essentials/) | REST API Tutorial blog entry. |
+| Escape | [API Security Checklist](https://escape.tech/blog/api-security-checklist/) | API security checklist built with AppSec Engineers in mind |
 
 ## Conferences
 | Name      | Description |
@@ -160,6 +161,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [List of API endpoints & objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) | A list of 3203 common API endpoints and objects designed for fuzzing. |
 | [List of Swagger endpoints](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/swagger.txt) | Swagger endpoints |
 | [SecLists for API's web-content discovery](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api) | It is a collection of web content discovery lists for APIs used during security assessments. |
+| [GraphQL wordlist](https://github.com/Escape-Technologies/graphql-wordlist) | The only GraphQL wordlist you'll ever need. Operations, field names, type names... Collected on more than 60k distinct GraphQL schemas. |
 
 ## HTTP 101
 | Name | Description |
@@ -269,6 +271,9 @@ Name | Author | Description |
 | [graphql-playground](https://github.com/graphql/graphql-playground) | GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration) |
 | [graphql-threat-matrix](https://github.com/nicholasaleks/graphql-threat-matrix) | GraphQL threat framework used by security professionals to research security gaps in GraphQL implementations. |
 | [graphw00f](https://github.com/dolevf/graphw00f) | graphw00f is GraphQL Server Engine Fingerprinting utility for software security professionals looking to learn more about what technology is behind a given GraphQL endpoint. |
+| [goctopus](https://github.com/Escape-Technologies/goctopus) | Blazing fast GraphQL discovery & fingerprinting toolbox. |
+| [graphql-armor](https://github.com/Escape-Technologies/goctopus) | The missing GraphQL security security layer for Apollo GraphQL and Yoga / Envelop servers |
+
 |  |  |
 | **REST APIs** |
 | [Akto](https://github.com/akto-api-security/akto) | API discovery, automated business logic testing and runtime detection |
@@ -321,6 +326,7 @@ Name | Author | Description |
 | Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises by @TheXSSrat |
 | Kontra | [OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
 | ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
+| Escape | [API Security Academy](https://university.apisec.ai) | A free, open-source platform dedicated to learn how to secure GraphQL applications |
 
 ## Twitter
 | Author            | Name                                                 | Description                                           |
