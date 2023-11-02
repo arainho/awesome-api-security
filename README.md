@@ -316,17 +316,17 @@ Name | Author | Description |
 ## Training, Workshops, Labs
 | Author | Name | Description |
 | ------ | ---- | ----------- |
-| Pentester Academy | [API security, REST Labs](https://attackdefense.pentesteracademy.com/listing?labtype=rest&subtype=rest-api-security) | Pentester Academy - attack & defense |
 | APIsec | [API Security University](https://university.apisec.ai) | APIsec University provides training courses for application security professionals |
-| Grant Ongers | [API top 10 walkthrough](https://securedelivery.io/articles/api-top-ten-walkthrough/) | OWASP API Top 10 CTF Walk-through. |
-| Karel Husa | [BankGround API](https://bankground.eu) | Banking-like REST and GraphQL API for training/learning purposes.                                                                                                           |
-| Hacker101 | [GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
-| OWASP-SKF | [GraphQL Labs](https://demo.securityknowledgeframework.org/labs/view) | GraphQL Labs on the OWASP Security Knowledge Framework |
 | Corey Ball | [Hacking APIs](https://sway.office.com/HVrL2AXUlWGNDHqy) | Hacking APIs: workshop |
-| Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises by @TheXSSrat |
+| Escape | [API Security Academy](https://escape.tech/academy/) | API Security Academy, by escape |
+| Grant Ongers | [API top 10 walkthrough](https://securedelivery.io/articles/api-top-ten-walkthrough/) | OWASP API Top 10 CTF Walk-through. |
+| Hacker101 | [GraphQL challenges](https://www.hackerone.com/ethical-hacker/graphql-week-hacker101-capture-flag-challenges) | GraphQL Week on The Hacker101 Capture the Flag Challenges |
+| Karel Husa | [BankGround API](https://bankground.eu) | Banking-like REST and GraphQL API for training/learning purposes.                                                                                                           |
 | Kontra | [OWASP Top 10 for API](https://application.security/free/owasp-top-10-API) | Is a series of free interactive application security training modules that teach developers how to identify and mitigate security vulnerabilities in their web API endpoints. |
+| OWASP-SKF | [GraphQL Labs](https://demo.securityknowledgeframework.org/labs/view) | GraphQL Labs on the OWASP Security Knowledge Framework |
+| Pentester Academy | [API security, REST Labs](https://attackdefense.pentesteracademy.com/listing?labtype=rest&subtype=rest-api-security) | Pentester Academy - attack & defense |
 | ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
-| Escape | [API Security Academy](https://university.apisec.ai) | A free, open-source platform dedicated to learn how to secure GraphQL applications |
+| Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) |  API Hacking Excercises by @TheXSSrat |
 
 ## Twitter
 | Author            | Name                                                 | Description                                           |
