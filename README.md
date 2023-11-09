@@ -48,6 +48,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity. |
 | [Keyhacks](https://github.com/streaak/keyhacks)| Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid. |
 |[Private key usage verification ](https://github.com/trufflesecurity/driftwood) | Driftwood is a tool that can enable you to lookup whether a private key is used for things like TLS or as a GitHub SSH key for a user. |
+| [Mantra](https://github.com/MrEmpy/mantra) | A tool used to hunt down API key leaks in JS files and pages |
 
 ## Books
 | Author      | Publisher | Name | Description |
