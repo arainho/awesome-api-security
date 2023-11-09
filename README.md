@@ -332,6 +332,7 @@ Name | Author | Description |
 | Dana Epp          | [@ddǝɐuɐp](https://twitter.com/danaepp)              | Microsoft Security MVP                                |
 | David Sopas       | [@dsopas](https://twitter.com/dsopas)                | Security Researcher                                   |
 | Katie Paxton-Fear | [@InsiderPhD](https://twitter.com/InsiderPhD)        | Lecturer and hacker                                   |
+| Wesley Thijs      | [@theXSSrat](https://twitter.com/theXSSrat)          | Ethical hacker                                        |
 
 ## Contributions
 1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. The exception is in the book's topic, where some referenced items may have an associated cost.
