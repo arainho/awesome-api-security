@@ -83,7 +83,6 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Apollo | [GraphQL API — GraphQL Security Checklist](https://www.apollographql.com/blog/graphql/security/9-ways-to-secure-your-graphql-api-security-checklist/) | 9 Ways To Secure your GraphQL API — GraphQL Security Checklist |
 | LeapGraph | [GraphQL API - The Complete Vulnerability Checklist](https://leapgraph.com/graphql-api-security/)| How to Secure a GraphQL API - The Complete Vulnerability Checklist |
 | Lokesh Gupta | [REST API Security Essentials](https://restfulapi.net/security-essentials/) | REST API Tutorial blog entry. |
-| Escape | [API Security Checklist](https://escape.tech/blog/api-security-checklist/) | API security checklist built with AppSec Engineers in mind |
 
 ## Conferences
 | Name      | Description |
@@ -272,7 +271,7 @@ Name | Author | Description |
 | [graphql-threat-matrix](https://github.com/nicholasaleks/graphql-threat-matrix) | GraphQL threat framework used by security professionals to research security gaps in GraphQL implementations. |
 | [graphw00f](https://github.com/dolevf/graphw00f) | graphw00f is GraphQL Server Engine Fingerprinting utility for software security professionals looking to learn more about what technology is behind a given GraphQL endpoint. |
 | [goctopus](https://github.com/Escape-Technologies/goctopus) | Blazing fast GraphQL discovery & fingerprinting toolbox. |
-| [graphql-armor](https://github.com/Escape-Technologies/goctopus) | The missing GraphQL security security layer for Apollo GraphQL and Yoga / Envelop servers |
+| [graphql-armor](https://github.com/Escape-Technologies/graphql-armor) | The missing GraphQL security security layer for Apollo GraphQL and Yoga / Envelop servers |
 
 |  |  |
 | **REST APIs** |
