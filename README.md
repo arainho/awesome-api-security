@@ -48,6 +48,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity. |
 | [Keyhacks](https://github.com/streaak/keyhacks)| Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid. |
 |[Private key usage verification ](https://github.com/trufflesecurity/driftwood) | Driftwood is a tool that can enable you to lookup whether a private key is used for things like TLS or as a GitHub SSH key for a user. |
+| [Mantra](https://github.com/MrEmpy/mantra) | A tool used to hunt down API key leaks in JS files and pages |
 
 ## Books
 | Author      | Publisher | Name | Description |
@@ -81,7 +82,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Inon Shkedy | [31 days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) | This challenge is Inon Shkedy's 31 days API Security Tips. |
 | Binary Brotherhood| [OAuth2: Security checklist](https://web.archive.org/web/20210607123429/https://www.binarybrotherhood.io/oauth2_threat_model.html)| OAuth 2.0 Threat Model Pentesting Checklist |
 | Apollo | [GraphQL API — GraphQL Security Checklist](https://www.apollographql.com/blog/graphql/security/9-ways-to-secure-your-graphql-api-security-checklist/) | 9 Ways To Secure your GraphQL API — GraphQL Security Checklist |
-| LeapGraph | [GraphQL API - The Complete Vulnerability Checklist](https://leapgraph.com/graphql-api-security/)| How to Secure a GraphQL API - The Complete Vulnerability Checklist |
+| LeapGraph | [GraphQL API - The Complete Vulnerability Checklist](https://web.archive.org/web/20220701140017/https://leapgraph.com/graphql-api-security/)| How to Secure a GraphQL API - The Complete Vulnerability Checklist |
 | Lokesh Gupta | [REST API Security Essentials](https://restfulapi.net/security-essentials/) | REST API Tutorial blog entry. |
 
 ## Conferences
@@ -335,6 +336,7 @@ Name | Author | Description |
 | Dana Epp          | [@ddǝɐuɐp](https://twitter.com/danaepp)              | Microsoft Security MVP                                |
 | David Sopas       | [@dsopas](https://twitter.com/dsopas)                | Security Researcher                                   |
 | Katie Paxton-Fear | [@InsiderPhD](https://twitter.com/InsiderPhD)        | Lecturer and hacker                                   |
+| Wesley Thijs      | [@theXSSrat](https://twitter.com/theXSSrat)          | Ethical hacker                                        |
 
 ## Contributions
 1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. The exception is in the book's topic, where some referenced items may have an associated cost.
