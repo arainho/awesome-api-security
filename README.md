@@ -259,7 +259,6 @@ Name | Author | Description |
 ## Tools
 | Name | Description |
 | ---- | ----------- |
-| | |
 | **GraphQL** |
 | [BatchQL](https://github.com/assetnote/batchql) | GraphQL security auditing script with a focus on performing batch GraphQL queries and mutations. |
 | [clairvoyance](https://github.com/nikitastupin/clairvoyance) | Obtain GraphQL API schema despite disabled introspection! |
@@ -273,9 +272,8 @@ Name | Author | Description |
 | [graphw00f](https://github.com/dolevf/graphw00f) | graphw00f is GraphQL Server Engine Fingerprinting utility for software security professionals looking to learn more about what technology is behind a given GraphQL endpoint. |
 | [goctopus](https://github.com/Escape-Technologies/goctopus) | Blazing fast GraphQL discovery & fingerprinting toolbox. |
 | [graphql-armor](https://github.com/Escape-Technologies/graphql-armor) | The missing GraphQL security security layer for Apollo GraphQL and Yoga / Envelop servers |
-
 |  |  |
-| **REST APIs** |
+| **REST APIs** | |
 | [Akto](https://github.com/akto-api-security/akto) | API discovery, automated business logic testing and runtime detection |
 | [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
 | [APIClarity](https://github.com/apiclarity/apiclarity) | Reconstruct Open API Specifications from real-time workload traffic seamlessly. |
@@ -300,11 +298,11 @@ Name | Author | Description |
 | [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | Dump all available paths and/or endpoints on WADL file. |
 | [fuzz-lightyear](https://github.com/Yelp/fuzz-lightyear)| A pytest-inspired, DAST framework, capable of identifying vulnerabilities in a distributed, micro-service ecosystem through chaos engineering testing and stateful, Swagger fuzzing. |
 |  |  |
-| **SOAP** |
+| **SOAP** | |
 | [Wsdler](https://github.com/NetSPI/Wsdler)| WSDL Parser extension for Burp. |
 | [wsdl-wizard](https://github.com/portswigger/wsdl-wizard)| WSDL Wizard is a Burp Suite plugin written in Python to detect current and discover new WSDL (Web Service Definition Language) files. |
 |  |  |
-| **Others**|
+| **Others**| |
 | [dredd](https://github.com/apiaryio/dredd)| Language-agnostic HTTP API Testing Tool  |
 | [getallurls (gau)](https://github.com/lc/gau) | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl. |
 | [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
