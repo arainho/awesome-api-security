@@ -309,7 +309,6 @@ Name | Author | Description |
 | [SoapUI](https://github.com/SmartBear/soapui) | SoapUI is a free and open-source cross-platform functional testing solution for APIs and web services. |
 | [Step CI](https://github.com/stepci/stepci) | Open-source framework for API Quality Assurance, which tests REST, GraphQL and gRPC automated and from Open API spec. |
 | [unfurl](https://github.com/tomnomnom/unfurl) | Pull out bits of URLs provided on stdin |
-
 | [noir](https://github.com/hahwul/noir) | Noir is an attack surface detector form source code. |
 
 ## Training, Workshops, Labs
