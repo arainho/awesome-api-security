@@ -273,7 +273,6 @@ Name | Author | Description |
 | [graphw00f](https://github.com/dolevf/graphw00f) | graphw00f is GraphQL Server Engine Fingerprinting utility for software security professionals looking to learn more about what technology is behind a given GraphQL endpoint. |
 | [goctopus](https://github.com/Escape-Technologies/goctopus) | Blazing fast GraphQL discovery & fingerprinting toolbox. |
 | [graphql-armor](https://github.com/Escape-Technologies/graphql-armor) | The missing GraphQL security security layer for Apollo GraphQL and Yoga / Envelop servers |
-
 |  |  |
 | **REST APIs** |
 | [Akto](https://github.com/akto-api-security/akto) | API discovery, automated business logic testing and runtime detection |
