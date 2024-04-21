@@ -96,17 +96,17 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | [APISandbox](https://github.com/API-Security/APISandbox) | [APISecurity Community](https://github.com/API-Security) | Pre-Built Vulnerable Multiple API Scenarios Environments Based on Docker-Compose. |
 | [Bookstore](https://tryhackme.com/room/bookstoreoc) | [sidchn](https://tryhackme.com/p/sidchn) | TryHackMe room - A Beginner level box with basic web enumeration and REST API Fuzzing. |
 | [crAPI](https://github.com/OWASP/crAPI) | [OWASP](https://github.com/OWASP) | completely ridiculous API (crAPI) |
-| [Damn Vulnerable GraphQL Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)| [dolevf](https://github.com/dolevf/) |Damn Vulnerable GraphQL Application is intentionally vulnerable implementation of Facebook's GraphQL technology to learn and practice GraphQL Security. |
-| [Damn Vulnerable Micro Services](https://github.com/ne0z/DamnVulnerableMicroServices) | [ne0z](https://github.com/ne0z) | This is a vulnerable microservice written in many languages to demonstrating OWASP API Top Security Risk (under development)|
+| [Damn Vulnerable GraphQL Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application) | [dolevf](https://github.com/dolevf/) |Damn Vulnerable GraphQL Application is intentionally vulnerable implementation of Facebook's GraphQL technology to learn and practice GraphQL Security. |
+| [Damn Vulnerable Micro Services](https://github.com/ne0z/DamnVulnerableMicroServices) | [ne0z](https://github.com/ne0z) | This is a vulnerable microservice written in many languages to demonstrating OWASP API Top Security Risk (under development). |
 | [Damn Vulnerable RESTaurant API Game](https://github.com/theowni/Damn-Vulnerable-RESTaurant-API-Game) | [theowni](https://github.com/theowni) | Damn Vulnerable Restaurant is an intentionally vulnerable Web API game for learning and training purposes dedicated to developers, ethical hackers and security engineers. |
 | [Damn Vulnerable Web Services](https://github.com/snoopysecurity/dvws-node) | [snoopysecurity](https://github.com/snoopysecurity)  |Damn Vulnerable Web Services is a vulnerable web service/API/application that we can use to learn webservices/API vulnerabilities. |
 | [Generic-University](https://github.com/InsiderPhD/Generic-University) | [InsiderPhD](https://github.com/InsiderPhD) | Vulnerable API with Laravel App |
 | [node-api-goat](https://github.com/layro01/node-api-goat) | [layro01](https://github.com/layro01) | A simple Express.JS REST API application that exposes endpoints with code that contains vulnerabilities. |
-| [Pixi](https://github.com/DevSlop/Pixi) | [DevSlop](https://github.com/DevSlop) |The Pixi module is a MEAN Stack web app with wildly insecure APIs! |
+| [Pixi](https://github.com/DevSlop/Pixi) | [DevSlop](https://github.com/DevSlop) | The Pixi module is a MEAN Stack web app with wildly insecure APIs! |
 |[poc-graphql](https://github.com/righettod/poc-graphql) | [righettod](https://github.com/righettod) | Research on GraphQL from an AppSec point of view. |
 | [REST API Goat](https://github.com/optiv/rest-api-goat) | [optiv](https://github.com/optiv) | This is a "Goat" project so you can get familiar with REST API testing. |
-| [VAmPI](https://github.com/erev0s/VAmPI)| [erev0s](https://github.com/erev0s) |Vulnerable REST API with OWASP top 10 vulnerabilities for APIs |
-| [vAPI](https://github.com/roottusk/vapi)| [roottusk](https://github.com/roottusk) |vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable API that mimics OWASP API Top 10 scenarios through Exercises. |
+| [VAmPI](https://github.com/erev0s/VAmPI)| [erev0s](https://github.com/erev0s) | Vulnerable REST API with OWASP top 10 vulnerabilities for APIs |
+| [vAPI](https://github.com/roottusk/vapi)| [roottusk](https://github.com/roottusk) | vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable API that mimics OWASP API Top 10 scenarios through Exercises. |
 | [vulnapi](https://github.com/tkisason/vulnapi) | [tkisason](https://github.com/tkisason) | Intentionaly very vulnerable API with bonus bad coding practices. |
 | [vulnerable-graphql-api](https://github.com/CarveSystems/vulnerable-graphql-api) | [CarveSystems](https://github.com/CarveSystems) | A very vulnerable implementation of a GraphQL API. |
 | [Websheep](https://github.com/marmicode/websheep) | [marmicode](https://github.com/marmicode) | Websheep is an app based on a willingly vulnerable ReSTful APIs. |
