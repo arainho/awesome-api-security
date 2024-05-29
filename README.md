@@ -58,6 +58,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Dolev Farhi and Nick Aleks | No starch press | [Black Hat GraphQL](https://nostarch.com/black-hat-graphql) | Black Hat GraphQL (book in pre-order). |
 | Corey Ball  | No starch press | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces. |
 | Justing Richer and Antonio Sanso | Manning | [Understanding API Security](https://livebook.manning.com/book/understanding-api-security/introduction/) | Several chapters from several Manning books that give you some context for how API security works in the real world. |
+| Colin Domoney | Packt Publishing | [Defending APIs](https://www.packtpub.com/product/defending-apis/9781804617120) | Focused on helping developers produce secure APIs |
 
 
 ## Cheatsheets
