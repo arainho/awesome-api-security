@@ -317,6 +317,7 @@ Name | Author | Description |
 ## Training, Workshops, Labs
 | Author | Name | Description |
 | ------ | ---- | ----------- |
+| Practical DevSecOps | [Certified API Security Professional](https://www.practical-devsecops.com/certified-api-security-professional/) | World class DevSecOps Training and Certifications |
 | APIsec | [API Security University](https://university.apisec.ai) | APIsec University provides training courses for application security professionals |
 | Corey Ball | [Hacking APIs](https://sway.office.com/HVrL2AXUlWGNDHqy) | Hacking APIs: workshop |
 | Escape | [API Security Academy](https://escape.tech/academy/) | API Security Academy, by escape |
