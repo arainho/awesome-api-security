@@ -44,10 +44,10 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | Name | Description |
 | ---- | ----------- |
 | [API Guesser](https://api-guesser.netlify.app/) | Simple website to guess API Key / OAuth Token by Muhammad Daffa |
-|[API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares. |
+| [API Key Leaks: Tools and exploits](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks) | An API key is a unique identifier that is used to authenticate requests associated with your project. Some developers might hardcode them or leave it on public shares. |
 | [Key-Checker](https://github.com/daffainfo/Key-Checker)| Go scripts for checking API key / access token validity. |
 | [Keyhacks](https://github.com/streaak/keyhacks)| Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid. |
-|[Private key usage verification ](https://github.com/trufflesecurity/driftwood) | Driftwood is a tool that can enable you to lookup whether a private key is used for things like TLS or as a GitHub SSH key for a user. |
+| [Private key usage verification ](https://github.com/trufflesecurity/driftwood) | Driftwood is a tool that can enable you to lookup whether a private key is used for things like TLS or as a GitHub SSH key for a user. |
 | [Mantra](https://github.com/MrEmpy/mantra) | A tool used to hunt down API key leaks in JS files and pages |
 
 ## Books
@@ -55,8 +55,8 @@ Please read the <a href="#contributions">contributions</a> section before openin
 | ----------- | --------- | -----| ----------- |
 | Emily Freeman | Data Theorem Special Edition | [API Security for dummies](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWJ9kN) | This book is a high-level introduction to the key concepts of API security and DevSecOps. |
 | Neil Madden | Manning   | [API Security in Action](https://www.manning.com/books/api-security-in-action)| API Security in Action teaches you how to create secure APIs for any situation. |
-| Dolev Farhi and Nick Aleks | No starch press | [Black Hat GraphQL](https://nostarch.com/black-hat-graphql) | Black Hat GraphQL (book in pre-order). |
-| Corey Ball  | No starch press | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces. |
+| Dolev Farhi and Nick Aleks | No Starch Press | [Black Hat GraphQL](https://nostarch.com/black-hat-graphql) | Black Hat GraphQL. |
+| Corey Ball  | No Starch Press | [Hacking APIs](https://nostarch.com/hacking-apis)| Breaking Web Application Programming Interfaces. |
 | Justing Richer and Antonio Sanso | Manning | [Understanding API Security](https://livebook.manning.com/book/understanding-api-security/introduction/) | Several chapters from several Manning books that give you some context for how API security works in the real world. |
 | Colin Domoney | Packt Publishing | [Defending APIs](https://www.packtpub.com/product/defending-apis/9781804617120) | Focused on helping developers produce secure APIs |
 
