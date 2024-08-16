@@ -295,6 +295,7 @@ Name | Author | Description |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | Automagically reverse-engineer REST APIs via capturing traffic |
 | [Optic](https://github.com/opticdev/optic) | Verify the accuracy of your OpenAPI 3.x spec using real traffic and automatically apply patches that keep it up-to-date |
 | [OFFAT](https://github.com/OWASP/OFFAT) | The OWASP OFFAT tool autonomously assesses your API for prevalent vulnerabilities, though full compatibility with OAS v3 is pending. The project remains a work in progress, continuously evolving towards completion. |
+| [RateMyOpenAPI](https://ratemyopenapi.com/) | Open-source tool that scans your OpenAPI spec for security, documentation, and SDK generation issues - and generates a report with action items and suggestions. |
 | [REST-Attacker](https://github.com/RUB-NDS/REST-Attacker) | Designed as a proof-of-concept for the feasibility of testing generic real-world REST implementations. Its goal is to provide a framework for REST security research. |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
 | [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
