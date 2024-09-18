@@ -177,13 +177,16 @@ Please read the <a href="#contributions">contributions</a> section before openin
 ## Mind maps
 | Author  | Name | Description |
 | ------- | ---- | ----------- |
+| [Abhay Bhargav](https://twitter.com/abhaybhargav)| [REST API defenses](https://mobile.twitter.com/abhaybhargav/status/1373982049019654149/photo/1) | Mind map: REST API defenses |
 | [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - ATTACK](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap%20ATTACK.pdf) | Mind map: API Pentesting - ATTACK |
 | [Cypro AB](https://github.com/cyprosecurity) | [API Pentesting - Recon](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap.pdf) | Mind map: API Pentesting - Recon |
 | [Cypro AB](https://github.com/cyprosecurity) | [GraphQL Attacking](https://github.com/cyprosecurity/API-SecurityEmpire/blob/main/assets/API%20Pentesting%20Mindmap%20%7B%7BGraphQL%20Attacking%7D%7D.pdf) | Mind map: GraphQL Attacking |
-| [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
 | [David Sopas](https://github.com/dsopas) | [MindAPI](https://dsopas.github.io/MindAPI/play/) | Organize your API security assessment by using MindAPI 
 | [Harsh Bothra](https://github.com/muffyhub) | [XML attacks](https://www.xmind.net/m/xNEY9b/) | Mind map: XML attacks |
-| [Abhay Bhargav](https://twitter.com/abhaybhargav)| [REST API defenses](https://mobile.twitter.com/abhaybhargav/status/1373982049019654149/photo/1) | Mind map: REST API defenses |
+| [Mosaad Sallam](https://github.com/h0tak88r))| [GraphQL Security Testing](https://github.com/h0tak88r/Sec_Mind_Maps/blob/main/GraphQL%20Security%20Testing.pdf) | Mind map: GraphQL Security Testing |
+| [Mosaad Sallam](https://github.com/h0tak88r))| [OWASP API Top10](https://github.com/h0tak88r/Sec_Mind_Maps/blob/main/OWASP%20API%20TOP%2010.pdf) | Mind map: OWASP API Top 10 |
+| [Mufaddal Masalawala](https://github.com/harsh-bothra) | [IDOR Techniques](https://www.xmind.net/m/CSKSWZ/) | Mind map: IDOR Techniques |
+
 
 ## Newsletters
 | Author  | Name | Description |
