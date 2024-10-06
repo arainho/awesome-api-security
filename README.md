@@ -332,6 +332,7 @@ Name | Author | Description |
 | Practical DevSecOps | [Certified API Security Professional](https://www.practical-devsecops.com/certified-api-security-professional/) | Comprehensive course on API security, covering OWASP API Top 10, secure API design, and hands-on labs. |
 | Semgrep Academy | [API Security Mini Course](https://academy.semgrep.dev/courses/api-security-mini-course) | Learn the basics of API security in this short and fun mini course! |
 | ShipFast | [Practical API Security Walkthrough](https://github.com/approov/shipfast-api-protection) | Learn practical Mobile and API security techniques: API Key, Static and Dynamic HMAC, Dynamic Certificate Pinning, and Mobile App Attestation. |
+| Wesley Thijs | [Let's build an API to hack](https://hackxpert.com/blog/API-Hacking-Excercises/) | API Hacking Excercises by @TheXSSrat |
 
 ## Twitter
 | Author            | Name                                                 | Description                                           |
