@@ -344,19 +344,21 @@ Name | Author | Description |
 | Wesley Thijs      | [@theXSSrat](https://twitter.com/theXSSrat)          | Ethical hacker                                        |
 
 ## Contributions
-1. The purpose of this repository is to collect API Security tools and resources. The preference goes to open-source or community editions tools, creative commons resources, and resources created by the community for the benefit of the community. The exception is in the book's topic, where some referenced items may have an associated cost.
+1. **Repository Purpose:** This repository aims to collect API security tools and resources. Preference is given to open-source or community editions of tools, Creative Commons resources, and content created by the community for the benefit of the community.
 
-2. Other content vendor-specific, ads, commercial, restricted, free trial, freemium, closed-source (proprietary software), products or services provided in exchange for private user details are considered out of scope pull requests.
+2. **Out of Scope:** Pull requests that involve vendor-specific content, advertisements, commercial or restricted products, free trials, freemium services, closed-source (proprietary) software, or services that require users to provide private details will be considered out of scope and may be closed or ignored.
 
-3. Content or materials not directly related to API security, hunting bugs in APIs, hardening or hacking APIs may also be discarded.
+3. **Relevance:** Contributions must be directly related to API security, bug hunting, API hardening, or API hacking. Materials unrelated to these topics may be discarded.
 
-4. Duplicated content or entries that do not provide additional or relevant content compared with existing entries may also not be considered.
+4. **Duplicates and Relevance:** Duplicate entries or submissions that do not add new, relevant content beyond existing entries will not be considered.
 
-5. Out of scope pull requests will be probably discarded, closed or ignored without notice.
+5. **Out of Scope PRs:** Pull requests that fall outside the scope of this repository are likely to be discarded, closed, or ignored without notice.
 
-6. The twitter section reference authors of books, videos, workshops, courses, newsletters or content already existent on this repository. This is a bit subjective and may not be consensual at all! Even though it can bring division I decided to add the section since it might be useful to some of the visitors of the repository.
+6. **Twitter Section:** The Twitter section references authors of books, videos, workshops, courses, newsletters, or other content already present in this repository. While this section is somewhat subjective and may be divisive, it has been included as it might be helpful to some visitors of the repository.
 
-7. If you are an author of tools/content and your description is not accurate on twitter or other section let me know!
+7. **Content Accuracy:** If you are an author of tools or content and notice that your description is inaccurate or outdated in any section (including the Twitter section), please reach out to update it.
+
+8. **Book References:** The only exception to the "out-of-scope" rule pertains to books. Some referenced books may have an associated cost, which is allowed under certain circumstances.
 
 If you think your content fits the above purposes, please
 - create a new branch
