@@ -304,6 +304,7 @@ Name | Author | Description |
 | [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
 | [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | Dump all available paths and/or endpoints on WADL file. |
 | [fuzz-lightyear](https://github.com/Yelp/fuzz-lightyear)| A pytest-inspired, DAST framework, capable of identifying vulnerabilities in a distributed, micro-service ecosystem through chaos engineering testing and stateful, Swagger fuzzing. |
+| [CentralMind/Gateway](https://github.com/centralmind/gateway) — Generate production ready APIs using AI based on database schema and data, optimized for AI-Agents. Supports PostgreSQL, Clickhouse, MySQL, Snowflake, BigQuery. |
 |  |  |
 | **SOAP** |
 | [Wsdler](https://github.com/NetSPI/Wsdler)| WSDL Parser extension for Burp. |
