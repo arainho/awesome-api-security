@@ -289,7 +289,7 @@ Name | Author | Description |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
 | [CATS](https://github.com/Endava/cats) | CATS is a REST API Fuzzer and negative testing tool for OpenAPI endpoints. |
-| [CentralMind/Gateway](https://github.com/centralmind/gateway) — Generate production ready APIs using AI based on database schema and data, optimized for AI-Agents. Supports PostgreSQL, Clickhouse, MySQL, Snowflake, BigQuery. |
+| [CentralMind/Gateway](https://github.com/centralmind/gateway) | Generate production ready APIs using AI based on database schema and data, optimized for AI-Agents. Supports PostgreSQL, Clickhouse, MySQL, Snowflake, BigQuery. |
 | [Cherrybomb](https://github.com/blst-security/cherrybomb) | Stop half-done API specifications with a CLI tool that helps you avoid undefined user behaviour by validating your API specifications. |
 | [fuzz-lightyear](https://github.com/Yelp/fuzz-lightyear) | A pytest-inspired, DAST framework, capable of identifying vulnerabilities in a distributed, micro-service ecosystem through chaos engineering testing and stateful, Swagger fuzzing. |
 | [fuzzapi](https://github.com/Fuzzapi/fuzzapi) | Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
