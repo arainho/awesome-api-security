@@ -281,30 +281,31 @@ Name | Author | Description |
 |  |  |
 | **REST APIs** |
 | [Akto](https://github.com/akto-api-security/akto) | API discovery, automated business logic testing and runtime detection |
-| [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
 | [APIClarity](https://github.com/apiclarity/apiclarity) | Reconstruct Open API Specifications from real-time workload traffic seamlessly. |
-| [APIFuzzer](https://github.com/KissPeter/APIFuzzer) | Fuzz test your application using your OpenAPI or Swagger API definition without coding. |
+| [APICheck](https://bbva.github.io/apicheck/) | The DevSecOps toolset for REST APIs. |
 | [APIKit](https://github.com/API-Security/APIKit) | APIKit：Discovery, Scan and Audit APIs Toolkit All In One. |
+| [APIFuzzer](https://github.com/KissPeter/APIFuzzer) | Fuzz test your application using your OpenAPI or Swagger API definition without coding. |
 | [Arjun](https://github.com/s0md3v/Arjun) | HTTP parameter discovery suite. |
 | [Astra](https://github.com/flipkart-incubator/Astra) | Automated Security Testing For REST API's. |
 | [Automatic API Attack Tool](https://github.com/imperva/automatic-api-attack-tool) | Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output. |
 | [CATS](https://github.com/Endava/cats) | CATS is a REST API Fuzzer and negative testing tool for OpenAPI endpoints. |
+| [CentralMind/Gateway](https://github.com/centralmind/gateway) — Generate production ready APIs using AI based on database schema and data, optimized for AI-Agents. Supports PostgreSQL, Clickhouse, MySQL, Snowflake, BigQuery. |
 | [Cherrybomb](https://github.com/blst-security/cherrybomb) | Stop half-done API specifications with a CLI tool that helps you avoid undefined user behaviour by validating your API specifications. |
+| [fuzz-lightyear](https://github.com/Yelp/fuzz-lightyear) | A pytest-inspired, DAST framework, capable of identifying vulnerabilities in a distributed, micro-service ecosystem through chaos engineering testing and stateful, Swagger fuzzing. |
+| [fuzzapi](https://github.com/Fuzzapi/fuzzapi) | Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
 | [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go. | 
-| [fuzzapi](https://github.com/Fuzzapi/fuzzapi)| Fuzzapi is a tool used for REST API pentesting anTnT-Fuzzerd uses API_Fuzzer gem. |
 | [gotestwaf](https://github.com/wallarm/gotestwaf) | An open-source project in Golang to test different web application firewalls (WAF) for detection logic and bypasses |
 | [kiterunner](https://github.com/assetnote/kiterunner) | Contextual Content Discovery Tool. |
 | [Metlo](https://github.com/metlo-labs/metlo) | Open-source API security tool to discover, inventory, test, and protect your APIs. |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | Automagically reverse-engineer REST APIs via capturing traffic |
-| [Optic](https://github.com/opticdev/optic) | Verify the accuracy of your OpenAPI 3.x spec using real traffic and automatically apply patches that keep it up-to-date |
 | [OFFAT](https://github.com/OWASP/OFFAT) | The OWASP OFFAT tool autonomously assesses your API for prevalent vulnerabilities, though full compatibility with OAS v3 is pending. The project remains a work in progress, continuously evolving towards completion. |
+| [Optic](https://github.com/opticdev/optic) | Verify the accuracy of your OpenAPI 3.x spec using real traffic and automatically apply patches that keep it up-to-date |
 | [REST-Attacker](https://github.com/RUB-NDS/REST-Attacker) | Designed as a proof-of-concept for the feasibility of testing generic real-world REST implementations. Its goal is to provide a framework for REST security research. |
 | [RESTler](https://github.com/microsoft/restler-fuzzer) | RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. |
-| [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ)| A tool geared towards pentesting APIs using OpenAPI definitions. |
+| [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ) | A tool geared towards pentesting APIs using OpenAPI definitions. |
 | [TnT-Fuzzer](https://github.com/Teebytes/TnT-Fuzzer) | OpenAPI 2.0 (Swagger) fuzzer written in python. Basically TnT for your API. |
 | [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | Dump all available paths and/or endpoints on WADL file. |
-| [fuzz-lightyear](https://github.com/Yelp/fuzz-lightyear)| A pytest-inspired, DAST framework, capable of identifying vulnerabilities in a distributed, micro-service ecosystem through chaos engineering testing and stateful, Swagger fuzzing. |
-| [CentralMind/Gateway](https://github.com/centralmind/gateway) — Generate production ready APIs using AI based on database schema and data, optimized for AI-Agents. Supports PostgreSQL, Clickhouse, MySQL, Snowflake, BigQuery. |
+| [WuppieFuzz](https://github.com/TNO-S3/WuppieFuzz) | WuppieFuzz is a coverage-guided REST API fuzzer developed on top of LibAFL, targeting a wide audience of end-users, with a strong focus on ease-of-use, explainability of the discovered flaws and modularity. WuppieFuzz supports all three settings of testing (black box, grey box and white box). |
 |  |  |
 | **SOAP** |
 | [Wsdler](https://github.com/NetSPI/Wsdler)| WSDL Parser extension for Burp. |
