@@ -322,7 +322,7 @@ Name | Author | Description |
 | [noir](https://github.com/hahwul/noir) | Noir is an attack surface detector form source code. |
 |  |  |
 | **AI Agent Security**|
-| [MOSS](https://github.com/mosscomputing/moss) | Cryptographic signing for AI agents using ML-DSA-44 post-quantum signatures. Creates tamper-proof audit trails for API calls made by AI agents, enabling attribution, compliance, and policy enforcement. |
+| [MOSS](https://pypi.org/project/moss-sdk/) | Cryptographic signing for AI agents using ML-DSA-44 post-quantum signatures. Creates tamper-proof audit trails for API calls made by AI agents, enabling attribution, compliance, and policy enforcement. |
 
 ## Training, Workshops, Labs
 | Author | Name | Description |
