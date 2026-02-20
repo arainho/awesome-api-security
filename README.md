@@ -218,6 +218,7 @@ Name | Author | Description |
 | [API and microservice security](https://portswigger.net/burp/vulnerability-scanner/api-security-testing/guide-to-api-microservice-security) | PortSwigger | What are API and microservice security? |
 | [Strengthening Your API Security Posture](https://42crunch.com/knowledge-series/strengthening-api-security-posture/) | 42Crunch | Strengthening Your API Security Posture – Ford Motor Company. |
 | [The Fault in Our Stars](https://www.tenchisecurity.com/blog/thefaultinourstars) | Tenchi Security | Security Implications of AWS API Gateway Lambda Authorizers and IAM Wildcard Expansion. |
+| [AppSec Santa — API Security Tools](https://appsecsanta.com/api-security-tools) | AppSec Santa | Curated comparison of API security tools with features, pricing, and alternatives |
 
 ## Playlists
 | Name | Description |
