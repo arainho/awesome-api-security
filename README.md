@@ -251,6 +251,7 @@ Name | Author | Description |
 ## Security APIs
 | Name | Description |
 | ---- | ----------- |
+| [ArkForge Trust Layer](https://arkforge.fr/trust)| Cryptographic proof API for HTTP exchanges — Ed25519, RFC 3161 timestamps, and Sigstore Rekor attestations. |
 | [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
 
 ## Specifications
