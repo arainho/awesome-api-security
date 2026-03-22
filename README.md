@@ -252,6 +252,7 @@ Name | Author | Description |
 | Name | Description |
 | ---- | ----------- |
 | [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
+| [ClawSearch](https://clawsearch.cc) | Security-first search engine for AI agent skills with Trust Score and supply chain safety checks. CLI: `npx clawsearch-guard <skill-name>` |
 
 ## Specifications
 | Name | Description |
