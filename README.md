@@ -252,6 +252,7 @@ Name | Author | Description |
 | Name | Description |
 | ---- | ----------- |
 | [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
+| [ContrastAPI](https://api.contrastcyber.com) | Free security intelligence API — CVE lookup, domain recon, IP reputation, tech fingerprinting, code security checks. No API key required. |
 
 ## Specifications
 | Name | Description |
