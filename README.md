@@ -34,6 +34,7 @@
 
 ---
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts including API security scanning, vulnerability assessment, and automated threat detection. MIT licensed.
 ## About
 The awesome-api-security (aka awesome-apisec) repository is collection of awesome API Security tools and resources.     
 The focus goes to open-source tools and resources that benefit all the community.    
