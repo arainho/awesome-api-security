@@ -251,6 +251,7 @@ Name | Author | Description |
 ## Security APIs
 | Name | Description |
 | ---- | ----------- |
+| [IPASIS](https://ipasis.com) | Real-time bot detection and fraud prevention API with IP reputation, proxy/VPN detection, and email validation. Returns a 0-100 trust score in under 20ms. |
 | [awesome-security-apis](https://github.com/jaegeral/security-apis)| A collective list of public JSON APIs for use in security. |
 
 ## Specifications
