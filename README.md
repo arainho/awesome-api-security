@@ -198,6 +198,7 @@ Please read the <a href="#contributions">contributions</a> section before openin
 
 ## Other resources
 Name | Author | Description |
+| [HackMyIP](https://hackmyip.com) | HackMyIP | Free online IP/security toolkit with 20 tools: port scanner, DNS lookup, SSL checker, HTTP headers, email breach check, and more. No signup required. |
 ---- | ------ | ----------- |
 | [API Hacking Articles](https://danaepp.com/blog)| Dana Epp | API Hacking Fundamentals, Tools, Techniques, Fails and Mindset articles. |
 | [API Security best practices guide](https://expeditedsecurity.com/api-security-best-practices-megaguide) |  Expedited Security | API Security Best Practices MegaGuide |
